@@ -12,10 +12,10 @@ export default function CTASection() {
           
           {/* Main content */}
           <div className="text-center max-w-2xl mx-auto relative z-10">
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-primary-foreground">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 leading-tight text-primary-foreground">
               Vous voulez rentrer dans une maison propre vendredi?
             </h2>
-            <p className="text-primary-foreground/80 mb-8 leading-relaxed">
+            <p className="text-primary-foreground/80 mb-6 md:mb-8 leading-relaxed">
               Appelez Lena: +32 492 95 53 48. Réponse en 2h. On commence cette semaine.
             </p>
             <Link
