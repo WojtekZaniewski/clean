@@ -3,9 +3,9 @@ import Link from "next/link"
 
 export default function CTASection() {
   return (
-    <section id="contact" className="py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="relative bg-primary rounded-3xl p-12 md:p-16 overflow-hidden">
+    <section id="contact" className="py-12 md:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative bg-primary rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
           {/* Decorative circles */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />

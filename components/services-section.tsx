@@ -25,9 +25,9 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section id="services" className="py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="services" className="py-12 md:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 md:mb-12">
           <span className="text-xs font-medium text-primary tracking-wider uppercase">Nos services</span>
           <h2 className="font-serif text-3xl md:text-4xl mt-4 mb-4 text-balance">
             On nettoie tout type d'espace
@@ -37,11 +37,11 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-card border border-border rounded-2xl p-6 hover:shadow-lg hover:border-primary/20 transition-all duration-300 group"
+              className="bg-card border border-border rounded-2xl p-5 md:p-6 hover:shadow-lg hover:border-primary/20 transition-all duration-300 group"
             >
               <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary/10 transition-colors">
                 <service.icon className="w-6 h-6 text-primary" />

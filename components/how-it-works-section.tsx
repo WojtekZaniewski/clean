@@ -23,9 +23,9 @@ export default function HowItWorksSection() {
   ]
 
   return (
-    <section className="py-24 bg-secondary/30">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section className="py-12 md:py-16 lg:py-20 bg-secondary/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 md:mb-12">
           <span className="text-xs font-medium text-primary tracking-wider uppercase">Comment ça marche</span>
           <h2 className="font-serif text-3xl md:text-4xl mt-4 mb-4">
             Trois étapes. C'est tout.
@@ -35,10 +35,10 @@ export default function HowItWorksSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
           {steps.map((step, index) => (
             <div key={step.number} className="relative">
-              <div className="bg-card border border-border rounded-2xl p-8 text-center h-full">
+              <div className="bg-card border border-border rounded-2xl p-6 md:p-8 text-center h-full">
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <step.icon className="w-7 h-7 text-primary" />
                 </div>

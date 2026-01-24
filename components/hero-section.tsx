@@ -11,10 +11,10 @@ export default function HeroSection() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 pt-16 pb-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16 lg:pt-20 pb-12 md:pb-16 lg:pb-20">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left content */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.15] text-balance">
               Rentrez chez vous. Tout brille. Vous n'avez rien fait.
             </h1>
@@ -52,7 +52,7 @@ export default function HeroSection() {
           {/* Right visual */}
           <div className="relative">
             <div 
-              className="relative rounded-3xl p-8 aspect-square flex items-center justify-center bg-cover bg-center bg-no-repeat"
+              className="relative rounded-3xl p-4 sm:p-6 md:p-8 aspect-square flex items-center justify-center bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: 'url(/lenusia.png)'
               }}

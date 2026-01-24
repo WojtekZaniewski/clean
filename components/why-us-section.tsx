@@ -30,16 +30,16 @@ export default function WhyUsSection() {
   ]
 
   return (
-    <section id="pourquoi-nous" className="py-24 bg-secondary/30">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="pourquoi-nous" className="py-12 md:py-16 lg:py-20 bg-secondary/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <div>
             <span className="text-xs font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
-            <h2 className="font-serif text-3xl md:text-4xl mt-4 mb-6 leading-tight text-balance">
+            <h2 className="font-serif text-3xl md:text-4xl mt-4 mb-6 md:mb-8 leading-tight text-balance">
               Pourquoi on revient chaque semaine chez les mêmes clients depuis 3 ans
             </h2>
             
-            <div className="space-y-5">
+            <div className="space-y-4 md:space-y-5">
               {reasons.map((reason) => (
                 <div key={reason.title} className="flex gap-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
