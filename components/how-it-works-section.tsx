@@ -1,0 +1,60 @@
+import { FileText, Calendar, Sparkles } from "lucide-react"
+
+export default function HowItWorksSection() {
+  const steps = [
+    {
+      number: "01",
+      icon: FileText,
+      title: "Vous nous contactez",
+      description: "Un message ou un appel. On répond vite.",
+    },
+    {
+      number: "02",
+      icon: Calendar,
+      title: "On fixe un moment",
+      description: "Vous choisissez le jour. On s'adapte à vous.",
+    },
+    {
+      number: "03",
+      icon: Sparkles,
+      title: "C'est propre",
+      description: "On vient, on nettoie, vous rentrez tranquille.",
+    },
+  ]
+
+  return (
+    <section className="py-24 bg-secondary/30">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <span className="text-xs font-medium text-primary tracking-wider uppercase">Comment ça marche</span>
+          <h2 className="font-serif text-3xl md:text-4xl mt-4 mb-4">
+            Trois étapes. C'est tout.
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto">
+            Pas compliqué.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {steps.map((step, index) => (
+            <div key={step.number} className="relative">
+              <div className="bg-card border border-border rounded-2xl p-8 text-center h-full">
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <step.icon className="w-7 h-7 text-primary" />
+                </div>
+                <span className="text-xs font-medium text-primary">{step.number}</span>
+                <h3 className="font-semibold text-lg mt-2 mb-3">{step.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+              </div>
+              
+              {/* Connector */}
+              {index < steps.length - 1 && (
+                <div className="hidden md:block absolute top-1/2 -right-4 w-8 border-t-2 border-dashed border-border" />
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
