@@ -5,22 +5,22 @@ export default function WhyUsSection() {
     {
       icon: MapPin,
       title: "On est d'ici",
-      description: "On connaît Liège. Toujours la même équipe chez vous. Pas de sous-traitance.",
+      description: "Lena et son équipe. Pas de sous-traitance. On se connaît par nos prénoms après 2 visites.",
     },
     {
       icon: Clock,
       title: "On arrive à l'heure",
-      description: "Vous savez quand on vient. On fait le travail. Quand on part, c'est propre.",
+      description: "10h = 10h. Pas 10h15. On prévient 30 min avant si imprévu. Ça n'arrive jamais.",
     },
     {
       icon: Leaf,
       title: "Produits sains",
-      description: "Efficaces mais pas agressifs. Bon pour vous, bon pour la planète.",
+      description: "Produits qui nettoient vraiment. Sans odeur chimique qui reste 3 jours. Bon pour vos enfants et vos animaux.",
     },
     {
       icon: Sparkles,
       title: "On ne laisse rien",
-      description: "Les coins, les plinthes, les endroits oubliés. On nettoie tout.",
+      description: "Les coins, les plinthes, derrière le frigo. Les endroits où personne ne regarde mais vous savez qu'ils sont sales.",
     },
     {
       icon: Heart,
@@ -36,11 +36,8 @@ export default function WhyUsSection() {
           <div>
             <span className="text-xs font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
             <h2 className="font-serif text-3xl md:text-4xl mt-4 mb-6 leading-tight text-balance">
-              Pourquoi les gens nous font confiance
+              Pourquoi on revient chaque semaine chez les mêmes clients depuis 3 ans
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              On fait le travail bien. C'est simple.
-            </p>
             
             <div className="space-y-5">
               {reasons.map((reason) => (

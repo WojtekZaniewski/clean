@@ -16,15 +16,11 @@ export default function HeroSection() {
           {/* Left content */}
           <div className="space-y-8">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.15] text-balance">
-              Rentrez chez vous.
-              <br />
-              <span className="text-primary">Respirez.</span>
-              <br />
-              Tout est impeccable.
+              Rentrez chez vous. Tout brille. Vous n'avez rien fait.
             </h1>
 
             <p className="text-muted-foreground text-lg max-w-md leading-relaxed">
-              On nettoie votre maison, Airbnb ou bureau. Vous rentrez, tout est propre.
+              Plus de ménage le week-end. Plus de stress avant les invités. Juste une maison propre quand vous rentrez.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

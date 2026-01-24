@@ -5,22 +5,22 @@ export default function ServicesSection() {
     {
       icon: Home,
       title: "Maison",
-      description: "On nettoie tout. Cuisine, salle de bain, chambres. Vous rentrez, c'est propre.",
+      description: "Cuisine qui sent le citron. Salle de bain sans traces. Lit refait. On passe 3 heures minimum, jamais en vitesse.",
     },
     {
       icon: BedDouble,
       title: "Airbnb",
-      description: "Vos voyageurs arrivent dans un logement impeccable. On gère tout entre deux réservations.",
+      description: "Vos 5 étoiles sont sûres. On nettoie entre chaque guest. À l'heure. Pas d'excuses.",
     },
     {
       icon: Building2,
       title: "Hôtels",
-      description: "Chambres prêtes à temps. Chaque jour. Vos clients reviennent.",
+      description: "14h. Chambres prêtes. On travaille avec 3 hôtels à Liège depuis 2 ans. Zéro retard.",
     },
     {
       icon: Briefcase,
       title: "Bureaux",
-      description: "Un bureau propre, c'est une équipe qui travaille mieux. On passe quand ça vous arrange.",
+      description: "Vos clients arrivent, le bureau sent bon. Pas de miettes, pas de poussière. On vient tôt ou tard. Vous choisissez.",
     },
   ]
 

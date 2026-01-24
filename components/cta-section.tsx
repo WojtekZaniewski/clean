@@ -13,10 +13,10 @@ export default function CTASection() {
           {/* Main content */}
           <div className="text-center max-w-2xl mx-auto relative z-10">
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-primary-foreground">
-              Envie d'un chez-vous propre ?
+              Vous voulez rentrer dans une maison propre vendredi?
             </h2>
             <p className="text-primary-foreground/80 mb-8 leading-relaxed">
-              Devis gratuit. Sans engagement. On vous répond vite.
+              Appelez Lena: +32 492 95 53 48. Réponse en 2h. On commence cette semaine.
             </p>
             <Link
               href="mailto:contact@lenas-cleaning.be"
