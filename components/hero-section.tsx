@@ -61,19 +61,6 @@ export default function HeroSection() {
                 backgroundImage: 'url(/lenusia.png)'
               }}
             >
-              {/* Central illustration */}
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 overflow-hidden">
-                  <Image
-                    src="/lenusia.png"
-                    alt="Lensusia"
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="font-serif text-lg text-foreground/80">Un espace qui respire</p>
-              </div>
             </div>
           </div>
         </div>
