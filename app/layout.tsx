@@ -10,7 +10,6 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   title: "Lena's Cleaning Services - Nettoyage professionnel à Liège",
   description: "Service de nettoyage local à Liège. Airbnb, hôtels, bureaux et maisons. Fiable, discret, et obsédé par les détails.",
-    generator: 'v0.app'
 }
 
 export const viewport: Viewport = {
