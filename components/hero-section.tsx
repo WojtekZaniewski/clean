@@ -55,18 +55,12 @@ export default function HeroSection() {
 
           {/* Right visual */}
           <div className="relative">
-            <div className="relative bg-gradient-to-br from-accent/50 to-secondary rounded-3xl p-8 aspect-square flex items-center justify-center">
-              {/* Decorative elements */}
-              <div className="absolute top-6 left-6 bg-card rounded-xl p-4 shadow-lg border border-border/50">
-                <p className="text-xs text-muted-foreground mb-1">Prochain nettoyage</p>
-                <p className="font-medium">Demain, 9h00</p>
-              </div>
-              
-              <div className="absolute bottom-6 right-6 bg-card rounded-xl p-4 shadow-lg border border-border/50">
-                <p className="text-xs text-muted-foreground mb-1">Satisfaction client</p>
-                <p className="font-medium text-primary">100% positifs</p>
-              </div>
-
+            <div 
+              className="relative rounded-3xl p-8 aspect-square flex items-center justify-center bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: 'url(/lenusia.png)'
+              }}
+            >
               {/* Central illustration */}
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 overflow-hidden">
