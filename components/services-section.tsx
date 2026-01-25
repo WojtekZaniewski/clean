@@ -15,7 +15,7 @@ export default function ServicesSection() {
     {
       icon: Building2,
       title: "Hôtels",
-      description: "14h. Chambres prêtes. Zéro retard.",
+      description: "Les chambres sont toujours prêtes à l'heure, quoi qu'il arrive. Ponctualité et précision sont les maîtres mots qui décrivent le mieux notre entreprise auprès de nos clients.",
     },
     {
       icon: Briefcase,
