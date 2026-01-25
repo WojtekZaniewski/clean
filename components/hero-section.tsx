@@ -58,7 +58,7 @@ export default function HeroSection() {
           {/* Right visual - appears second on mobile */}
           <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden flex items-center justify-center">
             <div 
-              className="relative rounded-2xl sm:rounded-3xl md:rounded-[2rem] w-full h-full max-w-full max-h-full flex items-center justify-center bg-contain bg-no-repeat bg-center"
+              className="relative rounded-lg sm:rounded-xl md:rounded-2xl w-full h-full max-w-full max-h-full flex items-center justify-center bg-contain bg-no-repeat bg-center"
               style={{
                 backgroundImage: 'url(/lenusia.png)'
               }}

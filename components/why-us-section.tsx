@@ -56,7 +56,7 @@ export default function WhyUsSection() {
 
           <div className="relative w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden flex items-center justify-center mt-8 lg:mt-0">
             <div 
-              className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-no-repeat"
+              className="relative rounded-lg sm:rounded-xl md:rounded-2xl w-full h-full flex items-center justify-center bg-cover bg-no-repeat"
               style={{
                 backgroundImage: 'url(/lenusia.png)',
                 backgroundPosition: 'center center'
