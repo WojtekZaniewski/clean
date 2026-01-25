@@ -26,7 +26,15 @@ export default function HeroSection() {
     return () => clearInterval(interval)
   }, [api])
 
-  const images = Array.from({ length: 13 }, (_, i) => i + 1)
+  // Start from image 3, then continue with 4-13, then 1-2
+  const images = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1, 2]
+  
+  // Scroll to image 3 (index 0) on mount
+  useEffect(() => {
+    if (api) {
+      api.scrollTo(0, false) // false = no animation on initial load
+    }
+  }, [api])
   const trustPoints = [
     "Service local à Liège",
     "Assurance complète",
@@ -86,20 +94,23 @@ export default function HeroSection() {
               opts={{
                 align: "start",
                 loop: true,
+                dragFree: false,
+                containScroll: "trimSnaps",
               }}
               className="w-full h-full"
             >
               <CarouselContent className="h-full">
                 {images.map((num) => (
                   <CarouselItem key={num} className="h-full">
-                    <div className="relative w-full h-full flex items-center justify-center rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+                    <div className="relative w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
                         alt={`Lena's Cleaning - Image ${num}`}
                         width={800}
                         height={800}
-                        className="w-full h-full object-contain rounded-lg sm:rounded-xl md:rounded-2xl"
-                        priority={num === 1}
+                        className="w-full h-full object-cover rounded-lg sm:rounded-xl md:rounded-2xl"
+                        priority={num === 3}
+                        sizes="(max-width: 768px) 100vw, 50vw"
                       />
                     </div>
                   </CarouselItem>
