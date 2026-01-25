@@ -31,9 +31,9 @@ export default function WhyUsSection() {
 
   return (
     <section id="pourquoi-nous" className="h-screen flex items-center justify-center bg-secondary/30 w-full overflow-hidden">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4 sm:py-6 md:py-8">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center h-full">
-          <div className="flex flex-col justify-center">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 h-full flex items-center">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center w-full">
+          <div className="flex flex-col justify-center h-full max-h-full overflow-y-auto">
             <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 sm:mt-3 mb-4 sm:mb-5 md:mb-6 leading-tight text-balance">
               Pourquoi on revient chaque semaine chez les mêmes clients depuis 3 ans
