@@ -41,12 +41,12 @@ export default function WhyUsSection() {
             
             <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
               {reasons.map((reason) => (
-                <div key={reason.title} className="flex gap-3 sm:gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 bg-accent rounded-lg flex items-center justify-center">
-                    <reason.icon className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary" aria-hidden="true" />
+                <div key={reason.title} className="flex gap-2.5 sm:gap-3 md:gap-4">
+                  <div className="flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-accent rounded-lg flex items-center justify-center">
+                    <reason.icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary" aria-hidden="true" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-medium mb-1 sm:mb-1.5 text-sm sm:text-base md:text-lg lg:text-xl break-words">{reason.title}</h3>
+                    <h3 className="font-medium mb-1 text-sm sm:text-base md:text-lg lg:text-xl break-words">{reason.title}</h3>
                     <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed break-words">{reason.description}</p>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ export default function WhyUsSection() {
             </div>
           </div>
 
-          <div className="relative w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden flex items-center justify-center mt-8 lg:mt-0">
+          <div className="relative w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden flex items-center justify-center mt-4 sm:mt-5 md:mt-6 lg:mt-0">
             <div 
               className="relative rounded-lg sm:rounded-xl md:rounded-2xl w-full h-full flex items-center justify-center bg-cover bg-no-repeat"
               style={{
