@@ -32,22 +32,22 @@ export default function WhyUsSection() {
   return (
     <section id="pourquoi-nous" className="py-12 md:py-16 lg:py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 items-center">
           <div>
-            <span className="text-xs font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
-            <h2 className="font-serif text-3xl md:text-4xl mt-4 mb-6 md:mb-8 leading-tight text-balance">
+            <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mt-3 sm:mt-4 mb-5 sm:mb-6 md:mb-8 leading-tight text-balance">
               Pourquoi on revient chaque semaine chez les mêmes clients depuis 3 ans
             </h2>
             
-            <div className="space-y-4 md:space-y-5">
+            <div className="space-y-4 sm:space-y-5">
               {reasons.map((reason) => (
-                <div key={reason.title} className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                    <reason.icon className="w-5 h-5 text-primary" />
+                <div key={reason.title} className="flex gap-3 sm:gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-11 sm:h-11 bg-accent rounded-lg flex items-center justify-center">
+                    <reason.icon className="w-5 h-5 text-primary" aria-hidden="true" />
                   </div>
-                  <div>
-                    <h3 className="font-medium mb-1">{reason.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{reason.description}</p>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-medium mb-1 text-base sm:text-lg">{reason.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{reason.description}</p>
                   </div>
                 </div>
               ))}
