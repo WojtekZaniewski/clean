@@ -117,7 +117,7 @@ export default function HeroSection() {
               }}
               className="absolute inset-0 w-full h-full"
             >
-              <CarouselContent className="h-full -ml-0 [&>div]:h-full">
+              <CarouselContent className="h-full -ml-0">
                 {images.map((num, index) => (
                   <CarouselItem key={num} className="pl-0 basis-full h-full">
                     <div className="relative w-full h-full overflow-hidden">
