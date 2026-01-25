@@ -10,41 +10,41 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-10 sm:pb-12 md:pb-16 lg:pb-20">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
+    <section className="relative overflow-hidden min-h-screen flex items-center">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-center">
           {/* Left content - appears first on mobile for better priority */}
-          <div className="space-y-5 sm:space-y-6 md:space-y-8 order-2 lg:order-1">
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.2] sm:leading-[1.15] text-balance">
+          <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12 order-2 lg:order-1">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.15] sm:leading-[1.1] text-balance">
               Rentrez chez vous. Tout brille. Vous n'avez rien fait.
             </h1>
 
-            <p className="text-base sm:text-lg text-muted-foreground max-w-md leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
               Plus de ménage le week-end. Plus de stress avant les invités. Juste une maison propre quand vous rentrez.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 md:gap-6">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-base sm:text-sm font-medium hover:bg-primary/90 transition-colors min-h-[44px] touch-manipulation"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 sm:px-10 sm:py-5 md:px-12 md:py-6 rounded-full text-base sm:text-lg md:text-xl font-medium hover:bg-primary/90 transition-colors min-h-[52px] sm:min-h-[56px] md:min-h-[60px] touch-manipulation"
                 aria-label="Obtenir un devis gratuit"
               >
                 Obtenir un devis gratuit
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" aria-hidden="true" />
               </Link>
               <Link
                 href="#services"
-                className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-base sm:text-sm font-medium hover:bg-secondary transition-colors min-h-[44px] touch-manipulation"
+                className="inline-flex items-center justify-center gap-2 border-2 border-border px-8 py-4 sm:px-10 sm:py-5 md:px-12 md:py-6 rounded-full text-base sm:text-lg md:text-xl font-medium hover:bg-secondary transition-colors min-h-[52px] sm:min-h-[56px] md:min-h-[60px] touch-manipulation"
                 aria-label="Découvrir nos services"
               >
                 Découvrir nos services
               </Link>
             </div>
 
-            <div className="flex flex-wrap gap-3 sm:gap-4 pt-2">
+            <div className="flex flex-wrap gap-4 sm:gap-5 md:gap-6 pt-4">
               {trustPoints.map((point) => (
-                <div key={point} className="flex items-center gap-2 text-sm sm:text-base text-muted-foreground">
-                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" aria-hidden="true" />
+                <div key={point} className="flex items-center gap-2 sm:gap-3 text-base sm:text-lg md:text-xl text-muted-foreground">
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0" aria-hidden="true" />
                   <span>{point}</span>
                 </div>
               ))}
@@ -52,9 +52,9 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-6 sm:mb-0">
+          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 h-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
             <div 
-              className="relative rounded-2xl sm:rounded-3xl aspect-square w-full max-w-md mx-auto sm:max-w-none flex items-center justify-center bg-cover bg-center bg-no-repeat"
+              className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: 'url(/lenusia.png)'
               }}

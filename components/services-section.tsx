@@ -25,29 +25,29 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section id="services" className="py-12 md:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Nos services</span>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mt-3 sm:mt-4 mb-3 sm:mb-4 text-balance">
+    <section id="services" className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 w-full">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
+          <span className="text-sm sm:text-base md:text-lg font-medium text-primary tracking-wider uppercase">Nos services</span>
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-4 sm:mt-5 md:mt-6 mb-4 sm:mb-5 md:mb-6 text-balance">
             On nettoie tout type d'espace
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto px-4 sm:px-0">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0">
             Maison, Airbnb, hôtel ou bureau. Toujours le même soin.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-card border border-border rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 hover:shadow-lg hover:border-primary/20 transition-all duration-300 group"
+              className="bg-card border border-border rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group h-full"
             >
-              <div className="w-11 h-11 sm:w-12 sm:h-12 bg-accent rounded-xl flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-primary/10 transition-colors">
-                <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" aria-hidden="true" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 bg-accent rounded-xl flex items-center justify-center mb-5 sm:mb-6 md:mb-8 group-hover:bg-primary/10 transition-colors">
+                <service.icon className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 text-primary" aria-hidden="true" />
               </div>
-              <h3 className="font-semibold text-base sm:text-lg mb-2">{service.title}</h3>
-              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{service.description}</p>
+              <h3 className="font-semibold text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4">{service.title}</h3>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>
