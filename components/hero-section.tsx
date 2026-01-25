@@ -10,9 +10,9 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-center">
+    <section className="relative overflow-hidden h-screen flex items-center justify-center">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-center h-full">
           {/* Left content - appears first on mobile for better priority */}
           <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12 order-2 lg:order-1">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.15] sm:leading-[1.1] text-balance">
@@ -52,7 +52,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 h-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
+          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full">
             <div 
               className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-center bg-no-repeat"
               style={{
