@@ -10,8 +10,8 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="relative overflow-hidden h-screen flex items-center justify-center">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-1 sm:py-2">
+    <section className="relative overflow-hidden h-screen flex items-start justify-center pt-16 sm:pt-20">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-0 pb-2">
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center h-full">
           {/* Left content - appears first on mobile for better priority */}
           <div className="space-y-3 sm:space-y-4 md:space-y-5 order-2 lg:order-1 flex flex-col justify-center">
