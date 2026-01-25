@@ -16,13 +16,13 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        "Trois enfants, un chien. Chaque vendredi, on retrouve une maison propre. Merci !",
+        "Trois enfants, un chien. Chaque samedi, nous entrons dans une maison propre. Merci !",
       author: "Julie & Thomas",
       location: "Outremeuse",
     },
     {
       quote:
-        "Le bureau est propre chaque matin. On n'y pense même plus.",
+        "Le bureau est impeccable à chaque fois. On n'y pense même plus.",
       author: "Pierre L.",
       location: "Médiacité",
     },
