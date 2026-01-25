@@ -19,21 +19,21 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           <Link 
             href="#services" 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
+            className="text-base text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
             aria-label="Voir nos services"
           >
             Services
           </Link>
           <Link 
             href="#pourquoi-nous" 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
+            className="text-base text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
             aria-label="Pourquoi nous choisir"
           >
             Pourquoi nous
           </Link>
           <Link 
             href="#temoignages" 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
+            className="text-base text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
             aria-label="Lire les avis clients"
           >
             Avis clients
@@ -42,7 +42,7 @@ export default function Header() {
 
         <Link 
           href="#contact"
-          className="bg-primary text-primary-foreground px-4 sm:px-5 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium hover:bg-primary/90 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
+          className="bg-primary text-primary-foreground px-5 sm:px-6 py-3 sm:py-3.5 rounded-full text-base sm:text-lg font-medium hover:bg-primary/90 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
           aria-label="Demander un devis gratuit"
         >
           <span className="hidden sm:inline">Devis gratuit</span>
