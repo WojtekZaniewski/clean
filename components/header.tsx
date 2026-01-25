@@ -9,9 +9,9 @@ export default function Header() {
           <Image
             src="/logo.jpg"
             alt="Lena's Cleaning - Service de nettoyage professionnel"
-            width={150}
-            height={44}
-            className="h-8 sm:h-10 w-auto object-contain"
+            width={200}
+            height={60}
+            className="h-12 sm:h-14 md:h-16 w-auto object-contain"
             priority
           />
         </Link>
