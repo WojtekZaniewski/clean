@@ -14,6 +14,26 @@ import { useEffect, useState } from "react"
 
 export default function HeroSection() {
   const [api, setApi] = useState<any>(null)
+  const [current, setCurrent] = useState(0)
+
+  // Start from image 3, then continue with 4-13, then 1-2
+  const images = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1, 2]
+
+  // Track current slide
+  useEffect(() => {
+    if (!api) return
+
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap())
+    }
+
+    api.on('select', onSelect)
+    onSelect() // Set initial state
+
+    return () => {
+      api.off('select', onSelect)
+    }
+  }, [api])
 
   // Auto-play carousel
   useEffect(() => {
@@ -25,14 +45,12 @@ export default function HeroSection() {
 
     return () => clearInterval(interval)
   }, [api])
-
-  // Start from image 3, then continue with 4-13, then 1-2
-  const images = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1, 2]
   
   // Scroll to image 3 (index 0) on mount
   useEffect(() => {
     if (api) {
       api.scrollTo(0, false) // false = no animation on initial load
+      setCurrent(0)
     }
   }, [api])
   const trustPoints = [
@@ -88,7 +106,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden">
+          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full">
             <Carousel
               setApi={setApi}
               opts={{
@@ -100,9 +118,9 @@ export default function HeroSection() {
               className="w-full h-full"
             >
               <CarouselContent className="h-full -ml-0">
-                {images.map((num) => (
+                {images.map((num, index) => (
                   <CarouselItem key={num} className="pl-0 basis-full h-full">
-                    <div className="relative w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+                    <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
                         alt={`Lena's Cleaning - Image ${num}`}
@@ -117,6 +135,22 @@ export default function HeroSection() {
               </CarouselContent>
               <CarouselPrevious className="left-2 sm:left-4 md:-left-12 z-10 bg-background/80 backdrop-blur-sm hover:bg-background" />
               <CarouselNext className="right-2 sm:right-4 md:-right-12 z-10 bg-background/80 backdrop-blur-sm hover:bg-background" />
+              
+              {/* Pagination dots - desktop only */}
+              <div className="hidden lg:flex absolute bottom-4 left-1/2 -translate-x-1/2 z-10 gap-2">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => api?.scrollTo(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      current === index
+                        ? 'bg-primary w-6'
+                        : 'bg-primary/30 hover:bg-primary/50'
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
             </Carousel>
           </div>
         </div>
