@@ -11,11 +11,11 @@ export default function HeroSection() {
 
   return (
     <section className="relative overflow-hidden h-screen flex items-center justify-center">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-2 sm:py-3 md:py-4 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center w-full h-full">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 h-full flex items-center">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center w-full h-full py-4 sm:py-6 md:py-8">
           {/* Left content - appears first on mobile for better priority */}
-          <div className="space-y-2 sm:space-y-3 md:space-y-4 order-2 lg:order-1 flex flex-col justify-center h-full">
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+          <div className="space-y-3 sm:space-y-4 md:space-y-5 order-2 lg:order-1 flex flex-col justify-center h-full">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.1] sm:leading-[1.15]">
               Rentrez chez vous.<br />
               Tout brille.<br />
               Vous n'avez rien fait.
@@ -56,7 +56,7 @@ export default function HeroSection() {
           {/* Right visual - appears second on mobile */}
           <div className="relative order-1 lg:order-2 mb-6 sm:mb-0 h-full flex items-center justify-center">
             <div 
-              className="relative rounded-3xl sm:rounded-[2rem] md:rounded-[2.5rem] w-3/4 h-3/4 max-w-md max-h-[70vh] flex items-center justify-center bg-contain bg-no-repeat bg-center"
+              className="relative rounded-3xl sm:rounded-[2rem] md:rounded-[2.5rem] lg:rounded-[3rem] w-full h-full max-h-full flex items-center justify-center bg-contain bg-no-repeat bg-center overflow-hidden"
               style={{
                 backgroundImage: 'url(/lenusia.png)'
               }}
