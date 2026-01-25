@@ -10,7 +10,7 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        "J'ai 4 Airbnb. Lena s'occupe de tout. Mes voyageurs sont contents. Moi aussi.",
+        "Lena s'occupe de ma maison et de mon Airbnb. Je suis très satisfaite de ses services.",
       author: "Marc D.",
       location: "Guillemins",
     },
