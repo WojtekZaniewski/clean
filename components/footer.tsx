@@ -4,8 +4,8 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary/50 py-10 sm:py-12 md:py-16 border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <footer className="bg-secondary/50 py-12 sm:py-16 md:py-20 lg:py-24 border-t border-border w-full">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
@@ -13,12 +13,12 @@ export default function Footer() {
               <Image
                 src="/logo.jpg"
                 alt="Lena's Cleaning - Service de nettoyage professionnel"
-                width={150}
-                height={44}
-                className="h-8 sm:h-10 w-auto object-contain"
+                width={200}
+                height={60}
+                className="h-10 sm:h-12 md:h-14 w-auto object-contain"
               />
             </div>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
               On nettoie à Liège et autour. Simplement.
             </p>
           </div>
