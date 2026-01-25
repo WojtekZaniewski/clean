@@ -36,17 +36,21 @@ if (missing.length > 0) {
   process.exit(1);
 }
 
-// Check for absolute paths in index.html
+// Check for paths in index.html (absolute paths are correct for GitHub Pages)
 const indexHtml = path.join(outDir, 'index.html');
 if (fs.existsSync(indexHtml)) {
   const content = fs.readFileSync(indexHtml, 'utf8');
   const absolutePaths = content.match(/href="\/[^"]+|src="\/[^"]+/g);
-  if (absolutePaths && absolutePaths.length > 0) {
-    console.log('\n⚠ Warning: Found absolute paths in index.html:');
-    absolutePaths.slice(0, 5).forEach(p => console.log(`  ${p}`));
-    console.log('\nRun: npm run build (this should fix paths automatically)');
+  const relativePaths = content.match(/href="\.\.\/[^"]+|src="\.\.\/[^"]+/g);
+  
+  if (relativePaths && relativePaths.length > 0) {
+    console.log('\n⚠ Warning: Found incorrect relative paths (../) in index.html:');
+    relativePaths.slice(0, 5).forEach(p => console.log(`  ${p}`));
+    console.log('\nThese should be absolute paths (/) for GitHub Pages');
+  } else if (absolutePaths && absolutePaths.length > 0) {
+    console.log('\n✓ All paths are absolute (correct for GitHub Pages)');
   } else {
-    console.log('\n✓ All paths are relative');
+    console.log('\n✓ Paths verified');
   }
 }
 

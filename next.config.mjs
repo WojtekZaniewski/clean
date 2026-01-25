@@ -10,6 +10,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // For GitHub Pages - use absolute paths from root
+  // This works with custom domains on GitHub Pages
 }
 
 export default nextConfig
