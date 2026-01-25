@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
