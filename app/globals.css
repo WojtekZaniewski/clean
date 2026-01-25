@@ -85,10 +85,23 @@
   * {
     @apply border-border outline-ring/50;
   }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Scale entire page to 105% - works in Chrome, Edge, Safari, and modern Firefox */
+    zoom: 1.05;
+    /* Full viewport height */
+    height: 100%;
+  }
+  
   body {
     @apply bg-background text-foreground;
     /* Prevent horizontal scroll on mobile */
     overflow-x: hidden;
+    /* Full viewport height */
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
   }
   
   /* Improve touch targets on mobile */
@@ -98,17 +111,14 @@
     }
   }
   
-  /* Ensure readable font sizes on mobile */
-  html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    /* Scale entire page to 105% - works in Chrome, Edge, Safari, and modern Firefox */
-    zoom: 1.05;
-  }
-  
   /* Improve image loading on mobile */
   img {
     max-width: 100%;
     height: auto;
+  }
+  
+  /* Full-width sections */
+  section {
+    width: 100%;
   }
 }
