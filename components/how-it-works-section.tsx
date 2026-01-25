@@ -23,28 +23,28 @@ export default function HowItWorksSection() {
   ]
 
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-secondary/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Comment ça marche</span>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mt-3 sm:mt-4 mb-3 sm:mb-4">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 bg-secondary/30 w-full">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
+          <span className="text-sm sm:text-base md:text-lg font-medium text-primary tracking-wider uppercase">Comment ça marche</span>
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-4 sm:mt-5 md:mt-6 mb-4 sm:mb-5 md:mb-6">
             Trois étapes. C'est tout.
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto px-4 sm:px-0">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0">
             Pas compliqué.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12 max-w-7xl mx-auto">
           {steps.map((step, index) => (
             <div key={step.number} className="relative">
-              <div className="bg-card border border-border rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 text-center h-full">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                  <step.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary" aria-hidden="true" />
+              <div className="bg-card border border-border rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 text-center h-full">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 sm:mb-6 md:mb-8">
+                  <step.icon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-xs font-medium text-primary">{step.number}</span>
-                <h3 className="font-semibold text-base sm:text-lg mt-2 mb-2 sm:mb-3">{step.title}</h3>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{step.description}</p>
+                <span className="text-sm sm:text-base font-medium text-primary">{step.number}</span>
+                <h3 className="font-semibold text-lg sm:text-xl md:text-2xl mt-3 sm:mt-4 mb-3 sm:mb-4">{step.title}</h3>
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
               
               {/* Connector */}
