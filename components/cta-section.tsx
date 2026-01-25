@@ -13,10 +13,10 @@ export default function CTASection() {
           {/* Main content */}
           <div className="text-center max-w-full sm:max-w-4xl mx-auto relative z-10 w-full py-2 sm:py-3 md:py-4 lg:py-0">
             <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-6xl xl:text-7xl mb-2 sm:mb-3 md:mb-4 lg:mb-8 leading-tight text-primary-foreground px-2 sm:px-4 lg:px-0 break-words">
-              Vous voulez rentrer dans une maison propre vendredi?
+              Vous voulez rentrer et que tout soit propre?
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-primary-foreground/90 sm:text-primary-foreground/80 mb-3 sm:mb-4 md:mb-5 lg:mb-10 leading-relaxed px-2 sm:px-4 lg:px-0 break-words">
-              Appelez Lena: <a href="tel:+32492955348" className="underline font-medium hover:text-primary-foreground transition-colors break-all">+32 492 95 53 48</a>. Réponse en 2h. On commence cette semaine.
+              Appelez Lena: <a href="tel:+32492955348" className="underline font-medium hover:text-primary-foreground transition-colors break-all">+32 492 95 53 48</a>. Réponse en 2h.
             </p>
             <Link
               href="mailto:contact@lenas-cleaning.be"
