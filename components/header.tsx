@@ -7,11 +7,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center min-h-[44px] touch-manipulation" aria-label="Retour à l'accueil">
           <Image
-            src="/logo.png"
+            src="/logo.jpg"
             alt="Lena's Cleaning - Service de nettoyage professionnel"
             width={200}
             height={60}
-            className="h-8 sm:h-10 md:h-12 w-auto max-w-[180px] sm:max-w-[200px] md:max-w-[220px] object-contain"
+            className="h-12 sm:h-14 md:h-16 w-auto object-contain"
             priority
           />
         </Link>
@@ -19,21 +19,21 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           <Link 
             href="#services" 
-            className="text-base text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
             aria-label="Voir nos services"
           >
             Services
           </Link>
           <Link 
             href="#pourquoi-nous" 
-            className="text-base text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
             aria-label="Pourquoi nous choisir"
           >
             Pourquoi nous
           </Link>
           <Link 
             href="#temoignages" 
-            className="text-base text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center"
             aria-label="Lire les avis clients"
           >
             Avis clients
@@ -42,7 +42,7 @@ export default function Header() {
 
         <Link 
           href="#contact"
-          className="bg-primary text-primary-foreground px-5 sm:px-6 py-3 sm:py-3.5 rounded-full text-base sm:text-lg font-medium hover:bg-primary/90 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
+          className="bg-primary text-primary-foreground px-4 sm:px-5 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium hover:bg-primary/90 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
           aria-label="Demander un devis gratuit"
         >
           <span className="hidden sm:inline">Devis gratuit</span>
