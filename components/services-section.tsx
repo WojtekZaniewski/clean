@@ -15,7 +15,7 @@ export default function ServicesSection() {
     {
       icon: Building2,
       title: "Hôtels",
-      description: "14h. Chambres prêtes. On travaille avec 3 hôtels à Liège depuis 2 ans. Zéro retard.",
+      description: "14h. Chambres prêtes. Zéro retard.",
     },
     {
       icon: Briefcase,

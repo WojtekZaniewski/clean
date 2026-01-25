@@ -36,7 +36,7 @@ export default function WhyUsSection() {
           <div className="flex flex-col justify-center w-full">
             <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
             <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-5xl mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5 lg:mb-6 leading-tight text-balance break-words">
-              Pourquoi on revient chaque semaine chez les mêmes clients depuis 3 ans
+              Pourquoi on revient chaque semaine chez les mêmes clients
             </h2>
             
             <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
