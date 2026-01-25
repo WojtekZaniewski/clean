@@ -7,11 +7,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center min-h-[44px] touch-manipulation" aria-label="Retour à l'accueil">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Lena's Cleaning - Service de nettoyage professionnel"
             width={200}
             height={60}
-            className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+            className="h-8 sm:h-10 md:h-12 w-auto max-w-[180px] sm:max-w-[200px] md:max-w-[220px] object-contain"
             priority
           />
         </Link>
