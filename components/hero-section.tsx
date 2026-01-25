@@ -10,13 +10,17 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="relative overflow-hidden h-screen flex items-start justify-center pt-16 sm:pt-20">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-0 pb-2">
-        <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center h-full">
+    <section className="relative overflow-hidden h-screen">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-start">
           {/* Left content - appears first on mobile for better priority */}
-          <div className="space-y-3 sm:space-y-4 md:space-y-5 order-2 lg:order-1 flex flex-col justify-center">
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.15] sm:leading-[1.1] text-balance">
-              Rentrez chez vous. Tout brille. Vous n'avez rien fait.
+          <div className="space-y-3 sm:space-y-4 md:space-y-5 order-2 lg:order-1 flex flex-col">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.15] sm:leading-[1.1]">
+              Rentrez chez vous.
+              <br />
+              Tout brille.
+              <br />
+              Vous n'avez rien fait.
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-xl text-muted-foreground max-w-2xl leading-relaxed">
