@@ -88,7 +88,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden flex items-center justify-center">
+          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden">
             <Carousel
               setApi={setApi}
               opts={{
@@ -99,16 +99,15 @@ export default function HeroSection() {
               }}
               className="w-full h-full"
             >
-              <CarouselContent className="h-full">
+              <CarouselContent className="h-full -ml-0">
                 {images.map((num) => (
-                  <CarouselItem key={num} className="h-full">
+                  <CarouselItem key={num} className="pl-0 basis-full h-full">
                     <div className="relative w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
                         alt={`Lena's Cleaning - Image ${num}`}
-                        width={800}
-                        height={800}
-                        className="w-full h-full object-cover rounded-lg sm:rounded-xl md:rounded-2xl"
+                        fill
+                        className="object-cover rounded-lg sm:rounded-xl md:rounded-2xl"
                         priority={num === 3}
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
