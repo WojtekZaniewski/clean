@@ -11,8 +11,8 @@ export default function HeroSection() {
 
   return (
     <section className="relative overflow-hidden h-screen flex items-center justify-center">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4 sm:py-6 md:py-8">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center h-full">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-2 sm:py-3 md:py-4">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center h-full">
           {/* Left content - appears first on mobile for better priority */}
           <div className="space-y-4 sm:space-y-5 md:space-y-6 order-2 lg:order-1">
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.15] sm:leading-[1.1] text-balance">
@@ -52,11 +52,13 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full">
+          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full overflow-hidden">
             <div 
-              className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-center bg-no-repeat"
+              className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-no-repeat"
               style={{
-                backgroundImage: 'url(/lenusia.png)'
+                backgroundImage: 'url(/lenusia.png)',
+                backgroundPosition: 'top center',
+                objectFit: 'cover'
               }}
               role="img"
               aria-label="Image de Lena's Cleaning - Service de nettoyage professionnel"
