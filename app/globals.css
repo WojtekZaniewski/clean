@@ -102,6 +102,8 @@
   html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    /* Scale entire page to 105% - works in Chrome, Edge, Safari, and modern Firefox */
+    zoom: 1.05;
   }
   
   /* Improve image loading on mobile */
