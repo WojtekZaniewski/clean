@@ -3,28 +3,28 @@ import Link from "next/link"
 
 export default function CTASection() {
   return (
-    <section id="contact" className="h-screen flex items-center justify-center w-full">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
-        <div className="relative bg-primary rounded-2xl sm:rounded-3xl md:rounded-[2rem] p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20 overflow-hidden h-full flex items-center justify-center">
+    <section id="contact" className="min-h-screen lg:h-screen flex items-center justify-center w-full py-12 sm:py-16 md:py-20 lg:py-0">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 w-full">
+        <div className="relative bg-primary rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-[2rem] p-6 sm:p-8 md:p-10 lg:p-16 xl:p-20 overflow-hidden min-h-[400px] sm:min-h-[500px] lg:h-full lg:flex lg:items-center lg:justify-center">
           {/* Decorative circles */}
-          <div className="absolute top-0 right-0 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+          <div className="absolute top-0 right-0 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
           
           {/* Main content */}
-          <div className="text-center max-w-4xl mx-auto relative z-10 w-full">
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-5 md:mb-6 lg:mb-8 leading-tight text-primary-foreground px-2 sm:px-0">
+          <div className="text-center max-w-full sm:max-w-4xl mx-auto relative z-10 w-full py-4 sm:py-6 lg:py-0">
+            <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-6xl xl:text-7xl mb-3 sm:mb-4 md:mb-5 lg:mb-8 leading-tight text-primary-foreground px-2 sm:px-4 lg:px-0 break-words">
               Vous voulez rentrer dans une maison propre vendredi?
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-primary-foreground/90 sm:text-primary-foreground/80 mb-5 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed px-2 sm:px-0">
-              Appelez Lena: <a href="tel:+32492955348" className="underline font-medium hover:text-primary-foreground transition-colors">+32 492 95 53 48</a>. Réponse en 2h. On commence cette semaine.
+            <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-primary-foreground/90 sm:text-primary-foreground/80 mb-4 sm:mb-5 md:mb-6 lg:mb-10 leading-relaxed px-2 sm:px-4 lg:px-0 break-words">
+              Appelez Lena: <a href="tel:+32492955348" className="underline font-medium hover:text-primary-foreground transition-colors break-all">+32 492 95 53 48</a>. Réponse en 2h. On commence cette semaine.
             </p>
             <Link
               href="mailto:contact@lenas-cleaning.be"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-10 py-5 sm:px-12 sm:py-6 md:px-14 md:py-7 rounded-full text-lg sm:text-xl md:text-2xl font-medium hover:bg-white/90 transition-colors min-h-[56px] sm:min-h-[60px] md:min-h-[64px] touch-manipulation"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-6 py-3.5 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-14 lg:py-7 rounded-full text-sm sm:text-base md:text-lg lg:text-2xl font-medium hover:bg-white/90 transition-colors min-h-[48px] sm:min-h-[52px] md:min-h-[56px] lg:min-h-[64px] w-full sm:w-auto touch-manipulation"
               aria-label="Envoyer un email pour demander un devis"
             >
               Demander un devis
-              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" aria-hidden="true" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 flex-shrink-0" aria-hidden="true" />
             </Link>
           </div>
         </div>

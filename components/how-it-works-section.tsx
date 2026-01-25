@@ -23,28 +23,28 @@ export default function HowItWorksSection() {
   ]
 
   return (
-    <section className="h-screen flex items-center justify-center bg-secondary/30 w-full">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
+    <section className="min-h-screen lg:h-screen flex items-center justify-center bg-secondary/30 w-full py-12 sm:py-16 md:py-20 lg:py-0">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 w-full">
         <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
-          <span className="text-sm sm:text-base md:text-lg font-medium text-primary tracking-wider uppercase">Comment ça marche</span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-4 sm:mt-5 md:mt-6 mb-4 sm:mb-5 md:mb-6">
+          <span className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-primary tracking-wider uppercase">Comment ça marche</span>
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mt-3 sm:mt-4 md:mt-5 lg:mt-6 mb-3 sm:mb-4 md:mb-5 lg:mb-6 break-words px-2 sm:px-0">
             Trois étapes. C'est tout.
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full sm:max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 break-words">
             Pas compliqué.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12 max-w-full sm:max-w-7xl mx-auto">
           {steps.map((step, index) => (
             <div key={step.number} className="relative">
-              <div className="bg-card border border-border rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 text-center h-full">
-                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 sm:mb-6 md:mb-8">
-                  <step.icon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-primary" aria-hidden="true" />
+              <div className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-12 text-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+                  <step.icon className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-sm sm:text-base font-medium text-primary">{step.number}</span>
-                <h3 className="font-semibold text-lg sm:text-xl md:text-2xl mt-3 sm:mt-4 mb-3 sm:mb-4">{step.title}</h3>
-                <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">{step.description}</p>
+                <span className="text-xs sm:text-sm md:text-base font-medium text-primary">{step.number}</span>
+                <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mt-2 sm:mt-3 md:mt-4 mb-2 sm:mb-3 md:mb-4 break-words">{step.title}</h3>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">{step.description}</p>
               </div>
               
               {/* Connector */}
