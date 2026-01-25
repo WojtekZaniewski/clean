@@ -1,8 +1,32 @@
+'use client'
+
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { useEffect, useState } from "react"
 
 export default function HeroSection() {
+  const [api, setApi] = useState<any>(null)
+
+  // Auto-play carousel
+  useEffect(() => {
+    if (!api) return
+
+    const interval = setInterval(() => {
+      api.scrollNext()
+    }, 4000) // Change slide every 4 seconds
+
+    return () => clearInterval(interval)
+  }, [api])
+
+  const images = Array.from({ length: 13 }, (_, i) => i + 1)
   const trustPoints = [
     "Service local à Liège",
     "Assurance complète",
@@ -57,15 +81,33 @@ export default function HeroSection() {
 
           {/* Right visual - appears second on mobile */}
           <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full overflow-hidden flex items-center justify-center">
-            <div 
-              className="relative rounded-lg sm:rounded-xl md:rounded-2xl w-full h-full max-w-full max-h-full flex items-center justify-center bg-contain bg-no-repeat bg-center"
-              style={{
-                backgroundImage: 'url(/lenusia.png)'
+            <Carousel
+              setApi={setApi}
+              opts={{
+                align: "start",
+                loop: true,
               }}
-              role="img"
-              aria-label="Image de Lena's Cleaning - Service de nettoyage professionnel"
+              className="w-full h-full"
             >
-            </div>
+              <CarouselContent className="h-full">
+                {images.map((num) => (
+                  <CarouselItem key={num} className="h-full">
+                    <div className="relative w-full h-full flex items-center justify-center rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+                      <Image
+                        src={`/${num}.jpg`}
+                        alt={`Lena's Cleaning - Image ${num}`}
+                        width={800}
+                        height={800}
+                        className="w-full h-full object-contain rounded-lg sm:rounded-xl md:rounded-2xl"
+                        priority={num === 1}
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2 sm:left-4 md:-left-12 z-10 bg-background/80 backdrop-blur-sm hover:bg-background" />
+              <CarouselNext className="right-2 sm:right-4 md:-right-12 z-10 bg-background/80 backdrop-blur-sm hover:bg-background" />
+            </Carousel>
           </div>
         </div>
       </div>
