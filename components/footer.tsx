@@ -57,12 +57,12 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="mailto:contact@lenas-cleaning.be" 
+                  href="mailto:cleaningserviceslena@gmail.com" 
                   className="flex items-center gap-2 text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors min-h-[44px] touch-manipulation break-all"
-                  aria-label="Envoyer un email à contact@lenas-cleaning.be"
+                  aria-label="Envoyer un email à cleaningserviceslena@gmail.com"
                 >
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary flex-shrink-0" aria-hidden="true" />
-                  <span>contact@lenas-cleaning.be</span>
+                  <span>cleaningserviceslena@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-center gap-2 text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground">

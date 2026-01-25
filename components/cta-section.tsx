@@ -19,7 +19,7 @@ export default function CTASection() {
               Appelez Lena: <a href="tel:+32492955348" className="underline font-medium hover:text-primary-foreground transition-colors break-all">+32 492 95 53 48</a>. Réponse en 2h.
             </p>
             <Link
-              href="mailto:contact@lenas-cleaning.be"
+              href="mailto:cleaningserviceslena@gmail.com"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary px-6 py-3.5 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-14 lg:py-7 rounded-full text-sm sm:text-base md:text-lg lg:text-2xl font-medium hover:bg-white/90 transition-colors min-h-[48px] sm:min-h-[52px] md:min-h-[56px] lg:min-h-[64px] w-full sm:w-auto touch-manipulation"
               aria-label="Envoyer un email pour demander un devis"
             >
