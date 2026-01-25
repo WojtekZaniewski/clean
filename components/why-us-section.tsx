@@ -34,8 +34,8 @@ export default function WhyUsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 items-center">
           <div>
-            <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mt-3 sm:mt-4 mb-5 sm:mb-6 md:mb-8 leading-tight text-balance">
+            <span className="text-sm sm:text-base font-medium text-primary tracking-wider uppercase">Pourquoi nous choisir</span>
+            <h2 className="font-serif text-[1.75rem] sm:text-[2.2rem] md:text-[3.3rem] mt-3 sm:mt-4 mb-5 sm:mb-6 md:mb-8 leading-tight text-balance">
               Pourquoi on revient chaque semaine chez les mêmes clients depuis 3 ans
             </h2>
             
@@ -46,8 +46,8 @@ export default function WhyUsSection() {
                     <reason.icon className="w-5 h-5 text-primary" aria-hidden="true" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-medium mb-1 text-base sm:text-lg">{reason.title}</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{reason.description}</p>
+                    <h3 className="font-medium mb-1 text-lg sm:text-xl">{reason.title}</h3>
+                    <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">{reason.description}</p>
                   </div>
                 </div>
               ))}

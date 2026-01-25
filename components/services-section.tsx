@@ -28,11 +28,11 @@ export default function ServicesSection() {
     <section id="services" className="py-12 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Nos services</span>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mt-3 sm:mt-4 mb-3 sm:mb-4 text-balance">
+          <span className="text-sm sm:text-base font-medium text-primary tracking-wider uppercase">Nos services</span>
+          <h2 className="font-serif text-[1.75rem] sm:text-[2.2rem] md:text-[3.3rem] mt-3 sm:mt-4 mb-3 sm:mb-4 text-balance">
             On nettoie tout type d'espace
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto px-4 sm:px-0">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto px-4 sm:px-0">
             Maison, Airbnb, hôtel ou bureau. Toujours le même soin.
           </p>
         </div>
@@ -46,8 +46,8 @@ export default function ServicesSection() {
               <div className="w-11 h-11 sm:w-12 sm:h-12 bg-accent rounded-xl flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-primary/10 transition-colors">
                 <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" aria-hidden="true" />
               </div>
-              <h3 className="font-semibold text-base sm:text-lg mb-2">{service.title}</h3>
-              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{service.description}</p>
+              <h3 className="font-semibold text-lg sm:text-xl mb-2">{service.title}</h3>
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

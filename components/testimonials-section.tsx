@@ -32,11 +32,11 @@ export default function TestimonialsSection() {
     <section id="temoignages" className="py-12 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">Témoignages</span>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mt-3 sm:mt-4 mb-3 sm:mb-4">
+          <span className="text-sm sm:text-base font-medium text-primary tracking-wider uppercase">Témoignages</span>
+          <h2 className="font-serif text-[1.75rem] sm:text-[2.2rem] md:text-[3.3rem] mt-3 sm:mt-4 mb-3 sm:mb-4">
             Ce que les gens disent
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto px-4 sm:px-0">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto px-4 sm:px-0">
             Des clients à Liège qui reviennent chaque semaine.
           </p>
         </div>
@@ -49,10 +49,10 @@ export default function TestimonialsSection() {
                   <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-primary text-primary" aria-hidden="true" />
                 ))}
               </div>
-              <p className="text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">{testimonial.quote}</p>
+              <p className="text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">{testimonial.quote}</p>
               <div>
-                <p className="font-medium text-sm sm:text-base">{testimonial.author}</p>
-                <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.location}</p>
+                <p className="font-medium text-base sm:text-lg">{testimonial.author}</p>
+                <p className="text-sm sm:text-base text-muted-foreground">{testimonial.location}</p>
               </div>
             </div>
           ))}
