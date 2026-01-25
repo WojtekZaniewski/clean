@@ -46,7 +46,7 @@ export default function ServicesSection() {
               <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-18 lg:h-18 bg-accent rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-8 group-hover:bg-primary/10 transition-colors">
                 <service.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-primary" aria-hidden="true" />
               </div>
-              <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 break-words">{service.title}</h3>
+              <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-1.5 sm:mb-2 md:mb-3 lg:mb-4 break-words">{service.title}</h3>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">{service.description}</p>
             </div>
           ))}
