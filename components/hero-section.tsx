@@ -11,10 +11,10 @@ export default function HeroSection() {
 
   return (
     <section className="relative overflow-hidden h-screen flex items-center justify-center">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-2 sm:py-3 md:py-4">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-1 sm:py-2">
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center h-full">
           {/* Left content - appears first on mobile for better priority */}
-          <div className="space-y-4 sm:space-y-5 md:space-y-6 order-2 lg:order-1">
+          <div className="space-y-3 sm:space-y-4 md:space-y-5 order-2 lg:order-1 flex flex-col justify-center">
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.15] sm:leading-[1.1] text-balance">
               Rentrez chez vous. Tout brille. Vous n'avez rien fait.
             </h1>
@@ -41,7 +41,7 @@ export default function HeroSection() {
               </Link>
             </div>
 
-            <div className="flex flex-wrap gap-3 sm:gap-4 pt-2">
+            <div className="flex flex-wrap gap-3 sm:gap-4 pt-1">
               {trustPoints.map((point) => (
                 <div key={point} className="flex items-center gap-2 text-sm sm:text-base md:text-lg text-muted-foreground">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" aria-hidden="true" />
@@ -52,13 +52,12 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full overflow-hidden">
+          <div className="relative order-1 lg:order-2 mb-6 sm:mb-0 h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full overflow-hidden flex items-center">
             <div 
               className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-no-repeat"
               style={{
                 backgroundImage: 'url(/lenusia.png)',
-                backgroundPosition: 'top center',
-                objectFit: 'cover'
+                backgroundPosition: 'top center'
               }}
               role="img"
               aria-label="Image de Lena's Cleaning - Service de nettoyage professionnel"
