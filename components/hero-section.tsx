@@ -60,11 +60,11 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="relative overflow-hidden min-h-screen lg:h-screen">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-12 sm:py-16 md:py-20 lg:h-full lg:flex lg:items-start lg:pt-16 lg:pb-4">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-10 items-start w-full">
+    <section className="relative overflow-hidden lg:h-screen">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-6 sm:py-8 md:py-12 lg:h-full lg:flex lg:items-start lg:pt-16 lg:pb-4">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-start w-full">
           {/* Left content - appears first on mobile for better priority */}
-          <div className="space-y-4 sm:space-y-5 md:space-y-6 order-2 lg:order-1 flex flex-col lg:ml-16 xl:ml-20">
+          <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 order-2 lg:order-1 flex flex-col lg:ml-16 xl:ml-20">
             <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl leading-[1.2] sm:leading-[1.15] lg:leading-[1.1] break-words">
               Rentrez chez vous.
               <br />
@@ -77,7 +77,7 @@ export default function HeroSection() {
               Plus de ménage le week-end. Plus de stress avant les invités. Juste une maison propre quand vous rentrez.
             </p>
 
-            <div className="flex flex-col gap-3 sm:gap-4 w-full">
+            <div className="flex flex-col gap-2.5 sm:gap-3 md:gap-4 w-full">
               <Link
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3.5 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-primary/90 transition-colors min-h-[48px] w-full sm:w-auto touch-manipulation"
@@ -95,7 +95,7 @@ export default function HeroSection() {
               </Link>
             </div>
 
-            <div className="flex flex-wrap gap-3 sm:gap-4 pt-2">
+            <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 pt-1 sm:pt-2">
               {trustPoints.map((point) => (
                 <div key={point} className="flex items-center gap-2 text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" aria-hidden="true" />
@@ -106,7 +106,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:aspect-[4/3]">
+          <div className="relative order-1 lg:order-2 mb-4 sm:mb-6 md:mb-8 lg:mb-0 w-full aspect-square sm:aspect-[4/3] lg:aspect-[4/3]">
             <Carousel
               setApi={setApi}
               opts={{

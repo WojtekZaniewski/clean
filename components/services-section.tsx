@@ -25,11 +25,11 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section id="services" className="min-h-screen lg:h-screen flex items-center justify-center w-full py-12 sm:py-16 md:py-20 lg:py-0">
+    <section id="services" className="lg:h-screen flex items-center justify-center w-full py-6 sm:py-8 md:py-12 lg:py-0">
       <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 w-full">
-        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+        <div className="text-center mb-5 sm:mb-6 md:mb-8 lg:mb-16">
           <span className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-primary tracking-wider uppercase">Nos services</span>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mt-3 sm:mt-4 md:mt-5 lg:mt-6 mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-balance break-words px-2 sm:px-0">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mt-2 sm:mt-3 md:mt-4 lg:mt-6 mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-balance break-words px-2 sm:px-0">
             On nettoie tout type d'espace
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full sm:max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 break-words">
@@ -37,13 +37,13 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-12">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group"
+              className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-6 lg:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 bg-accent rounded-xl flex items-center justify-center mb-4 sm:mb-5 md:mb-6 lg:mb-8 group-hover:bg-primary/10 transition-colors">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-18 lg:h-18 bg-accent rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-8 group-hover:bg-primary/10 transition-colors">
                 <service.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-primary" aria-hidden="true" />
               </div>
               <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 break-words">{service.title}</h3>
