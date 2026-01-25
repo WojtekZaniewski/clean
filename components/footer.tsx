@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
             <div className="mb-3 sm:mb-4">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Lena's Cleaning - Service de nettoyage professionnel"
                 width={200}
                 height={60}
