@@ -61,7 +61,7 @@ export default function HeroSection() {
               className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-no-repeat"
               style={{
                 backgroundImage: 'url(/lenusia.png)',
-                backgroundPosition: 'top center'
+                backgroundPosition: 'center center'
               }}
               role="img"
               aria-label="Image de Lena's Cleaning - Service de nettoyage professionnel"
