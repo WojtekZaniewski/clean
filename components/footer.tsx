@@ -1,5 +1,6 @@
-import { Sparkles, Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -8,11 +9,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-3 sm:mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <Sparkles className="w-4 h-4 text-primary-foreground" aria-hidden="true" />
-              </div>
-              <span className="font-serif text-base sm:text-lg">{"Lena's Cleaning"}</span>
+            <div className="mb-3 sm:mb-4">
+              <Image
+                src="/logo.jpg"
+                alt="Lena's Cleaning - Service de nettoyage professionnel"
+                width={150}
+                height={44}
+                className="h-8 sm:h-10 w-auto object-contain"
+              />
             </div>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
               On nettoie à Liège et autour. Simplement.
