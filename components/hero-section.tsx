@@ -15,8 +15,10 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center w-full h-full">
           {/* Left content - appears first on mobile for better priority */}
           <div className="space-y-2 sm:space-y-3 md:space-y-4 order-2 lg:order-1 flex flex-col justify-center h-full">
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight text-balance">
-              Rentrez chez vous. Tout brille. Vous n'avez rien fait.
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+              Rentrez chez vous.<br />
+              Tout brille.<br />
+              Vous n'avez rien fait.
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
@@ -54,7 +56,7 @@ export default function HeroSection() {
           {/* Right visual - appears second on mobile */}
           <div className="relative order-1 lg:order-2 mb-6 sm:mb-0 h-full flex items-center justify-center">
             <div 
-              className="relative rounded-2xl sm:rounded-3xl w-full h-full max-h-full flex items-center justify-center bg-contain bg-no-repeat bg-center"
+              className="relative rounded-3xl sm:rounded-[2rem] md:rounded-[2.5rem] w-3/4 h-3/4 max-w-md max-h-[70vh] flex items-center justify-center bg-contain bg-no-repeat bg-center"
               style={{
                 backgroundImage: 'url(/lenusia.png)'
               }}
