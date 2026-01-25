@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           {/* Left content - appears first on mobile for better priority */}
           <div className="space-y-5 sm:space-y-6 md:space-y-8 order-2 lg:order-1">
-            <h1 className="font-serif text-[2.75rem] sm:text-[3.3rem] md:text-[4.4rem] lg:text-[5.5rem] leading-[1.2] sm:leading-[1.15] text-balance">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.2] sm:leading-[1.15] text-balance">
               Rentrez chez vous. Tout brille. Vous n'avez rien fait.
             </h1>
 
