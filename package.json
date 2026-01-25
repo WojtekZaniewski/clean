@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build && node scripts/fix-paths.js && node scripts/verify-build.js",
+    "deploy": "npm run build && node scripts/copy-to-root.js",
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",

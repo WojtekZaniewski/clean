@@ -5,7 +5,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/ - Removed: built files need to be committed for GitHub Pages
 
 # production
 /build
