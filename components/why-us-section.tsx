@@ -54,8 +54,17 @@ export default function WhyUsSection() {
             </div>
           </div>
 
-          <div className="relative">
-            
+          <div className="relative h-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-full overflow-hidden flex items-center">
+            <div 
+              className="relative rounded-2xl sm:rounded-3xl w-full h-full flex items-center justify-center bg-cover bg-no-repeat"
+              style={{
+                backgroundImage: 'url(/lenusia.png)',
+                backgroundPosition: 'center center'
+              }}
+              role="img"
+              aria-label="Image de Lena's Cleaning - Service de nettoyage professionnel"
+            >
+            </div>
           </div>
         </div>
       </div>
