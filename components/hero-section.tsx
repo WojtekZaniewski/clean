@@ -120,12 +120,12 @@ export default function HeroSection() {
               <CarouselContent className="h-full -ml-0">
                 {images.map((num, index) => (
                   <CarouselItem key={num} className="pl-0 basis-full h-full">
-                    <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+                    <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
                         alt={`Lena's Cleaning - Image ${num}`}
                         fill
-                        className="object-cover rounded-lg sm:rounded-xl md:rounded-2xl"
+                        className="object-cover"
                         priority={num === 3}
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
