@@ -106,7 +106,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right visual - appears second on mobile */}
-          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:h-full lg:min-h-full">
+          <div className="relative order-1 lg:order-2 mb-8 sm:mb-0 w-full aspect-square sm:aspect-[4/3] lg:aspect-[4/3]">
             <Carousel
               setApi={setApi}
               opts={{
@@ -115,12 +115,12 @@ export default function HeroSection() {
                 dragFree: false,
                 containScroll: "trimSnaps",
               }}
-              className="w-full h-full"
+              className="absolute inset-0 w-full h-full"
             >
-              <CarouselContent className="h-full -ml-0">
+              <CarouselContent className="h-full -ml-0 [&>div]:h-full">
                 {images.map((num, index) => (
                   <CarouselItem key={num} className="pl-0 basis-full h-full">
-                    <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-full overflow-hidden">
+                    <div className="relative w-full h-full overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
                         alt={`Lena's Cleaning - Image ${num}`}
