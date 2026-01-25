@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40 w-full">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-2 sm:py-3 md:py-4 flex items-center justify-between">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4 sm:py-5 md:py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center min-h-[44px] touch-manipulation" aria-label="Retour à l'accueil">
           <Image
             src="/logo.png"
