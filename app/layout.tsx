@@ -8,9 +8,28 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nettoyageliege.com"),
   title: "Lena's Cleaning Services - Nettoyage professionnel à Liège",
-  description: "Service de nettoyage local à Liège. Airbnb, hôtels, bureaux et maisons. Fiable, discret, et obsédé par les détails.",
-    generator: 'v0.app'
+  description:
+    "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, hôtel. Équipe locale, réponse en 2h. Appelez: 0492 95 53 48",
+  keywords: [
+    "nettoyage Liège",
+    "femme de ménage Liège",
+    "nettoyage Airbnb",
+    "nettoyage bureau",
+    "service ménage Liège",
+  ],
+  alternates: {
+    canonical: "https://nettoyageliege.com",
+  },
+  openGraph: {
+    title: "Lena's Cleaning Services - Nettoyage professionnel à Liège",
+    description: "Service de nettoyage professionnel à Liège. Réponse en 2h. Équipe locale de confiance.",
+    url: "https://nettoyageliege.com",
+    type: "website",
+    locale: "fr_BE",
+  },
+  generator: "v0.app",
 }
 
 export const viewport: Viewport = {
