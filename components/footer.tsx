@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* Services */}
           <div className="col-span-1 sm:col-span-1">
-            <h4 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Services</h4>
+            <h3 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Services</h3>
             <ul className="space-y-2 sm:space-y-3">
               {["Nettoyage maison", "Nettoyage Airbnb", "Nettoyage hôtels", "Nettoyage bureaux"].map((service) => (
                 <li key={service}>
@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="col-span-1 sm:col-span-1">
-            <h4 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Contact</h4>
+            <h3 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Contact</h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <a 
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Trust */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
-            <h4 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Garanties</h4>
+            <h3 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Garanties</h3>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground">
               <li className="break-words">Service local</li>
               <li className="break-words">Satisfaction garantie</li>
