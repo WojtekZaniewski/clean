@@ -36,6 +36,35 @@ export const viewport: Viewport = {
   themeColor: "#2563eb",
 }
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Lena's Cleaning Services",
+  description:
+    "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, hôtel. Équipe locale, réponse en 2h.",
+  url: "https://nettoyageliege.com",
+  telephone: "+32492955348",
+  email: "cleaningserviceslena@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Liège",
+    addressRegion: "Liège",
+    addressCountry: "BE",
+  },
+  areaServed: {
+    "@type": "GeoCircle",
+    geoMidpoint: { "@type": "GeoCoordinates", latitude: 50.6326, longitude: 5.5797 },
+    geoRadius: "30000",
+  },
+  priceRange: "€",
+  serviceType: [
+    "Nettoyage maison",
+    "Nettoyage Airbnb",
+    "Nettoyage hôtels",
+    "Nettoyage bureaux",
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -44,6 +73,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
