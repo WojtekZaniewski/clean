@@ -10,6 +10,7 @@ const filesToCopy = [
   '_not-found.html',
   '404.html',
   '.nojekyll',
+  'robots.txt',
   '_next',
   '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg',
   '10.jpg', '11.jpg', '12.jpg', '13.jpg',
@@ -61,9 +62,9 @@ filesToCopy.forEach(file => {
 // Copy any other files in out that aren't in the list
 const outFiles = fs.readdirSync(outDir);
 outFiles.forEach(file => {
-  if (!filesToCopy.includes(file) && !file.startsWith('__next') && !file.endsWith('.txt')) {
-    copyFileOrDir(file, file);
-  }
+  if (filesToCopy.includes(file) || file.startsWith('__next')) return;
+  if (file.endsWith('.txt')) return; // skip debug .txt; robots.txt is in filesToCopy
+  copyFileOrDir(file, file);
 });
 
 console.log('\n✓ All files copied to root directory');
