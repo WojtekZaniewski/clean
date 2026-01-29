@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, Star } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -68,6 +68,18 @@ export default function Footer() {
               <li className="flex items-center gap-2 text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary flex-shrink-0" aria-hidden="true" />
                 <span className="break-words">Liège et alentours</span>
+              </li>
+              <li>
+                <a
+                  href="https://share.google/rTvk1nhSy6ngSpjn8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors min-h-[44px] touch-manipulation break-words"
+                  aria-label="Notez-nous sur Google"
+                >
+                  <Star className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary flex-shrink-0" aria-hidden="true" />
+                  <span>Notez-nous sur Google</span>
+                </a>
               </li>
             </ul>
           </div>
