@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
+import Script from "next/script"
 import { DM_Sans, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
@@ -72,20 +73,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZSHKMDKN" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-X8ZSHKMDKN');
-            `,
-          }}
-        />
-      </head>
       <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased`}>
+        {/* Google tag (gtag.js) - wstrzyknięty do head przez Next.js */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-X8ZSHKMDKN"
+          strategy="beforeInteractive"
+        />
+        <Script id="gtag-init" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X8ZSHKMDKN');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
