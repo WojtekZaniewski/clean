@@ -8,11 +8,14 @@ import "./globals.css"
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
 
+const siteUrl = "https://nettoyageliege.com"
+const ogImage = `${siteUrl}/logo.png`
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nettoyageliege.com"),
+  metadataBase: new URL(siteUrl),
   title: "Lena's Cleaning Services - Nettoyage professionnel à Liège",
   description:
-    "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, hôtel. Équipe locale, réponse en 2h. Appelez: 0492 95 53 48",
+    "Nettoyage professionnel à Liège: maison, Airbnb, hôtels, bureaux. Équipe locale, réponse en 2h. Femme de ménage Liège et alentours. Devis gratuit: 0492 95 53 48.",
   keywords: [
     "nettoyage Liège",
     "femme de ménage Liège",
@@ -21,14 +24,22 @@ export const metadata: Metadata = {
     "service ménage Liège",
   ],
   alternates: {
-    canonical: "https://nettoyageliege.com",
+    canonical: siteUrl,
   },
   openGraph: {
     title: "Lena's Cleaning Services - Nettoyage professionnel à Liège",
-    description: "Service de nettoyage professionnel à Liège. Réponse en 2h. Équipe locale de confiance.",
-    url: "https://nettoyageliege.com",
+    description: "Nettoyage professionnel à Liège: maison, Airbnb, hôtels, bureaux. Équipe locale, réponse en 2h. Devis gratuit.",
+    url: siteUrl,
+    siteName: "Lena's Cleaning Services",
     type: "website",
     locale: "fr_BE",
+    images: [{ url: ogImage, width: 200, height: 60, alt: "Lena's Cleaning - Nettoyage Liège" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lena's Cleaning Services - Nettoyage professionnel à Liège",
+    description: "Nettoyage professionnel à Liège: maison, Airbnb, hôtels, bureaux. Équipe locale, réponse en 2h.",
+    images: [ogImage],
   },
   generator: "v0.app",
 }
@@ -39,11 +50,11 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   name: "Lena's Cleaning Services",
   description:
     "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, hôtel. Équipe locale, réponse en 2h.",
-  url: "https://nettoyageliege.com",
+  url: siteUrl,
   telephone: "+32492955348",
   email: "cleaningserviceslena@gmail.com",
   address: {
@@ -52,12 +63,8 @@ const jsonLd = {
     addressRegion: "Liège",
     addressCountry: "BE",
   },
-  areaServed: {
-    "@type": "GeoCircle",
-    geoMidpoint: { "@type": "GeoCoordinates", latitude: 50.6326, longitude: 5.5797 },
-    geoRadius: "30000",
-  },
-  priceRange: "€",
+  areaServed: "Liège et alentours",
+  priceRange: "€€",
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     "name": "Services de nettoyage",
@@ -76,7 +83,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr-BE">
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      </head>
       <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased`}>
         {/* Google tag (gtag.js) - wstrzyknięty do head przez Next.js */}
         <Script

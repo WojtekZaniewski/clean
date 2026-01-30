@@ -123,7 +123,7 @@ export default function HeroSection() {
                     <div className="relative w-full h-full overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
-                        alt={`Lena's Cleaning - Image ${num}`}
+                        alt={`Nettoyage professionnel à Liège - Lena's Cleaning Services, photo ${num}`}
                         fill
                         className="object-cover"
                         priority={num === 3}
@@ -147,7 +147,7 @@ export default function HeroSection() {
                         ? 'bg-primary w-6'
                         : 'bg-primary/30 hover:bg-primary/50'
                     }`}
-                    aria-label={`Go to slide ${index + 1}`}
+                    aria-label={`Aller à la photo ${index + 1}`}
                   />
                 ))}
               </div>

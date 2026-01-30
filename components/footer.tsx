@@ -21,6 +21,12 @@ export default function Footer() {
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed break-words">
               On nettoie à Liège et autour. Simplement.
             </p>
+            <address className="not-italic text-xs sm:text-sm md:text-base text-muted-foreground mt-2 sm:mt-3 break-words">
+              Lena's Cleaning Services<br />
+              Liège et alentours, Belgique<br />
+              <a href="tel:+32492955348" className="hover:text-foreground transition-colors">+32 492 95 53 48</a><br />
+              <a href="mailto:cleaningserviceslena@gmail.com" className="hover:text-foreground transition-colors">cleaningserviceslena@gmail.com</a>
+            </address>
           </div>
 
           {/* Services */}
