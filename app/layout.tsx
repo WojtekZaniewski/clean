@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    icon: "/logo.png",
+  },
   openGraph: {
     title: "Société de nettoyage Liège | Lena's Cleaning Services",
     description: "Société de nettoyage Liège. Maison, Airbnb, hôtels, bureaux. Équipe locale, réponse en 2h. Devis gratuit.",
