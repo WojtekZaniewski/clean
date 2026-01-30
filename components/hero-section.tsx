@@ -74,7 +74,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full lg:max-w-2xl leading-relaxed break-words">
-              Plus de ménage le week-end. Plus de stress avant les invités. Juste une maison propre quand vous rentrez.
+              Plus de ménage le week-end. Plus de stress avant les invités. Juste une maison propre quand vous rentrez. Lena's Cleaning est un service de nettoyage professionnel à Liège: nous prenons en charge votre domicile, votre logement Airbnb, ou vos locaux professionnels.
             </p>
 
             <div className="flex flex-col gap-2.5 sm:gap-3 md:gap-4 w-full">

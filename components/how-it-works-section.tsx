@@ -31,7 +31,7 @@ export default function HowItWorksSection() {
             Trois étapes. C'est tout.
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full sm:max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 break-words">
-            Pas compliqué.
+            Pas compliqué. Vous nous contactez, on fixe une date, et le jour J tout est fait. Devis gratuit, sans engagement caché.
           </p>
         </div>
 

@@ -38,7 +38,9 @@ export default function WhyUsSection() {
             <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-5xl mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5 lg:mb-6 leading-tight text-balance break-words">
               Pourquoi on revient chaque semaine chez les mêmes clients
             </h2>
-            
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-full lg:max-w-xl mb-4 sm:mb-5 md:mb-6 leading-relaxed break-words">
+              Une équipe locale, des horaires qui s'adaptent à vous, et un même interlocuteur à chaque fois. Voici ce qui fait la différence chez Lena's Cleaning.
+            </p>
             <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
               {reasons.map((reason) => (
                 <div key={reason.title} className="flex gap-2.5 sm:gap-3 md:gap-4">
