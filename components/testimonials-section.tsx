@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
             Ce que les gens disent
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full sm:max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 break-words">
-            Des clients à Liège qui reviennent chaque semaine.
+            Des clients Liège qui reviennent chaque semaine.
           </p>
         </div>
 

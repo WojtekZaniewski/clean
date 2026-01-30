@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="mb-3 sm:mb-4">
               <Image
                 src="/logo.png"
-                alt="Lena's Cleaning - Nettoyage à Liège"
+                alt="Lena's Cleaning - Nettoyage Liège"
                 width={200}
                 height={60}
                 className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-none"
@@ -114,7 +114,7 @@ export default function Footer() {
             >
               Notez-nous sur Google
             </a>
-            <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words">Service de nettoyage à Liège, Belgique</p>
+            <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words">Service de nettoyage Liège, Belgique</p>
           </div>
         </div>
       </div>

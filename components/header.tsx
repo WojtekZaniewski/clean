@@ -8,7 +8,7 @@ export default function Header() {
         <Link href="/" className="flex items-center min-h-[44px] touch-manipulation flex-shrink-0" aria-label="Retour à l'accueil">
           <Image
             src="/logo.png"
-            alt="Lena's Cleaning - Nettoyage à Liège"
+            alt="Lena's Cleaning - Nettoyage Liège"
             width={200}
             height={60}
             className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-none"

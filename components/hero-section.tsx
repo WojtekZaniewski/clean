@@ -54,7 +54,7 @@ export default function HeroSection() {
     }
   }, [api])
   const trustPoints = [
-    "Service local à Liège",
+    "Service local Liège",
     "Assurance complète",
     "Horaires flexibles",
   ]
@@ -74,7 +74,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full lg:max-w-2xl leading-relaxed break-words">
-              Plus de ménage le week-end. Plus de stress avant les invités. Juste une maison propre quand vous rentrez. Lena's Cleaning est un service de nettoyage à Liège: nous prenons en charge votre domicile, votre logement Airbnb, ou vos locaux.
+              Plus de ménage le week-end. Plus de stress avant les invités. Juste une maison propre quand vous rentrez. Lena's Cleaning est un service de nettoyage Liège: nous prenons en charge votre domicile, votre logement Airbnb, ou vos locaux.
             </p>
 
             <div className="flex flex-col gap-2.5 sm:gap-3 md:gap-4 w-full">
@@ -123,7 +123,7 @@ export default function HeroSection() {
                     <div className="relative w-full h-full overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
-                        alt={`Nettoyage à Liège - Lena's Cleaning Services, photo ${num}`}
+                        alt={`Nettoyage Liège - Lena's Cleaning Services, photo ${num}`}
                         fill
                         className="object-cover"
                         priority={num === 3}
