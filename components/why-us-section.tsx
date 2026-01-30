@@ -64,7 +64,7 @@ export default function WhyUsSection() {
                 backgroundPosition: 'center center'
               }}
               role="img"
-              aria-label="Lena's Cleaning - Nettoyage Liège"
+              aria-label="Société de nettoyage Liège"
             >
             </div>
           </div>

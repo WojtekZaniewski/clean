@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="mb-3 sm:mb-4">
               <Image
                 src="/logo.png"
-                alt="Lena's Cleaning - Nettoyage Liège"
+                alt="Société de nettoyage Liège"
                 width={200}
                 height={60}
                 className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-none"

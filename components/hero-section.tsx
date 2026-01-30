@@ -123,7 +123,7 @@ export default function HeroSection() {
                     <div className="relative w-full h-full overflow-hidden">
                       <Image
                         src={`/${num}.jpg`}
-                        alt={`Nettoyage Liège - Lena's Cleaning Services, photo ${num}`}
+                        alt={`Société de nettoyage Liège, photo ${num}`}
                         fill
                         className="object-cover"
                         priority={num === 3}
