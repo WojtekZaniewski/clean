@@ -1,6 +1,5 @@
 import Header from "@/components/header"
 import HeroSection from "@/components/hero-section"
-import PainReliefSection from "@/components/pain-relief-section"
 import ServicesSection from "@/components/services-section"
 import WhyUsSection from "@/components/why-us-section"
 import TestimonialsSection from "@/components/testimonials-section"
@@ -13,7 +12,6 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Header />
       <HeroSection />
-      <PainReliefSection />
       <ServicesSection />
       <WhyUsSection />
       <TestimonialsSection />

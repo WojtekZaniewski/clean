@@ -20,11 +20,6 @@ const filesToCopy = [
   'icon-dark-32x32.png',
   'icon-light-32x32.png',
   'icon.svg',
-  'placeholder-logo.png',
-  'placeholder-logo.svg',
-  'placeholder-user.jpg',
-  'placeholder.jpg',
-  'placeholder.svg',
 ];
 
 function copyFileOrDir(src, dest) {
