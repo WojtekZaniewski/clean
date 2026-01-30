@@ -58,12 +58,16 @@ const jsonLd = {
     geoRadius: "30000",
   },
   priceRange: "€",
-  serviceType: [
-    "Nettoyage maison",
-    "Nettoyage Airbnb",
-    "Nettoyage hôtels",
-    "Nettoyage bureaux",
-  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    "name": "Services de nettoyage",
+    itemListElement: [
+      { "@type": "ListItem", name: "Nettoyage maison" },
+      { "@type": "ListItem", name: "Nettoyage Airbnb" },
+      { "@type": "ListItem", name: "Nettoyage hôtels" },
+      { "@type": "ListItem", name: "Nettoyage bureaux" },
+    ],
+  },
 }
 
 export default function RootLayout({
