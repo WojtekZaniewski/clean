@@ -1,0 +1,38 @@
+---
+description: Deploy i SEO – po zmianach zawsze deploy; co edytować dla meta/tytułu
+alwaysApply: true
+---
+
+# Deploy i SEO (nettoyageliege.com / GitHub Pages)
+
+## Ważne: strona na żywo = pliki w ROOT repozytorium
+
+- **Na żywo serwowany jest `index.html` (i reszta) z katalogu głównego repo**, nie z `app/` ani `out/`.
+- Next.js buduje do `out/`; skrypt `copy-to-root.js` kopiuje z `out/` do roota.
+- **Bez uruchomienia deploy po zmianach użytkownik i Google widzą stary build.**
+
+## Zasada: po każdej zmianie widocznej na stronie → deploy
+
+Po edycji którejkolwiek z poniższych **zawsze** uruchom deploy i przypomnij o commit + push:
+
+- `app/layout.tsx` (meta, title, description, OG, Twitter, JSON-LD)
+- `app/page.tsx`, `app/globals.css`
+- dowolny plik w `components/` lub `public/`
+
+**Komenda:** `npm run deploy` (robi `next build` + fix-paths + verify + copy-to-root).
+
+Po deployu: **"Zacommituj i wypchnij zmiany w root (w tym index.html), żeby GitHub Pages zaktualizował stronę."**
+
+## Gdzie edytować SEO / meta
+
+| Co | Plik |
+|----|------|
+| Tytuł strony, meta description, keywords | `app/layout.tsx` → `metadata` |
+| Open Graph (Facebook itd.) | `app/layout.tsx` → `openGraph` |
+| Twitter Card | `app/layout.tsx` → `twitter` |
+| Dane strukturalne (JSON-LD) | `app/layout.tsx` → obiekt `jsonLd` |
+| Canonical URL | `app/layout.tsx` → `metadataBase`, `alternates.canonical` |
+| Sitemap | `app/sitemap.ts` |
+| robots.txt | `app/robots.ts` |
+
+Zmiany w `app/layout.tsx` (meta/tytuł) **nie** pojawią się na stronie, dopóki nie uruchomisz `npm run deploy` i nie wypchniesz zaktualizowanego `index.html` (i pozostałych plików z roota) na GitHub.
