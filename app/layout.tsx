@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "nettoyage Airbnb",
     "nettoyage bureau",
     "service ménage Liège",
+    "Société de nettoyage Liège",
+    "nettoyage à sec liège",
+    "job nettoyage maison de repos",
+    "maison nettoyage",
+    "nettoyage d une maison",
   ],
   alternates: {
     canonical: siteUrl,
