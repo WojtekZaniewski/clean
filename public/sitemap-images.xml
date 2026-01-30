@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://nettoyageliege.com/</loc>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/logo.png</image:loc>
+      <image:caption>Société de nettoyage Liège - Lena's Cleaning Services</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/1.jpg</image:loc>
+      <image:caption>Service de nettoyage Liège</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/2.jpg</image:loc>
+      <image:caption>Nettoyage maison Liège</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/3.jpg</image:loc>
+      <image:caption>Nettoyage professionnel Liège</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/lenusia.png</image:loc>
+      <image:caption>Lena's Cleaning Services</image:caption>
+    </image:image>
+  </url>
+</urlset>
