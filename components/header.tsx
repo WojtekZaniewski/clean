@@ -16,7 +16,31 @@ export default function Header() {
           />
         </Link>
 
-        <div className="flex-shrink-0" />
+        <nav className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 flex-shrink-0" aria-label="Navigation principale">
+          <Link
+            href="/"
+            className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
+            aria-label="Accueil"
+          >
+            Accueil
+          </Link>
+          <Link
+            href="/nettoyage-classique"
+            className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
+            aria-label="Nettoyage classique"
+          >
+            Nettoyage classique
+          </Link>
+        </nav>
+
+        <Link
+          href="/#contact"
+          className="bg-primary text-primary-foreground px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-primary/90 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation flex-shrink-0 whitespace-nowrap"
+          aria-label="Demander un devis gratuit"
+        >
+          <span className="hidden sm:inline">Devis gratuit</span>
+          <span className="sm:hidden">Devis</span>
+        </Link>
       </div>
     </header>
   )
