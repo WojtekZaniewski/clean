@@ -69,7 +69,11 @@ export default function HeroSection() {
               Société de nettoyage Liège
             </h1>
             <p className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-muted-foreground leading-tight break-words">
-              Rentrez chez vous. Tout brille. Vous n'avez rien fait.
+              Rentrez chez vous.
+              <br />
+              Tout brille.
+              <br />
+              Vous n'avez rien fait.
             </p>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full lg:max-w-2xl leading-relaxed break-words">
