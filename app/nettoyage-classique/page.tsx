@@ -1,15 +1,24 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowRight, Briefcase, Store, Home, User, Clock, Sparkles } from "lucide-react"
+import { ArrowRight, Briefcase, Store, Home, User, Clock, Sparkles, Droplets, Building2 } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 const siteUrl = "https://nettoyageliege.com"
 
 export const metadata: Metadata = {
-  title: "Nettoyage classique Liège | Société de nettoyage Liège",
+  title: "Nettoyage classique Liège | Société de nettoyage Liège – Service nettoyage, maison, à sec",
   description:
-    "Nettoyage classique à Liège: bureaux, commerces, restauration, particuliers. Sols, espaces communs, fenêtres. Équipe locale, devis gratuit. 0492 95 53 48.",
+    "Société de nettoyage Liège: service nettoyage maison, nettoyage à sec liège, job nettoyage maison de repos. Nettoyage d'une maison, bureaux, devis gratuit. 0492 95 53 48.",
+  keywords: [
+    "Société de nettoyage Liège",
+    "nettoyage à sec liège",
+    "job nettoyage maison de repos",
+    "maison nettoyage",
+    "nettoyage d une maison",
+    "service nettoyage",
+    "nettoyage classique Liège",
+  ],
   alternates: { canonical: `${siteUrl}/nettoyage-classique` },
 }
 
@@ -22,17 +31,17 @@ export default function NettoyageClassiquePage() {
         {/* Hero */}
         <section className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
           <span className="text-xs sm:text-sm font-medium text-primary tracking-wider uppercase">
-            Service de nettoyage Liège
+            Service nettoyage Liège
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-2 mb-4 sm:mb-6 text-balance break-words">
-            Nettoyage classique
+            Nettoyage classique – Société de nettoyage Liège
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
             Un lieu de travail propre et bien entretenu améliore l’image de votre entreprise, le confort de vos équipes et de vos visiteurs. 
-            Lena's Cleaning est votre société de nettoyage Liège pour le nettoyage classique: nous prenons en charge sols, espaces communs, fenêtres et portes, bureaux et meubles à Liège et alentours.
+            Notre service de nettoyage à Liège couvre le nettoyage d'une maison, des bureaux, le nettoyage à sec liège et le job nettoyage maison de repos. Société de nettoyage Liège: service nettoyage pour particuliers et professionnels – sols, espaces communs, fenêtres, bureaux et meubles à Liège et alentours.
           </p>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mt-3 sm:mt-4 leading-relaxed">
-            En tant que société de nettoyage à Liège, nous intervenons pour les entreprises et les particuliers. Passage ponctuel ou contrat régulier, nous nous adaptons à vos besoins.
+            Que vous cherchiez un service nettoyage pour votre maison, un job nettoyage maison de repos ou un nettoyage d'une maison après travaux, nous adaptons nos prestations à vos besoins. Devis gratuit sous 2h.
           </p>
         </section>
 
@@ -89,12 +98,12 @@ export default function NettoyageClassiquePage() {
               </div>
               <div>
                 <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-balance break-words">
-                  Nettoyage classique pour les particuliers
+                  Maison nettoyage – Nettoyage d&apos;une maison à Liège
                 </h2>
               </div>
             </div>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
-              Vous souhaitez déléguer le ménage de votre maison ou de votre appartement? Notre service de nettoyage classique s’adresse aussi aux particuliers à Liège et environs. Nous définissons ensemble la fréquence et le périmètre des passages.
+              Vous cherchez un service nettoyage pour le nettoyage d&apos;une maison ou d&apos;un appartement? Notre société de nettoyage Liège propose un service de maison nettoyage pour particuliers: ménage régulier, nettoyage d&apos;une maison après travaux ou avant emménagement s’adresse aussi aux particuliers à Liège et environs. Nous définissons ensemble la fréquence et le périmètre (nettoyage d&apos;une maison complète ou pièces ciblées). Devis gratuit.
             </p>
           </div>
         </section>
