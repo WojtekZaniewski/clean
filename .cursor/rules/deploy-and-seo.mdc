@@ -5,6 +5,68 @@ alwaysApply: true
 
 # Deploy i SEO (nettoyageliege.com / GitHub Pages)
 
+## Jak działa publikacja
+
+- Strona na żywo jest serwowana z **pliku `index.html` w katalogu głównym repo**, a nie z `app/` ani `out/`.
+- Next.js buduje statyczne pliki do folderu `out/`.
+- Skrypt `scripts/copy-to-root.js` kopiuje zawartość `out/` do root (m.in. `index.html`, `robots.txt`, `sitemap.xml`, `sitemap-images.xml`, `nettoyage-classique.html`, `_next/`).
+
+Jeśli po zmianach **nie uruchomisz deploya**, użytkownicy i Google nadal widzą **stary build**.
+
+## Zasada: po każdej zmianie widocznej na stronie → `npm run deploy`
+
+Po edycji któregokolwiek z poniższych plików **zawsze**:
+
+1. Uruchom w `D:\clean`:
+
+   ```bash
+   npm run deploy
+   ```
+
+2. To wykonuje:
+   - `next build`
+   - `scripts/fix-paths.js`
+   - `scripts/verify-build.js`
+   - `scripts/copy-to-root.js` (kopiuje `out/` → root)
+
+3. Następnie **zacommituj i zrób push** zmian z roota (w tym `index.html`, `nettoyage-classique.html`, `robots.txt`, `sitemap*.xml`, `_next/`).
+
+### Pliki, po których ZAWSZE robimy deploy
+
+- `app/layout.tsx` – tytuł, meta, Open Graph, Twitter, JSON-LD, FAQ schema
+- `app/page.tsx` – układ strony głównej, dodawanie sekcji
+- `app/nettoyage-classique/page.tsx` – artykuł SEO
+- `app/robots.ts`, `app/sitemap.ts`
+- `components/**/*` – hero, sekcje, navbar, footer, FAQ itd.
+- `public/*` – obrazki, `sitemap-images.xml`, `robots.txt` (jeśli kiedyś zmieniane)
+
+## Gdzie edytować SEO pod „société de nettoyage liège”
+
+- **Tytuł / meta description / keywords** – `app/layout.tsx → metadata`
+- **Open Graph / Twitter** – `app/layout.tsx → openGraph / twitter`
+- **LocalBusiness / Service / Breadcrumb / FAQPage (JSON-LD)** – `app/layout.tsx` + `components/faq-section.tsx`
+- **Treść pod frazę** – głównie:
+  - `components/hero-section.tsx`
+  - `components/societe-nettoyage-liege-section.tsx`
+  - `components/why-us-section.tsx`
+  - `components/cta-section.tsx`
+  - `app/nettoyage-classique/page.tsx`
+
+## Skrót dla agenta
+
+Przy **każdej** zmianie w kodzie, która ma być widoczna na opublikowanej stronie (treść, SEO, schema, linki, nowe podstrony):
+
+1. Wprowadź zmianę w kodzie.
+2. W `D:\clean` uruchom `npm run deploy`.
+3. Załóż, że użytkownik potem zrobi commit + push (przypomnij mu o tym w odpowiedzi).
+
+---
+description: Deploy i SEO – po zmianach zawsze deploy; co edytować dla meta/tytułu
+alwaysApply: true
+---
+
+# Deploy i SEO (nettoyageliege.com / GitHub Pages)
+
 ## Ważne: strona na żywo = pliki w ROOT repozytorium
 
 - **Na żywo serwowany jest `index.html` (i reszta) z katalogu głównego repo**, nie z `app/` ani `out/`.
