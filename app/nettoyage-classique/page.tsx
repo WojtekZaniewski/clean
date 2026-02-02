@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+avant emmĂ©nagement Ă  LiĂ¨ge et environs. Nous t type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, Briefcase, Store, Home, User, Clock, Sparkles, Droplets, Building2 } from "lucide-react"
 import Header from "@/components/header"
