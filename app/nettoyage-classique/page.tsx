@@ -29,10 +29,10 @@ export default function NettoyageClassiquePage() {
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
             Un lieu de travail propre et bien entretenu améliore l’image de votre entreprise, le confort de vos équipes et de vos visiteurs. 
-            Chez Lena's Cleaning, nous prenons en charge le nettoyage classique à Liège et alentours: sols, espaces communs, fenêtres et portes, bureaux et meubles, et bien plus encore.
+            Lena's Cleaning est votre société de nettoyage Liège pour le nettoyage classique: nous prenons en charge sols, espaces communs, fenêtres et portes, bureaux et meubles à Liège et alentours.
           </p>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mt-3 sm:mt-4 leading-relaxed">
-            Nous intervenons aussi bien pour les entreprises que pour les particuliers. Passage ponctuel ou contrat régulier, nous nous adaptons à vos besoins.
+            En tant que société de nettoyage à Liège, nous intervenons pour les entreprises et les particuliers. Passage ponctuel ou contrat régulier, nous nous adaptons à vos besoins.
           </p>
         </section>
 

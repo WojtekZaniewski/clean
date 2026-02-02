@@ -21,6 +21,15 @@ export default function Footer() {
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed break-words">
               On nettoie à Liège et autour. Simplement.
             </p>
+            <p className="mt-2 sm:mt-3">
+              <Link
+                href="/"
+                className="text-xs sm:text-sm md:text-base font-medium text-foreground hover:text-primary transition-colors underline underline-offset-2 break-words"
+                aria-label="Société de nettoyage Liège - Accueil"
+              >
+                Société de nettoyage Liège
+              </Link>
+            </p>
             <address className="not-italic text-xs sm:text-sm md:text-base text-muted-foreground mt-2 sm:mt-3 break-words">
               Lena's Cleaning Services<br />
               Liège et alentours, Belgique<br />
