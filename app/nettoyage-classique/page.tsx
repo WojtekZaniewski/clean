@@ -1,4 +1,4 @@
-avant emmĂ©nagement Ă  LiĂ¨ge et environs. Nous t type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, Briefcase, Store, Home, User, Clock, Sparkles, Droplets, Building2 } from "lucide-react"
 import Header from "@/components/header"
@@ -89,7 +89,51 @@ export default function NettoyageClassiquePage() {
           </div>
         </section>
 
-        {/* Particuliers */}
+        {/* Nettoyage à sec Liège */}
+        <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
+          <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+            <div className="flex gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-xl flex items-center justify-center">
+                <Droplets className="w-5 h-5 sm:w-6 sm:h-6 text-primary" aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-balance break-words">
+                  Nettoyage à sec Liège
+                </h2>
+              </div>
+            </div>
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed mb-4">
+              En complément de notre service nettoyage classique, nous proposons un nettoyage à sec liège pour textiles et surfaces délicates. En tant que société de nettoyage Liège, nous adaptons nos méthodes (nettoyage à sec liège ou humide) selon vos locaux et vos besoins.
+            </p>
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
+              Devis gratuit pour tout projet de nettoyage à sec à Liège et alentours.
+            </p>
+          </div>
+        </section>
+
+        {/* Job nettoyage maison de repos */}
+        <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
+          <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+            <div className="flex gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-xl flex items-center justify-center">
+                <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary" aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-balance break-words">
+                  Job nettoyage maison de repos
+                </h2>
+              </div>
+            </div>
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed mb-4">
+              Vous recherchez un job nettoyage maison de repos ou un service nettoyage pour résidence seniors à Liège? Notre société de nettoyage Liège intervient en maison de repos et maisons de soins: espaces communs, chambres, sanitaires et cuisines, dans le respect des protocoles d&apos;hygiène.
+            </p>
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
+              Contrat régulier ou renfort ponctuel: nous nous adaptons à vos plannings. Devis gratuit pour votre établissement.
+            </p>
+          </div>
+        </section>
+
+        {/* Maison nettoyage – Particuliers */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
             <div className="flex gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -103,7 +147,7 @@ export default function NettoyageClassiquePage() {
               </div>
             </div>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
-              Vous cherchez un service nettoyage pour le nettoyage d&apos;une maison ou d&apos;un appartement? Notre société de nettoyage Liège propose un service de maison nettoyage pour particuliers: ménage régulier, nettoyage d&apos;une maison après travaux ou avant emménagement s’adresse aussi aux particuliers à Liège et environs. Nous définissons ensemble la fréquence et le périmètre (nettoyage d&apos;une maison complète ou pièces ciblées). Devis gratuit.
+              Vous cherchez un service nettoyage pour le nettoyage d&apos;une maison ou d&apos;un appartement? Notre société de nettoyage Liège propose un service de maison nettoyage pour particuliers: ménage régulier, nettoyage d&apos;une maison après travaux ou avant emménagement à LiègeĂ©nagement Ă  LiĂ¨ge et environs. Nous définissons ensemble la fréquence et le périmètre (nettoyage d&apos;une maison complète ou pièces ciblées). Devis gratuit.
             </p>
           </div>
         </section>
