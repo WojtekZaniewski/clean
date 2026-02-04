@@ -50,12 +50,15 @@ export default function FaqSection() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <section className="w-full py-6 sm:py-8 md:py-12 lg:py-16" aria-labelledby="faq-heading">
+      <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16" aria-labelledby="faq-heading">
         <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-          <h2 id="faq-heading" className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-balance break-words mb-6 sm:mb-8">
+          <h2
+            id="faq-heading"
+            className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-balance break-words mb-6 sm:mb-8 text-center"
+          >
             Société de nettoyage Liège: questions fréquentes
           </h2>
-          <Accordion type="single" collapsible className="w-full max-w-3xl">
+          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
             {faqItems.map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg font-medium">
