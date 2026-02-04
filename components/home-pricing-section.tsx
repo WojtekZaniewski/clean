@@ -18,37 +18,37 @@ export default function HomePricingSection() {
             <thead className="bg-secondary/60 text-foreground">
               <tr>
                 <th className="px-4 py-3 font-semibold">Service</th>
-                <th className="px-4 py-3 font-semibold">Tarif indicatif</th>
+                <th className="px-4 py-3 font-semibold">Tarif (sur devis)</th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5">Ménage régulier</td>
-                <td className="px-4 py-2.5">25 €/h</td>
+                <td className="px-4 py-2.5">Sur devis après visite ou échange</td>
               </tr>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5">Ménage ponctuel</td>
-                <td className="px-4 py-2.5">30 €/h</td>
+                <td className="px-4 py-2.5">Sur devis selon la prestation</td>
               </tr>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5">Nettoyage de bureaux</td>
-                <td className="px-4 py-2.5">28 €/h</td>
+                <td className="px-4 py-2.5">Sur devis selon surface et fréquence</td>
               </tr>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5">Nettoyage Airbnb (studio)</td>
-                <td className="px-4 py-2.5">À partir de 45 €</td>
+                <td className="px-4 py-2.5">Sur devis par type de logement</td>
               </tr>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5">Nettoyage Airbnb (T2+)</td>
-                <td className="px-4 py-2.5">À partir de 65 €</td>
+                <td className="px-4 py-2.5">Sur devis par type de logement</td>
               </tr>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5">Nettoyage à sec (chemise)</td>
-                <td className="px-4 py-2.5">5 €</td>
+                <td className="px-4 py-2.5">Sur devis selon volume</td>
               </tr>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5">Nettoyage à sec (costume)</td>
-                <td className="px-4 py-2.5">12 €</td>
+                <td className="px-4 py-2.5">Sur devis selon volume</td>
               </tr>
             </tbody>
           </table>
