@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Home, Building2, Briefcase, BedDouble } from "lucide-react"
 
 export default function ServicesSection() {
@@ -37,6 +38,13 @@ export default function ServicesSection() {
           </p>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-full sm:max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 break-words mt-2 sm:mt-3">
             En tant que société de nettoyage Liège, nous intervenons à Liège et alentours. Passage ponctuel ou contrat régulier, nous nous adaptons à vos besoins et à votre emploi du temps.
+          </p>
+          <p className="text-xs sm:text-sm text-muted-foreground max-w-full sm:max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 break-words mt-2 sm:mt-3">
+            En savoir plus sur nos services de{" "}
+            <Link href="/nettoyage-classique.html" className="underline underline-offset-2 hover:text-foreground">
+              nettoyage classique à Liège
+            </Link>
+            .
           </p>
         </div>
 
