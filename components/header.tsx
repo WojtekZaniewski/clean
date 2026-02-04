@@ -33,7 +33,7 @@ export default function Header() {
             Accueil
           </Link>
           <Link
-            href="/nettoyage-classique"
+            href="/nettoyage-classique.html"
             className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
             aria-label="Nettoyage classique"
           >
@@ -60,7 +60,7 @@ export default function Header() {
                   Accueil
                 </Link>
                 <Link
-                  href="/nettoyage-classique"
+                  href="/nettoyage-classique.html"
                   onClick={() => setMenuOpen(false)}
                   className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
                 >

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "service nettoyage",
     "nettoyage classique Liège",
   ],
-  alternates: { canonical: `${siteUrl}/nettoyage-classique` },
+  alternates: { canonical: `${siteUrl}/nettoyage-classique.html` },
 }
 
 export default function NettoyageClassiquePage() {
