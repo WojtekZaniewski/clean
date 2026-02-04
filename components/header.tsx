@@ -39,6 +39,13 @@ export default function Header() {
           >
             Nettoyage classique
           </Link>
+          <Link
+            href="/nettoyage-a-sec.html"
+            className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
+            aria-label="Nettoyage à sec"
+          >
+            Nettoyage à sec
+          </Link>
         </nav>
 
         {/* Mobile menu */}
@@ -65,6 +72,13 @@ export default function Header() {
                   className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
                 >
                   Nettoyage classique
+                </Link>
+                <Link
+                  href="/nettoyage-a-sec.html"
+                  onClick={() => setMenuOpen(false)}
+                  className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
+                >
+                  Nettoyage à sec
                 </Link>
                 <Link
                   href="/#contact"
