@@ -16,8 +16,8 @@ export default function HeroSection() {
   const [api, setApi] = useState<any>(null)
   const [current, setCurrent] = useState(0)
 
-  // Start from image 3, then continue with 4-13, then 1-2
-  const images = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1, 2]
+  // Start from image 3, then continue with 5-13, puis 1-2 (sans l'image d'évier)
+  const images = [3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1, 2]
 
   // Track current slide
   useEffect(() => {
