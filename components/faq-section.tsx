@@ -10,15 +10,23 @@ import {
 const faqItems = [
   {
     question: "Qu'est-ce qu'une société de nettoyage à Liège?",
-    answer: "Une société de nettoyage à Liège est une entreprise qui propose des prestations de nettoyage pour particuliers et professionnels: ménage à domicile, nettoyage de logements Airbnb, bureaux, hôtels et commerces. Lena's Cleaning est une société de nettoyage Liège intervenant à Liège et alentours avec une équipe locale et un interlocuteur unique.",
+    answer:
+      "Une société de nettoyage à Liège est une entreprise qui propose des prestations de nettoyage pour particuliers et professionnels : ménage à domicile, nettoyage de logements Airbnb, bureaux, hôtels et commerces. Lena's Cleaning est une société de nettoyage Liège intervenant à Liège et alentours avec une équipe locale et un interlocuteur unique.",
   },
   {
     question: "Pourquoi choisir une société de nettoyage à Liège?",
-    answer: "Choisir une société de nettoyage Liège comme Lena's Cleaning permet de bénéficier d'un service local, réactif (réponse sous 2h), avec des horaires flexibles et un devis gratuit. Nous intervenons pour la maison, l'Airbnb, les bureaux et les hôtels à Liège, Herstal, Seraing et environs.",
+    answer:
+      "Choisir une société de nettoyage Liège comme Lena's Cleaning permet de bénéficier d'un service local, réactif (réponse sous 2h), avec des horaires flexibles et un devis gratuit. Nous intervenons pour la maison, l'Airbnb, les bureaux et les hôtels à Liège, Herstal, Seraing et environs.",
+  },
+  {
+    question: "Proposez-vous le nettoyage à sec à Liège?",
+    answer:
+      "Oui, en plus du nettoyage classique, nous proposons un service de nettoyage à sec à Liège pour les vêtements et textiles délicats : costumes, robes, rideaux, etc. La prise et le dépôt à domicile sont possibles dans tout Liège.",
   },
   {
     question: "Comment contacter une société de nettoyage Liège?",
-    answer: "Pour contacter notre société de nettoyage Liège, appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2h et proposons un devis gratuit sans engagement.",
+    answer:
+      "Pour contacter notre société de nettoyage Liège, appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2h et proposons un devis gratuit sans engagement.",
   },
 ]
 

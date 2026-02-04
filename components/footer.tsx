@@ -42,17 +42,42 @@ export default function Footer() {
           <div className="col-span-1 sm:col-span-1">
             <h3 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Services</h3>
             <ul className="space-y-2 sm:space-y-3">
-              {["Nettoyage maison", "Nettoyage Airbnb", "Nettoyage hôtels", "Nettoyage bureaux"].map((service) => (
-                <li key={service}>
-                  <Link 
-                    href="#services" 
-                    className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
-                    aria-label={`Voir ${service}`}
-                  >
-                    {service}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/nettoyage-classique.html"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
+                  aria-label="Voir le nettoyage maison à Liège"
+                >
+                  Nettoyage maison
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/nettoyage-classique.html"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
+                  aria-label="Voir le nettoyage Airbnb à Liège"
+                >
+                  Nettoyage Airbnb
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/nettoyage-classique.html"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
+                  aria-label="Voir le nettoyage bureaux et hôtels à Liège"
+                >
+                  Nettoyage bureaux &amp; hôtels
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/nettoyage-a-sec.html"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
+                  aria-label="Voir le service de nettoyage à sec à Liège"
+                >
+                  Nettoyage à sec
+                </Link>
+              </li>
             </ul>
           </div>
 

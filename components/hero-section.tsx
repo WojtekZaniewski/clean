@@ -77,7 +77,9 @@ export default function HeroSection() {
             </p>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-full lg:max-w-2xl leading-relaxed break-words">
-              Lena's Cleaning est la société de nettoyage Liège qui prend en charge votre domicile, votre logement Airbnb et vos locaux. Plus de ménage le week-end, plus de stress avant les invités: une maison propre quand vous rentrez.
+              Lena&apos;s Cleaning est la société de nettoyage Liège qui prend en charge votre domicile, votre logement Airbnb, vos bureaux
+              et, via notre service de <strong>nettoyage à sec à Liège</strong>, vos textiles délicats. Plus de ménage le week-end, plus de stress
+              avant les invités: une maison propre quand vous rentrez.
             </p>
 
             <div className="flex flex-col gap-2.5 sm:gap-3 md:gap-4 w-full">

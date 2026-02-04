@@ -1,12 +1,13 @@
 import Link from "next/link"
-import { Home, Building2, Briefcase, BedDouble } from "lucide-react"
+import { Home, Building2, Briefcase, BedDouble, Droplets } from "lucide-react"
 
 export default function ServicesSection() {
   const services = [
     {
       icon: Home,
       title: "Maison",
-      description: "Cuisine qui sent le citron. Salle de bain sans traces. Lit refait. On passe 3 heures minimum, jamais en vitesse.",
+      description:
+        "Cuisine qui sent le citron. Salle de bain sans traces. Lit refait. On passe 3 heures minimum, jamais en vitesse.",
     },
     {
       icon: BedDouble,
@@ -16,12 +17,21 @@ export default function ServicesSection() {
     {
       icon: Building2,
       title: "Hôtels",
-      description: "Les chambres sont toujours prêtes à l'heure, quoi qu'il arrive. Ponctualité et précision sont les maîtres mots qui décrivent le mieux notre entreprise auprès de nos clients.",
+      description:
+        "Les chambres sont toujours prêtes à l'heure, quoi qu'il arrive. Ponctualité et précision sont les maîtres mots qui décrivent le mieux notre entreprise auprès de nos clients.",
     },
     {
       icon: Briefcase,
       title: "Bureaux",
-      description: "Vos clients arrivent, le bureau sent bon. Pas de miettes, pas de poussière. On vient tôt ou tard. Vous choisissez.",
+      description:
+        "Vos clients arrivent, le bureau sent bon. Pas de miettes, pas de poussière. On vient tôt ou tard. Vous choisissez.",
+    },
+    {
+      icon: Droplets,
+      title: "Nettoyage à sec",
+      description:
+        "Costumes, robes, rideaux, textiles délicats. On récupère chez vous, on nettoie à sec, on livre. Vos vêtements reviennent impeccables.",
+      href: "/nettoyage-a-sec.html",
     },
   ]
 
@@ -43,6 +53,10 @@ export default function ServicesSection() {
             En savoir plus sur nos services de{" "}
             <Link href="/nettoyage-classique.html" className="underline underline-offset-2 hover:text-foreground">
               nettoyage classique à Liège
+            </Link>{" "}
+            et de{" "}
+            <Link href="/nettoyage-a-sec.html" className="underline underline-offset-2 hover:text-foreground">
+              nettoyage à sec à Liège
             </Link>
             .
           </p>
@@ -58,7 +72,17 @@ export default function ServicesSection() {
                 <service.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-primary" aria-hidden="true" />
               </div>
               <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-1.5 sm:mb-2 md:mb-3 lg:mb-4 break-words">{service.title}</h3>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">{service.description}</p>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">
+                {service.description}{" "}
+                {service.href && (
+                  <Link
+                    href={service.href}
+                    className="inline-flex items-center text-sm sm:text-base text-primary hover:underline underline-offset-2 ml-1"
+                  >
+                    En savoir plus →
+                  </Link>
+                )}
+              </p>
             </div>
           ))}
         </div>

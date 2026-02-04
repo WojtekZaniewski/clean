@@ -16,20 +16,17 @@ const lcpImage = "/3.jpg"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Société de nettoyage Liège | Lena's Cleaning Services",
+  title: "Société de Nettoyage Liège | Nettoyage à Sec | Lena's Cleaning",
   description:
-    "Société de nettoyage Liège – Nettoyage maison, Airbnb, hôtels, bureaux à Liège. Équipe locale, réponse en 2h, devis gratuit. 0492 95 53 48.",
+    "Société de nettoyage à Liège. Maison, Airbnb, bureau, nettoyage à sec. Équipe locale, réponse 2h, devis gratuit. ☎️ 0492 95 53 48",
   keywords: [
-    "nettoyage Liège",
-    "femme de ménage Liège",
-    "nettoyage Airbnb",
-    "nettoyage bureau",
-    "service ménage Liège",
-    "Société de nettoyage Liège",
+    "société de nettoyage liège",
     "nettoyage à sec liège",
-    "job nettoyage maison de repos",
-    "maison nettoyage",
-    "nettoyage d une maison",
+    "entreprise de nettoyage liège",
+    "nettoyage maison liège",
+    "nettoyage airbnb liège",
+    "service nettoyage liège",
+    "nettoyage bureau liège",
   ],
   alternates: {
     canonical: siteUrl,
@@ -38,18 +35,20 @@ export const metadata: Metadata = {
     icon: "/logo.png",
   },
   openGraph: {
-    title: "Société de nettoyage Liège | Lena's Cleaning Services",
-    description: "Société de nettoyage Liège. Maison, Airbnb, hôtels, bureaux. Équipe locale, réponse en 2h. Devis gratuit.",
+    title: "Société de Nettoyage Liège | Lena's Cleaning Services",
+    description:
+      "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, nettoyage à sec. Équipe locale, devis gratuit.",
     url: siteUrl,
-    siteName: "Société de nettoyage Liège",
+    siteName: "Lena's Cleaning Services",
     type: "website",
     locale: "fr_BE",
     images: [{ url: ogImage, width: 200, height: 60, alt: "Société de nettoyage Liège" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Société de nettoyage Liège | Lena's Cleaning Services",
-    description: "Société de nettoyage Liège. Maison, Airbnb, hôtels, bureaux. Équipe locale, réponse en 2h.",
+    title: "Société de Nettoyage Liège | Lena's Cleaning",
+    description:
+      "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, nettoyage à sec. Équipe locale, devis gratuit.",
     images: [ogImage],
   },
   generator: "v0.app",
@@ -62,7 +61,7 @@ export const viewport: Viewport = {
 const jsonLdLocalBusiness = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
-  additionalType: "https://schema.org/CleaningService",
+  additionalType: ["https://schema.org/CleaningService", "https://schema.org/DryCleaningOrLaundry"],
   name: "Société de nettoyage Liège",
   alternateName: "Lena's Cleaning Services",
   description:
@@ -87,20 +86,25 @@ const jsonLdLocalBusiness = {
     { "@type": "City", name: "Liège" },
     { "@type": "City", name: "Herstal" },
     { "@type": "City", name: "Seraing" },
+    { "@type": "City", name: "Ans" },
+    { "@type": "City", name: "Grâce-Hollogne" },
+    { "@type": "City", name: "Flémalle" },
+    { "@type": "City", name: "Outremeuse" },
+    { "@type": "City", name: "Guillemins" },
   ],
   priceRange: "€€",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "20:00",
+      opens: "07:00",
+      closes: "19:00",
     },
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: "Saturday",
-      opens: "09:00",
-      closes: "18:00",
+      opens: "08:00",
+      closes: "14:00",
     },
   ],
   sameAs: [
@@ -126,20 +130,26 @@ const jsonLdLocalBusiness = {
 
 const jsonLdService = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: "Nettoyage de maison",
-  provider: { "@type": "LocalBusiness", name: "Société de nettoyage Liège" },
-  areaServed: { "@type": "City", name: "Liège" },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Services de nettoyage",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Nettoyage maison" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Nettoyage Airbnb" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Nettoyage bureau" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Nettoyage hôtels" } },
-    ],
-  },
+  "@graph": [
+    {
+      "@type": "Service",
+      name: "Nettoyage classique Liège",
+      description: "Service de nettoyage pour maisons, appartements et bureaux à Liège.",
+      provider: { "@type": "LocalBusiness", name: "Société de nettoyage Liège" },
+      areaServed: { "@type": "City", name: "Liège" },
+      serviceType: "Nettoyage résidentiel et commercial",
+      url: `${siteUrl}/nettoyage-classique.html`,
+    },
+    {
+      "@type": "Service",
+      name: "Nettoyage à Sec Liège",
+      description: "Service de nettoyage à sec pour vêtements et textiles délicats à Liège.",
+      provider: { "@type": "LocalBusiness", name: "Société de nettoyage Liège" },
+      areaServed: { "@type": "City", name: "Liège" },
+      serviceType: "Nettoyage à sec",
+      url: `${siteUrl}/nettoyage-a-sec.html`,
+    },
+  ],
 }
 
 const jsonLdBreadcrumb = {
@@ -160,10 +170,13 @@ export default function RootLayout({
   return (
     <html lang="fr-BE">
       <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="content-language" content="fr-BE" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preload" as="image" href={lcpImage} />
+        <link rel="alternate" href={siteUrl} hrefLang="fr-BE" />
       </head>
       <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased`}>
         {/* Google tag (gtag.js) - wstrzyknięty do head przez Next.js */}
