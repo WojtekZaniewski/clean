@@ -85,7 +85,7 @@ const jsonLdNettoyageClassique = {
           acceptedAnswer: {
             "@type": "Answer",
             text:
-              "Nos tarifs de nettoyage à Liège commencent à partir de 25€/heure pour un ménage régulier et sont confirmés sur devis après une courte évaluation de vos besoins.",
+              "Notre société de nettoyage à Liège propose des forfaits clairs : un nettoyage ponctuel complet à 200€ (1 salle de bain, 1 chambre, 1 cuisine et 1 pièce de vie), des pièces supplémentaires à 20€ par pièce, un abonnement mensuel BASIC à 499€ pour 4 nettoyages classiques par mois et un abonnement mensuel PREMIUM à 749€ pour 4 nettoyages en profondeur. Le devis reste gratuit et personnalisé selon votre logement.",
           },
         },
         {
@@ -357,7 +357,7 @@ export default function NettoyageClassiquePage() {
           </div>
         </section>
 
-        {/* Tarifs – sur devis */}
+        {/* Tarifs – forfaits et abonnements */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
             <div className="max-w-3xl space-y-4">
@@ -365,46 +365,53 @@ export default function NettoyageClassiquePage() {
                 Nos tarifs de nettoyage à Liège
               </h2>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                Nous croyons à une totale transparence sur nos prix. Dans le même temps, chaque logement et chaque bureau est différent. C&apos;est
-                pourquoi nos <strong>tarifs de nettoyage à Liège</strong> sont établis sur devis, après une évaluation rapide de vos besoins.
+                En tant que <strong>société de nettoyage à Liège</strong>, nous avons structuré nos prix en forfaits simples pour le{" "}
+                <strong>nettoyage maison à Liège</strong> et les bureaux : un nettoyage ponctuel « one time cleaning » et deux abonnements
+                mensuels (BASIC et PREMIUM).
               </p>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                À titre indicatif, nos prestations commencent généralement à partir de <strong>25€/h</strong> pour un ménage régulier, mais le montant
-                final est confirmé avec vous avant toute intervention.
+                Chaque logement est différent ; ces tarifs servent de base et peuvent être ajustés légèrement en fonction de la taille, de la
+                configuration et du niveau de saleté. Le devis est toujours gratuit et détaillé avant intervention.
               </p>
 
               <div className="overflow-x-auto rounded-xl border border-border bg-card/40">
                 <table className="min-w-full text-left text-xs sm:text-sm text-muted-foreground">
                   <thead className="bg-secondary/60 text-foreground">
                     <tr>
-                      <th className="px-4 py-3 font-semibold">Service</th>
-                      <th className="px-4 py-3 font-semibold">Tarif indicatif</th>
+                      <th className="px-4 py-3 font-semibold">Formule</th>
+                      <th className="px-4 py-3 font-semibold">Détail</th>
+                      <th className="px-4 py-3 font-semibold">Tarif</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5">Ménage régulier (hebdo/bi-hebdo)</td>
-                      <td className="px-4 py-2.5">Sur devis (à partir de 25€/h)</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">Nettoyage ponctuel (One time cleaning)</td>
+                      <td className="px-4 py-2.5">
+                        1 salle de bain, 1 chambre, 1 cuisine, 1 pièce de vie – parfait pour un grand <strong>service nettoyage à Liège</strong>{" "}
+                        avant une visite, un événement ou un emménagement.
+                      </td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">200&nbsp;€</td>
                     </tr>
                     <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5">Ménage ponctuel</td>
-                      <td className="px-4 py-2.5">Sur devis</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">Pièce supplémentaire (option)</td>
+                      <td className="px-4 py-2.5">Chambre, salle de bain ou pièce de vie supplémentaire ajoutée au forfait ponctuel.</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">20&nbsp;€ / pièce</td>
                     </tr>
                     <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5">Nettoyage de bureaux</td>
-                      <td className="px-4 py-2.5">Sur devis</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">Abonnement mensuel BASIC</td>
+                      <td className="px-4 py-2.5">
+                        4 nettoyages classiques par mois (1 par semaine) : dépoussiérage, vitres intérieures,{" "}
+                        <strong>nettoyage de cuisine</strong> (hors intérieur des placards et frigo), salle de bain, aspiration et lavage des sols.
+                      </td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">499&nbsp;€ / mois</td>
                     </tr>
                     <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5">Nettoyage Airbnb</td>
-                      <td className="px-4 py-2.5">Sur devis</td>
-                    </tr>
-                    <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5">Nettoyage après travaux</td>
-                      <td className="px-4 py-2.5">Sur devis</td>
-                    </tr>
-                    <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5">Nettoyage déménagement</td>
-                      <td className="px-4 py-2.5">Sur devis</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">Abonnement mensuel PREMIUM</td>
+                      <td className="px-4 py-2.5">
+                        4 nettoyages en profondeur par mois (1 par semaine). Inclut l&apos;abonnement BASIC + intérieur des placards et frigo,
+                        lessive, changement des draps, plinthes, cadres de portes et fenêtres, vaisselle (option parfum d&apos;ambiance).
+                      </td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">749&nbsp;€ / mois</td>
                     </tr>
                   </tbody>
                 </table>
@@ -412,11 +419,15 @@ export default function NettoyageClassiquePage() {
 
               <div className="border border-dashed border-border rounded-xl p-4 sm:p-5 bg-secondary/40">
                 <p className="text-sm sm:text-base text-foreground font-medium mb-1.5">
-                  Tarifs sur devis – transparents et sans engagement
+                  Devis sur mesure – transparents et sans engagement
                 </p>
                 <p className="text-xs sm:text-sm text-muted-foreground">
-                  Envoyez-nous une description de votre logement ou de vos bureaux (ou des photos), et nous vous renvoyons un devis détaillé pour votre
-                  service de nettoyage à Liège.
+                  Ces forfaits servent de base : un duplex de 200 m² ou un petit studio n&apos;auront pas exactement le même temps de travail. Envoyez-nous
+                  une description de votre logement ou de vos bureaux (ou des photos) et nous vous renvoyons un devis détaillé pour votre service de
+                  nettoyage à Liège.
+                </p>
+                <p className="text-xs sm:text-sm text-muted-foreground mt-1.5">
+                  Le nettoyage ne comprend pas les caves/garages, greniers utilisés comme stockage ni les espaces extérieurs (toit, terrasse, jardin).
                 </p>
               </div>
             </div>
@@ -577,8 +588,9 @@ export default function NettoyageClassiquePage() {
                     Combien coûte un service de nettoyage à Liège ?
                   </h3>
                   <p>
-                    Nos tarifs commencent en général à partir de 25€/h pour un ménage régulier et sont ajustés en fonction de la taille du logement,
-                    de la fréquence et du type de prestation. Tout est confirmé sur devis avant le début du service.
+                    Nous proposons des forfaits simples : un nettoyage ponctuel complet à 200€ (1 salle de bain, 1 chambre, 1 cuisine, 1 pièce de vie),
+                    des pièces supplémentaires à 20€ par pièce, un abonnement mensuel BASIC à 499€ pour 4 nettoyages classiques par mois et un
+                    abonnement mensuel PREMIUM à 749€ pour 4 nettoyages en profondeur. Le devis reste gratuit et ajusté à votre logement.
                   </p>
                 </div>
                 <div>
