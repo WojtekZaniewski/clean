@@ -352,13 +352,6 @@ export default function NettoyageClassiquePage() {
                   </p>
                 </div>
 
-                <p className="text-xs sm:text-sm text-muted-foreground">
-                  Pour vos vêtements délicats (costumes, robes, rideaux), découvrez aussi notre service dédié de{" "}
-                  <Link href="/nettoyage-a-sec.html" className="underline underline-offset-2 hover:text-foreground">
-                    nettoyage à sec à Liège
-                  </Link>
-                  .
-                </p>
               </div>
             </div>
           </div>

@@ -42,14 +42,6 @@ export default function HomePricingSection() {
                 <td className="px-4 py-2.5">Nettoyage Airbnb (T2+)</td>
                 <td className="px-4 py-2.5">Sur devis par type de logement</td>
               </tr>
-              <tr className="border-t border-border/60">
-                <td className="px-4 py-2.5">Nettoyage à sec (chemise)</td>
-                <td className="px-4 py-2.5">Sur devis selon volume</td>
-              </tr>
-              <tr className="border-t border-border/60">
-                <td className="px-4 py-2.5">Nettoyage à sec (costume)</td>
-                <td className="px-4 py-2.5">Sur devis selon volume</td>
-              </tr>
             </tbody>
           </table>
         </div>

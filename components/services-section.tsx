@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Home, Building2, Briefcase, BedDouble, Droplets } from "lucide-react"
+import { Home, Building2, Briefcase, BedDouble } from "lucide-react"
 
 export default function ServicesSection() {
   const services = [
@@ -26,17 +26,7 @@ export default function ServicesSection() {
       description:
         "Vos clients arrivent, le bureau sent bon. Pas de miettes, pas de poussière. On vient tôt ou tard. Vous choisissez.",
     },
-    {
-      icon: Droplets,
-      title: "Nettoyage à sec",
-      description:
-        "Costumes, robes, rideaux, textiles délicats. On récupère chez vous, on nettoie à sec, on livre. Vos vêtements reviennent impeccables.",
-      href: "/nettoyage-a-sec.html",
-    },
   ]
-
-  const firstRow = services.slice(0, 3)
-  const secondRow = services.slice(3)
 
   return (
     <section id="services" className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
@@ -56,69 +46,28 @@ export default function ServicesSection() {
             En savoir plus sur nos services de{" "}
             <Link href="/nettoyage-classique.html" className="underline underline-offset-2 hover:text-foreground">
               nettoyage classique à Liège
-            </Link>{" "}
-            et de{" "}
-            <Link href="/nettoyage-a-sec.html" className="underline underline-offset-2 hover:text-foreground">
-              nettoyage à sec à Liège
             </Link>
             .
           </p>
         </div>
 
-        <div className="space-y-6 sm:space-y-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
-            {firstRow.map((service) => (
-              <div
-                key={service.title}
-                className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-6 lg:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group"
-              >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-18 lg:h-18 bg-accent rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-8 group-hover:bg-primary/10 transition-colors">
-                  <service.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-primary" aria-hidden="true" />
-                </div>
-                <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-1.5 sm:mb-2 md:mb-3 lg:mb-4 break-words">
-                  {service.title}
-                </h3>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">
-                  {service.description}{" "}
-                  {service.href && (
-                    <Link
-                      href={service.href}
-                      className="inline-flex items-center text-sm sm:text-base text-primary hover:underline underline-offset-2 ml-1"
-                    >
-                      En savoir plus →
-                    </Link>
-                  )}
-                </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-6 lg:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group"
+            >
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-18 lg:h-18 bg-accent rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-8 group-hover:bg-primary/10 transition-colors">
+                <service.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-primary" aria-hidden="true" />
               </div>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-8 max-w-4xl mx-auto">
-            {secondRow.map((service) => (
-              <div
-                key={service.title}
-                className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-6 lg:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group"
-              >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-18 lg:h-18 bg-accent rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-8 group-hover:bg-primary/10 transition-colors">
-                  <service.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-primary" aria-hidden="true" />
-                </div>
-                <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-1.5 sm:mb-2 md:mb-3 lg:mb-4 break-words">
-                  {service.title}
-                </h3>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">
-                  {service.description}{" "}
-                  {service.href && (
-                    <Link
-                      href={service.href}
-                      className="inline-flex items-center text-sm sm:text-base text-primary hover:underline underline-offset-2 ml-1"
-                    >
-                      En savoir plus →
-                    </Link>
-                  )}
-                </p>
-              </div>
-            ))}
-          </div>
+              <h3 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-1.5 sm:mb-2 md:mb-3 lg:mb-4 break-words">
+                {service.title}
+              </h3>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">
+                {service.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

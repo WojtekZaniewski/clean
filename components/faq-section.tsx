@@ -19,11 +19,6 @@ const faqItems = [
       "Choisir une société de nettoyage Liège comme Lena's Cleaning permet de bénéficier d'un service local, réactif (réponse sous 2h), avec des horaires flexibles et un devis gratuit. Nous intervenons pour la maison, l'Airbnb, les bureaux et les hôtels à Liège, Herstal, Seraing et environs.",
   },
   {
-    question: "Proposez-vous le nettoyage à sec à Liège?",
-    answer:
-      "Oui, en plus du nettoyage classique, nous proposons un service de nettoyage à sec à Liège pour les vêtements et textiles délicats : costumes, robes, rideaux, etc. La prise et le dépôt à domicile sont possibles dans tout Liège.",
-  },
-  {
     question: "Comment contacter une société de nettoyage Liège?",
     answer:
       "Pour contacter notre société de nettoyage Liège, appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2h et proposons un devis gratuit sans engagement.",

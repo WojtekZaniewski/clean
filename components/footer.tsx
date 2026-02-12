@@ -69,15 +69,6 @@ export default function Footer() {
                   Nettoyage bureaux &amp; hôtels
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/nettoyage-a-sec.html"
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
-                  aria-label="Voir le service de nettoyage à sec à Liège"
-                >
-                  Nettoyage à sec
-                </Link>
-              </li>
             </ul>
           </div>
 

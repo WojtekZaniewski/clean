@@ -16,12 +16,11 @@ const lcpImage = "/3.jpg"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Société de Nettoyage Liège | Nettoyage à Sec | Lena's Cleaning",
+  title: "Société de Nettoyage Liège | Lena's Cleaning",
   description:
-    "Société de nettoyage à Liège. Maison, Airbnb, bureau, nettoyage à sec. Équipe locale, réponse 2h, devis gratuit. ☎️ 0492 95 53 48",
+    "Société de nettoyage à Liège. Maison, Airbnb, bureau. Équipe locale, réponse 2h, devis gratuit. ☎️ 0492 95 53 48",
   keywords: [
     "société de nettoyage liège",
-    "nettoyage à sec liège",
     "entreprise de nettoyage liège",
     "nettoyage maison liège",
     "nettoyage airbnb liège",
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Société de Nettoyage Liège | Lena's Cleaning Services",
     description:
-      "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, nettoyage à sec. Équipe locale, devis gratuit.",
+      "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau. Équipe locale, devis gratuit.",
     url: siteUrl,
     siteName: "Lena's Cleaning Services",
     type: "website",
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Société de Nettoyage Liège | Lena's Cleaning",
     description:
-      "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau, nettoyage à sec. Équipe locale, devis gratuit.",
+      "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau. Équipe locale, devis gratuit.",
     images: [ogImage],
   },
   generator: "v0.app",
@@ -61,7 +60,7 @@ export const viewport: Viewport = {
 const jsonLdLocalBusiness = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
-  additionalType: ["https://schema.org/CleaningService", "https://schema.org/DryCleaningOrLaundry"],
+  additionalType: "https://schema.org/CleaningService",
   name: "Société de nettoyage Liège",
   alternateName: "Lena's Cleaning Services",
   description:
@@ -130,26 +129,13 @@ const jsonLdLocalBusiness = {
 
 const jsonLdService = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      name: "Nettoyage classique Liège",
-      description: "Service de nettoyage pour maisons, appartements et bureaux à Liège.",
-      provider: { "@type": "LocalBusiness", name: "Société de nettoyage Liège" },
-      areaServed: { "@type": "City", name: "Liège" },
-      serviceType: "Nettoyage résidentiel et commercial",
-      url: `${siteUrl}/nettoyage-classique.html`,
-    },
-    {
-      "@type": "Service",
-      name: "Nettoyage à Sec Liège",
-      description: "Service de nettoyage à sec pour vêtements et textiles délicats à Liège.",
-      provider: { "@type": "LocalBusiness", name: "Société de nettoyage Liège" },
-      areaServed: { "@type": "City", name: "Liège" },
-      serviceType: "Nettoyage à sec",
-      url: `${siteUrl}/nettoyage-a-sec.html`,
-    },
-  ],
+  "@type": "Service",
+  name: "Nettoyage classique Liège",
+  description: "Service de nettoyage pour maisons, appartements et bureaux à Liège.",
+  provider: { "@type": "LocalBusiness", name: "Société de nettoyage Liège" },
+  areaServed: { "@type": "City", name: "Liège" },
+  serviceType: "Nettoyage résidentiel et commercial",
+  url: `${siteUrl}/nettoyage-classique.html`,
 }
 
 const jsonLdBreadcrumb = {

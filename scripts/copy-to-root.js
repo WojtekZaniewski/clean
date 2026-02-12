@@ -64,6 +64,16 @@ outFiles.forEach(file => {
   copyFileOrDir(file, file);
 });
 
+// Remove obsolete pages from root (no longer built)
+const toRemove = ['nettoyage-a-sec.html', 'nettoyage-a-sec'];
+toRemove.forEach(name => {
+  const destPath = path.join(rootDir, name);
+  if (fs.existsSync(destPath)) {
+    fs.rmSync(destPath, { recursive: true, force: true });
+    console.log(`✓ Removed obsolete: ${name}`);
+  }
+});
+
 console.log('\n✓ All files copied to root directory');
 console.log('\nNext steps:');
 console.log('1. Review the changes in GitHub Desktop');

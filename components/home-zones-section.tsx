@@ -7,8 +7,7 @@ export default function HomeZonesSection() {
             Notre société de nettoyage intervient à Liège et alentours
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Nous intervenons dans tout Liège et les communes environnantes pour vos besoins en nettoyage classique et{" "}
-            <strong>nettoyage à sec à Liège</strong>.
+            Nous intervenons dans tout Liège et les communes environnantes pour vos besoins en nettoyage classique.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 text-sm sm:text-base text-muted-foreground text-left sm:text-left md:text-left lg:text-left">
             <div>
