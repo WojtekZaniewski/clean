@@ -7,12 +7,16 @@ const siteUrl = "https://nettoyageliege.com"
 const pageUrl = `${siteUrl}/nettoyage-classique.html`
 
 export const metadata: Metadata = {
-  title: "Société de Nettoyage Liège | Lena's Cleaning | Dès 25€/h",
+  title: "Société de Nettoyage Liège | Lena's Cleaning | Dès 1,50€/m²",
   description:
     "Société de nettoyage à Liège. Maison, bureau, Airbnb, après travaux. Équipe locale, produits éco, devis gratuit en 2h. Appelez le 0492 95 53 48.",
   keywords: [
     "société de nettoyage liège",
     "entreprise de nettoyage liège",
+    "societe de nettoyage liege",
+    "société nettoyage liège",
+    "service de nettoyage liège",
+    "offre nettoyage liège",
     "nettoyage maison liège",
     "service nettoyage liège",
     "femme de ménage liège",
@@ -20,6 +24,22 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: pageUrl,
+  },
+  openGraph: {
+    title: "Nettoyage Classique Liège | Dès 1,50€/m² | Lena's Cleaning",
+    description:
+      "Service de nettoyage classique à Liège. Maison, bureau, Airbnb, après travaux. Devis gratuit en 2h.",
+    url: pageUrl,
+    type: "website",
+    locale: "fr_BE",
+    images: [{ url: `${siteUrl}/3.jpg`, width: 1200, height: 800, alt: "Nettoyage classique Liège" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nettoyage Classique Liège | Dès 1,50€/m²",
+    description:
+      "Service de nettoyage classique à Liège. Maison, bureau, Airbnb. Devis gratuit en 2h.",
+    images: [`${siteUrl}/3.jpg`],
   },
 }
 
@@ -85,7 +105,7 @@ const jsonLdNettoyageClassique = {
           acceptedAnswer: {
             "@type": "Answer",
             text:
-              "Notre société de nettoyage à Liège propose des forfaits clairs : un nettoyage ponctuel complet à 200€ (1 salle de bain, 1 chambre, 1 cuisine et 1 pièce de vie), des pièces supplémentaires à 20€ par pièce, un abonnement mensuel BASIC à 499€ pour 4 nettoyages classiques par mois et un abonnement mensuel PREMIUM à 749€ pour 4 nettoyages en profondeur. Le devis reste gratuit et personnalisé selon votre logement.",
+              "Notre société de nettoyage à Liège propose des tarifs au mètre carré : nettoyage classique à 1,50 €/m² et nettoyage en profondeur à 2,50 €/m². Nous proposons aussi un abonnement mensuel BASIC à 499€ pour 4 nettoyages classiques par mois et un abonnement mensuel PREMIUM à 749€ pour 4 nettoyages en profondeur. Le devis reste gratuit et personnalisé selon votre logement.",
           },
         },
         {
@@ -365,8 +385,8 @@ export default function NettoyageClassiquePage() {
                 Nos tarifs de nettoyage à Liège
               </h2>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                En tant que <strong>société de nettoyage à Liège</strong>, nous avons structuré nos prix en forfaits simples pour le{" "}
-                <strong>nettoyage maison à Liège</strong> et les bureaux : un nettoyage ponctuel « one time cleaning » et deux abonnements
+                En tant que <strong>société de nettoyage à Liège</strong>, nous avons structuré nos prix au mètre carré pour le{" "}
+                <strong>nettoyage maison à Liège</strong> et les bureaux : nettoyage classique, nettoyage en profondeur et deux abonnements
                 mensuels (BASIC et PREMIUM).
               </p>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -385,17 +405,18 @@ export default function NettoyageClassiquePage() {
                   </thead>
                   <tbody>
                     <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5 font-medium text-foreground">Nettoyage ponctuel (One time cleaning)</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">Nettoyage classique</td>
                       <td className="px-4 py-2.5">
-                        1 salle de bain, 1 chambre, 1 cuisine, 1 pièce de vie – parfait pour un grand <strong>service nettoyage à Liège</strong>{" "}
-                        avant une visite, un événement ou un emménagement.
+                        Entretien régulier ou ponctuel : dépoussiérage, aspiration, lavage des sols, nettoyage cuisine et salle de bain – idéal pour un <strong>service nettoyage à Liège</strong> rapide et efficace.
                       </td>
-                      <td className="px-4 py-2.5 font-medium text-foreground">200&nbsp;€</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">1,50&nbsp;€ / m²</td>
                     </tr>
                     <tr className="border-t border-border/60">
-                      <td className="px-4 py-2.5 font-medium text-foreground">Pièce supplémentaire (option)</td>
-                      <td className="px-4 py-2.5">Chambre, salle de bain ou pièce de vie supplémentaire ajoutée au forfait ponctuel.</td>
-                      <td className="px-4 py-2.5 font-medium text-foreground">20&nbsp;€ / pièce</td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">Nettoyage en profondeur</td>
+                      <td className="px-4 py-2.5">
+                        Nettoyage complet et minutieux : intérieur des placards, frigo, four, détartrage, plinthes, cadres de portes – parfait après un emménagement, des travaux ou un grand nettoyage de saison.
+                      </td>
+                      <td className="px-4 py-2.5 font-medium text-foreground">2,50&nbsp;€ / m²</td>
                     </tr>
                     <tr className="border-t border-border/60">
                       <td className="px-4 py-2.5 font-medium text-foreground">Abonnement mensuel BASIC</td>
@@ -588,8 +609,8 @@ export default function NettoyageClassiquePage() {
                     Combien coûte un service de nettoyage à Liège ?
                   </h3>
                   <p>
-                    Nous proposons des forfaits simples : un nettoyage ponctuel complet à 200€ (1 salle de bain, 1 chambre, 1 cuisine, 1 pièce de vie),
-                    des pièces supplémentaires à 20€ par pièce, un abonnement mensuel BASIC à 499€ pour 4 nettoyages classiques par mois et un
+                    Nous proposons des tarifs au mètre carré : nettoyage classique à 1,50&nbsp;€/m² et nettoyage en profondeur à 2,50&nbsp;€/m².
+                    Nous proposons aussi un abonnement mensuel BASIC à 499€ pour 4 nettoyages classiques par mois et un
                     abonnement mensuel PREMIUM à 749€ pour 4 nettoyages en profondeur. Le devis reste gratuit et ajusté à votre logement.
                   </p>
                 </div>

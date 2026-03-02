@@ -9,7 +9,7 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
 
 const siteUrl = "https://nettoyageliege.com"
-const ogImage = `${siteUrl}/logo.png`
+const ogImage = `${siteUrl}/3.jpg`
 
 // Preload LCP image (hero carousel first image)
 const lcpImage = "/3.jpg"
@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   keywords: [
     "société de nettoyage liège",
     "entreprise de nettoyage liège",
+    "societe de nettoyage liege",
+    "société nettoyage liège",
+    "service de nettoyage liège",
+    "offre de nettoyage liège",
     "nettoyage maison liège",
     "nettoyage airbnb liège",
     "service nettoyage liège",
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Lena's Cleaning Services",
     type: "website",
     locale: "fr_BE",
-    images: [{ url: ogImage, width: 200, height: 60, alt: "Société de nettoyage Liège" }],
+    images: [{ url: ogImage, width: 1200, height: 800, alt: "Société de nettoyage Liège - service professionnel" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -50,7 +54,6 @@ export const metadata: Metadata = {
       "Service de nettoyage professionnel à Liège. Maison, Airbnb, bureau. Équipe locale, devis gratuit.",
     images: [ogImage],
   },
-  generator: "v0.app",
 }
 
 export const viewport: Viewport = {
@@ -163,14 +166,15 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preload" as="image" href={lcpImage} />
         <link rel="alternate" href={siteUrl} hrefLang="fr-BE" />
+        <link rel="alternate" href={siteUrl} hrefLang="x-default" />
       </head>
       <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased`}>
         {/* Google tag (gtag.js) - wstrzyknięty do head przez Next.js */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-X8ZSHKMDKN"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
-        <Script id="gtag-init" strategy="beforeInteractive">
+        <Script id="gtag-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

@@ -69,6 +69,24 @@ export default function Footer() {
                   Nettoyage bureaux &amp; hôtels
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/offre-nettoyage-liege.html"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
+                  aria-label="Voir nos offres de nettoyage à Liège"
+                >
+                  Nos offres de nettoyage
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/entreprise-nettoyage-liege.html"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
+                  aria-label="Découvrir notre entreprise de nettoyage à Liège"
+                >
+                  Notre entreprise
+                </Link>
+              </li>
             </ul>
           </div>
 

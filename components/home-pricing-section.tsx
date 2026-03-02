@@ -10,7 +10,7 @@ export default function HomePricingSection() {
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
             En tant que société de nettoyage à Liège, nous proposons des formules claires pour le{" "}
-            <strong>nettoyage maison à Liège</strong> : nettoyage ponctuel et abonnements mensuels BASIC et PREMIUM. Devis gratuit pour toute
+            <strong>nettoyage maison à Liège</strong> : tarif au mètre carré et abonnements mensuels BASIC et PREMIUM. Devis gratuit pour toute
             demande spécifique.
           </p>
         </div>
@@ -26,17 +26,18 @@ export default function HomePricingSection() {
             </thead>
             <tbody>
               <tr className="border-t border-border/60">
-                <td className="px-4 py-2.5 font-medium text-foreground">Nettoyage ponctuel (One time cleaning)</td>
+                <td className="px-4 py-2.5 font-medium text-foreground">Nettoyage classique</td>
                 <td className="px-4 py-2.5">
-                  1 salle de bain, 1 chambre, 1 cuisine, 1 pièce de vie – idéal pour un <strong>service nettoyage à Liège</strong> complet avant un
-                  événement ou après un emménagement.
+                  Entretien régulier ou ponctuel : dépoussiérage, aspiration, lavage des sols, nettoyage cuisine et salle de bain – idéal pour un <strong>service nettoyage à Liège</strong> rapide et efficace.
                 </td>
-                <td className="px-4 py-2.5 font-medium text-foreground">200&nbsp;€</td>
+                <td className="px-4 py-2.5 font-medium text-foreground">1,50&nbsp;€ / m²</td>
               </tr>
               <tr className="border-t border-border/60">
-                <td className="px-4 py-2.5 font-medium text-foreground">Pièce supplémentaire (option)</td>
-                <td className="px-4 py-2.5">Chambre, salle de bain ou pièce de vie en plus du forfait ponctuel.</td>
-                <td className="px-4 py-2.5 font-medium text-foreground">20&nbsp;€ / pièce</td>
+                <td className="px-4 py-2.5 font-medium text-foreground">Nettoyage en profondeur</td>
+                <td className="px-4 py-2.5">
+                  Nettoyage complet et minutieux : intérieur des placards, frigo, four, détartrage, plinthes, cadres de portes – parfait après un emménagement, des travaux ou un grand nettoyage de saison.
+                </td>
+                <td className="px-4 py-2.5 font-medium text-foreground">2,50&nbsp;€ / m²</td>
               </tr>
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5 font-medium text-foreground">Abonnement mensuel BASIC</td>

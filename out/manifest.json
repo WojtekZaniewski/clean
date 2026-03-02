@@ -1,0 +1,22 @@
+{
+  "name": "Société de Nettoyage Liège | Lena's Cleaning",
+  "short_name": "Lena's Cleaning",
+  "description": "Société de nettoyage à Liège. Maison, Airbnb, bureau. Équipe locale, réponse 2h, devis gratuit.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "lang": "fr-BE",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -39,6 +39,20 @@ export default function Header() {
           >
             Nettoyage classique
           </Link>
+          <Link
+            href="/offre-nettoyage-liege.html"
+            className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
+            aria-label="Nos offres de nettoyage"
+          >
+            Nos offres
+          </Link>
+          <Link
+            href="/entreprise-nettoyage-liege.html"
+            className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
+            aria-label="Notre entreprise de nettoyage"
+          >
+            Notre entreprise
+          </Link>
         </nav>
 
         {/* Mobile menu */}
@@ -65,6 +79,20 @@ export default function Header() {
                   className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
                 >
                   Nettoyage classique
+                </Link>
+                <Link
+                  href="/offre-nettoyage-liege.html"
+                  onClick={() => setMenuOpen(false)}
+                  className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
+                >
+                  Nos offres
+                </Link>
+                <Link
+                  href="/entreprise-nettoyage-liege.html"
+                  onClick={() => setMenuOpen(false)}
+                  className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
+                >
+                  Notre entreprise
                 </Link>
                 <Link
                   href="/#contact"

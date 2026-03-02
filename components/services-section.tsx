@@ -47,6 +47,10 @@ export default function ServicesSection() {
             <Link href="/nettoyage-classique.html" className="underline underline-offset-2 hover:text-foreground">
               nettoyage classique à Liège
             </Link>
+            {" "}ou découvrez{" "}
+            <Link href="/offre-nettoyage-liege.html" className="underline underline-offset-2 hover:text-foreground">
+              nos offres de nettoyage à Liège
+            </Link>
             .
           </p>
         </div>
