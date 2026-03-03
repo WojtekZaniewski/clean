@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Société de Nettoyage Liège | Lena's Cleaning",
   description:
-    "Société de nettoyage à Liège. Maison, Airbnb, bureau. Équipe locale, réponse 2h, devis gratuit. ☎️ 0492 95 53 48",
+    "Société de nettoyage à Liège pour maison, Airbnb et bureau. Équipe locale, produits écologiques, réponse en 2h. Devis gratuit et sans engagement. ☎ 0492 95 53 48",
   keywords: [
     "société de nettoyage liège",
     "entreprise de nettoyage liège",
@@ -145,9 +145,7 @@ const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Société de nettoyage Liège", item: siteUrl },
-    { "@type": "ListItem", position: 2, name: "Services", item: `${siteUrl}/#services` },
-    { "@type": "ListItem", position: 3, name: "Contact", item: `${siteUrl}/#contact` },
+    { "@type": "ListItem", position: 1, name: "Accueil", item: siteUrl },
   ],
 }
 

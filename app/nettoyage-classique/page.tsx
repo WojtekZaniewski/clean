@@ -65,6 +65,8 @@ const jsonLdNettoyageClassique = {
         { "@type": "City", name: "Herstal" },
         { "@type": "City", name: "Seraing" },
         { "@type": "City", name: "Ans" },
+        { "@type": "City", name: "Grâce-Hollogne" },
+        { "@type": "City", name: "Flémalle" },
         { "@type": "City", name: "Outremeuse" },
         { "@type": "City", name: "Guillemins" },
       ],

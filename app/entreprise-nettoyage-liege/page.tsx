@@ -96,6 +96,51 @@ const jsonLdEntreprise = {
       },
     },
     {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Pourquoi choisir Lena's Cleaning comme entreprise de nettoyage à Liège ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Lena's Cleaning est une entreprise de nettoyage locale à Liège. Vous échangez directement avec Lena, vous connaissez votre équipe, et nous utilisons des produits écologiques. Réponse sous 2 heures et devis gratuit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quels services propose votre entreprise de nettoyage à Liège ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Notre entreprise de nettoyage propose le nettoyage de maisons, appartements, bureaux, logements Airbnb, le nettoyage après travaux et le nettoyage de déménagement dans toute la région de Liège.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Votre entreprise de nettoyage est-elle assurée ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oui, notre entreprise de nettoyage à Liège est entièrement assurée. En cas de casse ou de dommage accidentel lors d'une intervention, vous êtes couvert.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Dans quelles communes intervient votre entreprise de nettoyage ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Notre entreprise de nettoyage intervient à Liège Centre, Guillemins, Outremeuse, Herstal, Seraing, Ans, Grâce-Hollogne, Flémalle et dans les communes environnantes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Comment obtenir un devis de votre entreprise de nettoyage ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2 heures avec un devis gratuit et sans engagement.",
+          },
+        },
+      ],
+    },
+    {
       "@type": "BreadcrumbList",
       itemListElement: [
         {
@@ -297,6 +342,59 @@ export default function EntrepriseNettoyageLiegePage() {
                     <li>Flémalle</li>
                     <li>Chaudfontaine</li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
+          <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+            <div className="max-w-3xl space-y-4">
+              <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
+                Questions fréquentes sur notre entreprise de nettoyage
+              </h2>
+              <div className="space-y-3 sm:space-y-4">
+                <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
+                  <h3 className="font-semibold text-sm sm:text-base mb-1.5">
+                    Pourquoi choisir Lena&apos;s Cleaning comme entreprise de nettoyage à Liège ?
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Lena&apos;s Cleaning est une entreprise de nettoyage locale à Liège. Vous échangez directement avec Lena, vous connaissez votre équipe, et nous utilisons des produits écologiques. Réponse sous 2 heures et devis gratuit.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
+                  <h3 className="font-semibold text-sm sm:text-base mb-1.5">
+                    Quels services propose votre entreprise de nettoyage à Liège ?
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Notre entreprise de nettoyage propose le nettoyage de maisons, appartements, bureaux, logements Airbnb, le nettoyage après travaux et le nettoyage de déménagement dans toute la région de Liège.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
+                  <h3 className="font-semibold text-sm sm:text-base mb-1.5">
+                    Votre entreprise de nettoyage est-elle assurée ?
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Oui, notre entreprise de nettoyage à Liège est entièrement assurée. En cas de casse ou de dommage accidentel lors d&apos;une intervention, vous êtes couvert.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
+                  <h3 className="font-semibold text-sm sm:text-base mb-1.5">
+                    Dans quelles communes intervient votre entreprise de nettoyage ?
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Notre entreprise de nettoyage intervient à Liège Centre, Guillemins, Outremeuse, Herstal, Seraing, Ans, Grâce-Hollogne, Flémalle et dans les communes environnantes.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
+                  <h3 className="font-semibold text-sm sm:text-base mb-1.5">
+                    Comment obtenir un devis de votre entreprise de nettoyage ?
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2 heures avec un devis gratuit et sans engagement.
+                  </p>
                 </div>
               </div>
             </div>

@@ -17,7 +17,20 @@ export default function HeroSection() {
   const [current, setCurrent] = useState(0)
 
   // Start from image 3, then 4–9, 11–13, then 1–2 (sans 10.jpg)
-  const images = [3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 1, 2]
+  const images = [
+    { num: 3, alt: "Salon lumineux après nettoyage professionnel à Liège" },
+    { num: 4, alt: "Cuisine propre et désinfectée par notre équipe de nettoyage" },
+    { num: 5, alt: "Salle de bain impeccable après passage de Lena's Cleaning" },
+    { num: 6, alt: "Nettoyage de bureau professionnel à Liège centre" },
+    { num: 7, alt: "Chambre à coucher entretenue par notre société de nettoyage" },
+    { num: 8, alt: "Produits de nettoyage écologiques utilisés à Liège" },
+    { num: 9, alt: "Appartement Airbnb nettoyé entre deux réservations à Liège" },
+    { num: 11, alt: "Sol brillant après nettoyage en profondeur" },
+    { num: 12, alt: "Espace de travail propre dans un bureau liégeois" },
+    { num: 13, alt: "Résultat du nettoyage après travaux de rénovation" },
+    { num: 1, alt: "Équipe de nettoyage Lena's Cleaning en intervention à Liège" },
+    { num: 2, alt: "Intérieur de maison propre grâce à notre service de nettoyage Liège" },
+  ]
 
   // Track current slide
   useEffect(() => {
@@ -123,15 +136,15 @@ export default function HeroSection() {
               className="absolute inset-0 w-full h-full"
             >
               <CarouselContent className="h-full -ml-0">
-                {images.map((num, index) => (
-                  <CarouselItem key={num} className="pl-0 basis-full h-full">
+                {images.map((img, index) => (
+                  <CarouselItem key={img.num} className="pl-0 basis-full h-full">
                     <div className="relative w-full h-full overflow-hidden">
                       <Image
-                        src={`/${num}.jpg`}
-                        alt={`Société de nettoyage Liège, photo ${num}`}
+                        src={`/${img.num}.jpg`}
+                        alt={img.alt}
                         fill
                         className="object-cover"
-                        priority={num === 3}
+                        priority={img.num === 3}
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
                     </div>

@@ -7,7 +7,7 @@ const siteUrl = "https://nettoyageliege.com"
 const pageUrl = `${siteUrl}/offre-nettoyage-liege.html`
 
 export const metadata: Metadata = {
-  title: "Offre de Nettoyage Liège | Service Professionnel | Lena's Cleaning",
+  title: "Offre de Nettoyage Liège | Dès 1,50€/m² | Lena's Cleaning",
   description:
     "Découvrez nos offres de nettoyage à Liège : nettoyage classique dès 1,50€/m², nettoyage en profondeur, abonnements BASIC et PREMIUM. Devis gratuit. ☎ 0492 95 53 48",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: pageUrl,
   },
   openGraph: {
-    title: "Offre de Nettoyage Liège | Service Professionnel | Lena's Cleaning",
+    title: "Offre de Nettoyage Liège | Dès 1,50€/m² | Lena's Cleaning",
     description:
       "Nos offres de nettoyage à Liège : classique, en profondeur, abonnements mensuels. Devis gratuit.",
     url: pageUrl,
@@ -66,6 +66,8 @@ const jsonLdOffre = {
         { "@type": "City", name: "Ans" },
         { "@type": "City", name: "Grâce-Hollogne" },
         { "@type": "City", name: "Flémalle" },
+        { "@type": "City", name: "Outremeuse" },
+        { "@type": "City", name: "Guillemins" },
       ],
       hasOfferCatalog: {
         "@type": "OfferCatalog",

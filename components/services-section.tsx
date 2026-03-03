@@ -30,7 +30,7 @@ export default function ServicesSection() {
 
   return (
     <section id="services" className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 w-full">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="text-center mb-5 sm:mb-6 md:mb-8 lg:mb-16">
           <span className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-primary tracking-wider uppercase">Nos services</span>
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mt-2 sm:mt-3 md:mt-4 lg:mt-6 mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-balance break-words px-2 sm:px-0">

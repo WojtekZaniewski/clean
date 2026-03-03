@@ -146,7 +146,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between mt-6 sm:mt-8 md:mt-12 lg:mt-16 pt-6 sm:pt-8 md:pt-10 lg:pt-12 border-t border-border text-center md:text-left gap-2">
-          <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words">{"© 2025 Lena's Cleaning Services. Tous droits réservés."}</p>
+          <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words">{"© 2026 Lena's Cleaning Services. Tous droits réservés."}</p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-2 sm:gap-4">
             <a
               href="https://share.google/rTvk1nhSy6ngSpjn8"
