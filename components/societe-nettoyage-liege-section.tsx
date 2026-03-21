@@ -15,7 +15,7 @@ export default function SocieteNettoyageLiegeSection() {
             interlocuteur unique, horaires flexibles et devis gratuit.
           </p>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-            Que vous soyez particulier ou professionnel, nous adaptons nos prestations à vos besoins. Réponse sous 2h, intervention à
+            Que vous soyez particulier ou professionnel, nous adaptons nos prestations à vos besoins. Réponse sous 48h, intervention à
             Liège, Herstal, Seraing et alentours.
           </p>
         </div>
