@@ -80,7 +80,7 @@ const jsonLdNettoyageClassique = {
         },
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Saturday",
+          dayOfWeek: ["Saturday", "Sunday"],
           opens: "08:00",
           closes: "14:00",
         },
@@ -342,7 +342,7 @@ export default function NettoyageClassiquePage() {
                   <ul className="list-disc pl-5 mt-1.5 space-y-1">
                     <li>Rotation rapide entre les guests</li>
                     <li>Nettoyage complet du logement</li>
-                    <li>Changement et lavage du linge de lit</li>
+                    <li>Changement du linge de lit</li>
                     <li>Réassort des consommables (sur demande)</li>
                     <li>Photos de contrôle qualité (sur demande)</li>
                   </ul>
@@ -432,7 +432,7 @@ export default function NettoyageClassiquePage() {
                       <td className="px-4 py-2.5 font-medium text-foreground">Abonnement mensuel PREMIUM</td>
                       <td className="px-4 py-2.5">
                         4 nettoyages en profondeur par mois (1 par semaine). Inclut l&apos;abonnement BASIC + intérieur des placards et frigo,
-                        lessive, changement des draps, plinthes, cadres de portes et fenêtres, vaisselle (option parfum d&apos;ambiance).
+                        changement des draps, plinthes, cadres de portes et fenêtres, vaisselle (option parfum d&apos;ambiance).
                       </td>
                       <td className="px-4 py-2.5 font-medium text-foreground">749&nbsp;€ / mois</td>
                     </tr>
@@ -543,7 +543,7 @@ export default function NettoyageClassiquePage() {
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5 md:p-6">
                   <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Flexibilité horaire</h3>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    Tôt le matin, en journée, en soirée, en semaine ou le samedi : nous adaptons nos interventions à votre emploi du temps.
+                    Tôt le matin, en journée, en soirée, 7 jours sur 7 : nous adaptons nos interventions à votre emploi du temps.
                   </p>
                 </div>
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5 md:p-6">

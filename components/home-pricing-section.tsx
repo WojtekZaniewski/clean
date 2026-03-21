@@ -50,7 +50,7 @@ export default function HomePricingSection() {
               <tr className="border-t border-border/60">
                 <td className="px-4 py-2.5 font-medium text-foreground">Abonnement mensuel PREMIUM</td>
                 <td className="px-4 py-2.5">
-                  4 nettoyages en profondeur par mois (1 par semaine). Inclut BASIC + intérieur des placards et frigo, lessive, changement
+                  4 nettoyages en profondeur par mois (1 par semaine). Inclut BASIC + intérieur des placards et frigo, changement
                   des draps, plinthes, cadres de portes et fenêtres, vaisselle (option parfum d&apos;ambiance).
                 </td>
                 <td className="px-4 py-2.5 font-medium text-foreground">749&nbsp;€ / mois</td>
