@@ -28,7 +28,7 @@ const faqSchema = {
       name: "Pourquoi choisir une société de nettoyage à Liège?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Choisir une société de nettoyage Liège comme Lena's Cleaning permet de bénéficier d'un service local, réactif (réponse sous 2h), avec des horaires flexibles et un devis gratuit. Nous intervenons pour la maison, l'Airbnb, les bureaux et les hôtels à Liège, Herstal, Seraing et environs.",
+        text: "Choisir une société de nettoyage Liège comme Lena's Cleaning permet de bénéficier d'un service local, réactif (réponse sous 48h), avec des horaires flexibles et un devis gratuit. Nous intervenons pour la maison, l'Airbnb, les bureaux et les hôtels à Liège, Herstal, Seraing et environs.",
       },
     },
     {
@@ -36,7 +36,7 @@ const faqSchema = {
       name: "Comment contacter une société de nettoyage Liège?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pour contacter notre société de nettoyage Liège, appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2h et proposons un devis gratuit sans engagement.",
+        text: "Pour contacter notre société de nettoyage Liège, appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 48h et proposons un devis gratuit sans engagement.",
       },
     },
   ],

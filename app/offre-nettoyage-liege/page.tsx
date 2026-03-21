@@ -140,7 +140,7 @@ const jsonLdOffre = {
           name: "Est-ce que le devis est gratuit ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Oui, le devis est entièrement gratuit et sans engagement. Contactez-nous par téléphone au 0492 95 53 48 ou via notre formulaire en ligne. Réponse sous 2 heures.",
+            text: "Oui, le devis est entièrement gratuit et sans engagement. Contactez-nous par téléphone au 0492 95 53 48 ou via notre formulaire en ligne. Réponse sous 48 heures.",
           },
         },
       ],
@@ -445,7 +445,7 @@ export default function OffreNettoyageLiegePage() {
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
                   <h3 className="font-semibold text-sm sm:text-base mb-1.5">Est-ce que le devis est gratuit ?</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Oui, le devis est entièrement gratuit et sans engagement. Contactez-nous au 0492 95 53 48 ou via notre formulaire. Réponse sous 2 heures.
+                    Oui, le devis est entièrement gratuit et sans engagement. Contactez-nous au 0492 95 53 48 ou via notre formulaire. Réponse sous 48 heures.
                   </p>
                 </div>
               </div>
@@ -461,7 +461,7 @@ export default function OffreNettoyageLiegePage() {
                 Profitez de nos offres de nettoyage à Liège
               </h2>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                Appelez Lena au <a href="tel:+32492955348" className="underline hover:text-foreground">0492 95 53 48</a>. Réponse sous 2 heures. Devis gratuit, sans engagement.
+                Appelez Lena au <a href="tel:+32492955348" className="underline hover:text-foreground">0492 95 53 48</a>. Réponse sous 48 heures. Devis gratuit, sans engagement.
               </p>
               <div className="flex flex-wrap gap-2.5 sm:gap-3 justify-center">
                 <Link

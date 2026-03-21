@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Société de Nettoyage Liège | Lena's Cleaning",
   description:
-    "Société de nettoyage à Liège pour maison, Airbnb et bureau. Équipe locale, produits écologiques, réponse en 2h. Devis gratuit et sans engagement. ☎ 0492 95 53 48",
+    "Société de nettoyage à Liège pour maison, Airbnb et bureau. Équipe locale, produits écologiques, réponse en 48h. Devis gratuit et sans engagement. ☎ 0492 95 53 48",
   keywords: [
     "société de nettoyage liège",
     "entreprise de nettoyage liège",
@@ -67,7 +67,7 @@ const jsonLdLocalBusiness = {
   name: "Société de nettoyage Liège",
   alternateName: "Lena's Cleaning Services",
   description:
-    "Société de nettoyage Liège. Maison, Airbnb, bureau, hôtel. Équipe locale, réponse en 2h.",
+    "Société de nettoyage Liège. Maison, Airbnb, bureau, hôtel. Équipe locale, réponse en 48h.",
   image: ogImage,
   url: siteUrl,
   telephone: "+32492955348",

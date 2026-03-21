@@ -103,7 +103,7 @@ const jsonLdEntreprise = {
           name: "Pourquoi choisir Lena's Cleaning comme entreprise de nettoyage à Liège ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Lena's Cleaning est une entreprise de nettoyage locale à Liège. Vous échangez directement avec Lena, vous connaissez votre équipe, et nous utilisons des produits écologiques. Réponse sous 2 heures et devis gratuit.",
+            text: "Lena's Cleaning est une entreprise de nettoyage locale à Liège. Vous échangez directement avec Lena, vous connaissez votre équipe, et nous utilisons des produits écologiques. Réponse sous 48 heures et devis gratuit.",
           },
         },
         {
@@ -135,7 +135,7 @@ const jsonLdEntreprise = {
           name: "Comment obtenir un devis de votre entreprise de nettoyage ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2 heures avec un devis gratuit et sans engagement.",
+            text: "Appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 48 heures avec un devis gratuit et sans engagement.",
           },
         },
       ],
@@ -361,7 +361,7 @@ export default function EntrepriseNettoyageLiegePage() {
                     Pourquoi choisir Lena&apos;s Cleaning comme entreprise de nettoyage à Liège ?
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Lena&apos;s Cleaning est une entreprise de nettoyage locale à Liège. Vous échangez directement avec Lena, vous connaissez votre équipe, et nous utilisons des produits écologiques. Réponse sous 2 heures et devis gratuit.
+                    Lena&apos;s Cleaning est une entreprise de nettoyage locale à Liège. Vous échangez directement avec Lena, vous connaissez votre équipe, et nous utilisons des produits écologiques. Réponse sous 48 heures et devis gratuit.
                   </p>
                 </div>
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
@@ -393,7 +393,7 @@ export default function EntrepriseNettoyageLiegePage() {
                     Comment obtenir un devis de votre entreprise de nettoyage ?
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 2 heures avec un devis gratuit et sans engagement.
+                    Appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 48 heures avec un devis gratuit et sans engagement.
                   </p>
                 </div>
               </div>
@@ -409,7 +409,7 @@ export default function EntrepriseNettoyageLiegePage() {
                 Contactez notre entreprise de nettoyage à Liège
               </h2>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                Appelez Lena au <a href="tel:+32492955348" className="underline hover:text-foreground">0492 95 53 48</a>. Réponse sous 2 heures. Devis gratuit, sans engagement.
+                Appelez Lena au <a href="tel:+32492955348" className="underline hover:text-foreground">0492 95 53 48</a>. Réponse sous 48 heures. Devis gratuit, sans engagement.
               </p>
               <div className="flex flex-wrap gap-2.5 sm:gap-3 justify-center">
                 <Link

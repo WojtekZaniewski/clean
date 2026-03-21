@@ -9,7 +9,7 @@ const pageUrl = `${siteUrl}/nettoyage-classique.html`
 export const metadata: Metadata = {
   title: "Société de Nettoyage Liège | Lena's Cleaning | Dès 1,50€/m²",
   description:
-    "Société de nettoyage à Liège. Maison, bureau, Airbnb, après travaux. Équipe locale, produits éco, devis gratuit en 2h. Appelez le 0492 95 53 48.",
+    "Société de nettoyage à Liège. Maison, bureau, Airbnb, après travaux. Équipe locale, produits éco, devis gratuit en 48h. Appelez le 0492 95 53 48.",
   keywords: [
     "société de nettoyage liège",
     "entreprise de nettoyage liège",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nettoyage Classique Liège | Dès 1,50€/m² | Lena's Cleaning",
     description:
-      "Service de nettoyage classique à Liège. Maison, bureau, Airbnb, après travaux. Devis gratuit en 2h.",
+      "Service de nettoyage classique à Liège. Maison, bureau, Airbnb, après travaux. Devis gratuit en 48h.",
     url: pageUrl,
     type: "website",
     locale: "fr_BE",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nettoyage Classique Liège | Dès 1,50€/m²",
     description:
-      "Service de nettoyage classique à Liège. Maison, bureau, Airbnb. Devis gratuit en 2h.",
+      "Service de nettoyage classique à Liège. Maison, bureau, Airbnb. Devis gratuit en 48h.",
     images: [`${siteUrl}/3.jpg`],
   },
 }
@@ -143,7 +143,7 @@ const jsonLdNettoyageClassique = {
           acceptedAnswer: {
             "@type": "Answer",
             text:
-              "Appelez-nous au 0492 95 53 48 ou envoyez-nous un email. Nous répondons sous 2 heures avec un devis gratuit et sans engagement.",
+              "Appelez-nous au 0492 95 53 48 ou envoyez-nous un email. Nous répondons sous 48 heures avec un devis gratuit et sans engagement.",
           },
         },
         {
@@ -240,7 +240,7 @@ export default function NettoyageClassiquePage() {
               <ul className="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm text-muted-foreground">
                 <li className="flex items-center gap-1.5">
                   <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary" />
-                  Réponse en 2h
+                  Réponse en 48h
                 </li>
                 <li className="flex items-center gap-1.5">
                   <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary" />
@@ -468,7 +468,7 @@ export default function NettoyageClassiquePage() {
                 <li>
                   <strong>1. Vous nous contactez</strong>
                   <br />
-                  Un appel, un message ou un email suffit. Nous répondons en 2 heures maximum, même le weekend.
+                  Un appel, un message ou un email suffit. Nous répondons en 48 heures maximum, même le weekend.
                 </li>
                 <li>
                   <strong>2. Nous évaluons vos besoins</strong>
@@ -524,7 +524,7 @@ export default function NettoyageClassiquePage() {
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5 md:p-6">
                   <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Réponse rapide</h3>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    Nous répondons en 2 heures à votre demande de <strong>service nettoyage à Liège</strong>. Besoin d&apos;une intervention urgente ?
+                    Nous répondons en 48 heures à votre demande de <strong>service nettoyage à Liège</strong>. Besoin d&apos;une intervention urgente ?
                     Nous nous organisons.
                   </p>
                 </div>
@@ -700,7 +700,7 @@ export default function NettoyageClassiquePage() {
                 Besoin d&apos;un service de nettoyage à Liège ?
               </h2>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                Appelez Lena au <a href="tel:+32492955348" className="underline hover:text-foreground">0492 95 53 48</a>. Réponse sous 2 heures. Devis
+                Appelez Lena au <a href="tel:+32492955348" className="underline hover:text-foreground">0492 95 53 48</a>. Réponse sous 48 heures. Devis
                 gratuit, sans engagement.
               </p>
               <div className="flex flex-wrap gap-2.5 sm:gap-3 justify-center">
