@@ -16,6 +16,9 @@ const lcpImage = "/3.jpg"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: "U0Kj2TSlpbUzCSr8ZdaJC5Kb2Ye8lDptD3kqCqfY3Tg",
+  },
   title: "Société de Nettoyage Liège | Lena's Cleaning",
   description:
     "Société de nettoyage à Liège pour maison, Airbnb et bureau. Équipe locale, produits écologiques, réponse en 48h. Devis gratuit et sans engagement. ☎ 0492 95 53 48",
