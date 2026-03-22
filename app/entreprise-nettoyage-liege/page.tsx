@@ -4,7 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 const siteUrl = "https://nettoyageliege.com"
-const pageUrl = `${siteUrl}/entreprise-nettoyage-liege.html`
+const pageUrl = `${siteUrl}/entreprise-nettoyage-liege`
 
 export const metadata: Metadata = {
   title: "Entreprise de Nettoyage Liège | Lena's Cleaning Services",
@@ -84,7 +84,7 @@ const jsonLdEntreprise = {
         },
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Saturday", "Sunday"],
+          dayOfWeek: "Saturday",
           opens: "08:00",
           closes: "14:00",
         },
@@ -295,13 +295,13 @@ export default function EntrepriseNettoyageLiegePage() {
               </ul>
               <div className="flex flex-wrap gap-2.5 sm:gap-3 mt-4">
                 <Link
-                  href="/nettoyage-classique.html"
+                  href="/nettoyage-classique"
                   className="inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium hover:bg-primary/90 transition-colors min-h-[44px] touch-manipulation"
                 >
                   Voir le détail de nos services
                 </Link>
                 <Link
-                  href="/offre-nettoyage-liege.html"
+                  href="/offre-nettoyage-liege"
                   className="inline-flex items-center justify-center border border-border px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium hover:bg-secondary transition-colors min-h-[44px] touch-manipulation"
                 >
                   Voir nos offres et tarifs

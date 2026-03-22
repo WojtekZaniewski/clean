@@ -44,11 +44,11 @@ export default function ServicesSection() {
           </p>
           <p className="text-xs sm:text-sm text-muted-foreground max-w-full sm:max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 break-words mt-2 sm:mt-3">
             En savoir plus sur nos services de{" "}
-            <Link href="/nettoyage-classique.html" className="underline underline-offset-2 hover:text-foreground">
+            <Link href="/nettoyage-classique" className="underline underline-offset-2 hover:text-foreground">
               nettoyage classique à Liège
             </Link>
             {" "}ou découvrez{" "}
-            <Link href="/offre-nettoyage-liege.html" className="underline underline-offset-2 hover:text-foreground">
+            <Link href="/offre-nettoyage-liege" className="underline underline-offset-2 hover:text-foreground">
               nos offres de nettoyage à Liège
             </Link>
             .

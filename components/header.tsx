@@ -33,21 +33,21 @@ export default function Header() {
             Accueil
           </Link>
           <Link
-            href="/nettoyage-classique.html"
+            href="/nettoyage-classique"
             className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
             aria-label="Nettoyage classique"
           >
             Nettoyage classique
           </Link>
           <Link
-            href="/offre-nettoyage-liege.html"
+            href="/offre-nettoyage-liege"
             className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
             aria-label="Nos offres de nettoyage"
           >
             Nos offres
           </Link>
           <Link
-            href="/entreprise-nettoyage-liege.html"
+            href="/entreprise-nettoyage-liege"
             className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
             aria-label="Notre entreprise de nettoyage"
           >
@@ -74,21 +74,21 @@ export default function Header() {
                   Accueil
                 </Link>
                 <Link
-                  href="/nettoyage-classique.html"
+                  href="/nettoyage-classique"
                   onClick={() => setMenuOpen(false)}
                   className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
                 >
                   Nettoyage classique
                 </Link>
                 <Link
-                  href="/offre-nettoyage-liege.html"
+                  href="/offre-nettoyage-liege"
                   onClick={() => setMenuOpen(false)}
                   className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
                 >
                   Nos offres
                 </Link>
                 <Link
-                  href="/entreprise-nettoyage-liege.html"
+                  href="/entreprise-nettoyage-liege"
                   onClick={() => setMenuOpen(false)}
                   className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation"
                 >

@@ -4,23 +4,23 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 const siteUrl = "https://nettoyageliege.com"
-const pageUrl = `${siteUrl}/nettoyage-classique.html`
+const pageUrl = `${siteUrl}/nettoyage-classique`
 
 export const metadata: Metadata = {
-  title: "Société de Nettoyage Liège | Lena's Cleaning | Dès 1,50€/m²",
+  title: "Nettoyage Classique Liège | Ménage à Domicile | Dès 1,50€/m²",
   description:
-    "Société de nettoyage à Liège. Maison, bureau, Airbnb, après travaux. Équipe locale, produits éco, devis gratuit en 48h. Appelez le 0492 95 53 48.",
+    "Nettoyage classique à Liège dès 1,50€/m². Ménage à domicile, maison, appartement, bureau. Dépoussiérage, sols, cuisine, salle de bain. Devis gratuit. ☎ 0492 95 53 48",
   keywords: [
-    "société de nettoyage liège",
-    "entreprise de nettoyage liège",
-    "societe de nettoyage liege",
-    "société nettoyage liège",
-    "service de nettoyage liège",
-    "offre nettoyage liège",
+    "nettoyage classique liège",
+    "ménage à domicile liège",
     "nettoyage maison liège",
-    "service nettoyage liège",
     "femme de ménage liège",
+    "nettoyage appartement liège",
     "nettoyage bureau liège",
+    "service nettoyage liège",
+    "nettoyage résidentiel liège",
+    "entretien maison liège",
+    "nettoyage domicile liège",
   ],
   alternates: {
     canonical: pageUrl,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nettoyage Classique Liège | Dès 1,50€/m² | Lena's Cleaning",
     description:
-      "Service de nettoyage classique à Liège. Maison, bureau, Airbnb, après travaux. Devis gratuit en 48h.",
+      "Nettoyage classique à Liège dès 1,50€/m². Ménage à domicile, maison, appartement, bureau. Devis gratuit en 48h.",
     url: pageUrl,
     type: "website",
     locale: "fr_BE",
@@ -80,7 +80,7 @@ const jsonLdNettoyageClassique = {
         },
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Saturday", "Sunday"],
+          dayOfWeek: "Saturday",
           opens: "08:00",
           closes: "14:00",
         },
@@ -342,7 +342,7 @@ export default function NettoyageClassiquePage() {
                   <ul className="list-disc pl-5 mt-1.5 space-y-1">
                     <li>Rotation rapide entre les guests</li>
                     <li>Nettoyage complet du logement</li>
-                    <li>Changement du linge de lit</li>
+                    <li>Changement et lavage du linge de lit</li>
                     <li>Réassort des consommables (sur demande)</li>
                     <li>Photos de contrôle qualité (sur demande)</li>
                   </ul>
@@ -432,7 +432,7 @@ export default function NettoyageClassiquePage() {
                       <td className="px-4 py-2.5 font-medium text-foreground">Abonnement mensuel PREMIUM</td>
                       <td className="px-4 py-2.5">
                         4 nettoyages en profondeur par mois (1 par semaine). Inclut l&apos;abonnement BASIC + intérieur des placards et frigo,
-                        changement des draps, plinthes, cadres de portes et fenêtres, vaisselle (option parfum d&apos;ambiance).
+                        lessive, changement des draps, plinthes, cadres de portes et fenêtres, vaisselle (option parfum d&apos;ambiance).
                       </td>
                       <td className="px-4 py-2.5 font-medium text-foreground">749&nbsp;€ / mois</td>
                     </tr>
@@ -543,7 +543,7 @@ export default function NettoyageClassiquePage() {
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5 md:p-6">
                   <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Flexibilité horaire</h3>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    Tôt le matin, en journée, en soirée, 7 jours sur 7 : nous adaptons nos interventions à votre emploi du temps.
+                    Tôt le matin, en journée, en soirée, en semaine ou le samedi : nous adaptons nos interventions à votre emploi du temps.
                   </p>
                 </div>
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5 md:p-6">

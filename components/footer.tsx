@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <Link
-                  href="/nettoyage-classique.html"
+                  href="/nettoyage-classique"
                   className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
                   aria-label="Voir le nettoyage maison à Liège"
                 >
@@ -53,7 +53,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/nettoyage-classique.html"
+                  href="/nettoyage-classique"
                   className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
                   aria-label="Voir le nettoyage Airbnb à Liège"
                 >
@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/nettoyage-classique.html"
+                  href="/nettoyage-classique"
                   className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
                   aria-label="Voir le nettoyage bureaux et hôtels à Liège"
                 >
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/offre-nettoyage-liege.html"
+                  href="/offre-nettoyage-liege"
                   className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
                   aria-label="Voir nos offres de nettoyage à Liège"
                 >
@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/entreprise-nettoyage-liege.html"
+                  href="/entreprise-nettoyage-liege"
                   className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
                   aria-label="Découvrir notre entreprise de nettoyage à Liège"
                 >

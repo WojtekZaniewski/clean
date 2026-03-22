@@ -4,7 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 const siteUrl = "https://nettoyageliege.com"
-const pageUrl = `${siteUrl}/offre-nettoyage-liege.html`
+const pageUrl = `${siteUrl}/offre-nettoyage-liege`
 
 export const metadata: Metadata = {
   title: "Offre de Nettoyage Liège | Dès 1,50€/m² | Lena's Cleaning",
@@ -100,7 +100,7 @@ const jsonLdOffre = {
           {
             "@type": "Offer",
             name: "Abonnement mensuel PREMIUM",
-            description: "4 nettoyages en profondeur par mois (1 par semaine). Inclut BASIC + intérieur des placards, changement des draps.",
+            description: "4 nettoyages en profondeur par mois (1 par semaine). Inclut BASIC + intérieur des placards, lessive, changement des draps.",
             price: "749",
             priceCurrency: "EUR",
             unitText: "par mois",
@@ -132,7 +132,7 @@ const jsonLdOffre = {
           name: "Proposez-vous des abonnements de nettoyage à Liège ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Oui, nous proposons deux abonnements mensuels : BASIC à 499€/mois (4 nettoyages classiques par mois) et PREMIUM à 749€/mois (4 nettoyages en profondeur par mois incluant changement de draps et parfum d'ambiance).",
+            text: "Oui, nous proposons deux abonnements mensuels : BASIC à 499€/mois (4 nettoyages classiques par mois) et PREMIUM à 749€/mois (4 nettoyages en profondeur par mois incluant lessive, changement de draps et parfum d'ambiance).",
           },
         },
         {
@@ -322,7 +322,7 @@ export default function OffreNettoyageLiegePage() {
                   <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
                     <li>&#10003; Tout le BASIC inclus</li>
                     <li>&#10003; Intérieur des placards et frigo</li>
-                    <li>&#10003; Changement des draps</li>
+                    <li>&#10003; Lessive et changement des draps</li>
                     <li>&#10003; Plinthes, cadres de portes et fenêtres</li>
                     <li>&#10003; Vaisselle + parfum d&apos;ambiance</li>
                   </ul>
@@ -375,13 +375,13 @@ export default function OffreNettoyageLiegePage() {
 
               <div className="flex flex-wrap gap-2.5 sm:gap-3 mt-4">
                 <Link
-                  href="/nettoyage-classique.html"
+                  href="/nettoyage-classique"
                   className="inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium hover:bg-primary/90 transition-colors min-h-[44px] touch-manipulation"
                 >
                   Voir le détail de nos prestations
                 </Link>
                 <Link
-                  href="/entreprise-nettoyage-liege.html"
+                  href="/entreprise-nettoyage-liege"
                   className="inline-flex items-center justify-center border border-border px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium hover:bg-secondary transition-colors min-h-[44px] touch-manipulation"
                 >
                   Découvrir notre entreprise
@@ -438,7 +438,7 @@ export default function OffreNettoyageLiegePage() {
                 <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
                   <h3 className="font-semibold text-sm sm:text-base mb-1.5">Proposez-vous des abonnements de nettoyage à Liège ?</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Oui, deux abonnements mensuels : BASIC à 499€/mois (4 nettoyages classiques) et PREMIUM à 749€/mois (4 nettoyages en profondeur incluant changement de draps et parfum d&apos;ambiance).
+                    Oui, deux abonnements mensuels : BASIC à 499€/mois (4 nettoyages classiques) et PREMIUM à 749€/mois (4 nettoyages en profondeur incluant lessive, changement de draps et parfum d&apos;ambiance).
                   </p>
                 </div>
 

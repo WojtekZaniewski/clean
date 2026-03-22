@@ -104,7 +104,7 @@ const jsonLdLocalBusiness = {
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday", "Sunday"],
+      dayOfWeek: "Saturday",
       opens: "08:00",
       closes: "14:00",
     },
@@ -138,7 +138,7 @@ const jsonLdService = {
   provider: { "@type": "LocalBusiness", name: "Société de nettoyage Liège" },
   areaServed: { "@type": "City", name: "Liège" },
   serviceType: "Nettoyage résidentiel et commercial",
-  url: `${siteUrl}/nettoyage-classique.html`,
+  url: `${siteUrl}/nettoyage-classique`,
 }
 
 const jsonLdBreadcrumb = {
