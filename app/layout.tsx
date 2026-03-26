@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   title: "Société de Nettoyage Liège | Lena's Cleaning",
   description:
-    "Société de nettoyage à Liège pour maison, Airbnb et bureau. Équipe locale, produits écologiques, réponse en 48h. Devis gratuit et sans engagement. ☎ 0492 95 53 48",
+    "Société de nettoyage à Liège — maison, Airbnb, bureaux. Interlocuteur unique, équipe locale, devis gratuit en 48h. Appelez le 0492 95 53 48.",
   keywords: [
     "société de nettoyage liège",
     "entreprise de nettoyage liège",

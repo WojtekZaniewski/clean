@@ -48,6 +48,7 @@ export default function Footer() {
                 { href: "/nettoyage-bureaux-liege", label: "Nettoyage bureaux" },
                 { href: "/nettoyage-apres-travaux-liege", label: "Après travaux" },
                 { href: "/nettoyage-demenagement-liege", label: "Déménagement" },
+                { href: "/nettoyage-maison-sale-liege", label: "Maison très sale" },
                 { href: "/femme-de-menage-liege", label: "Femme de ménage" },
                 { href: "/offre-nettoyage-liege", label: "Nos offres" },
                 { href: "/entreprise-nettoyage-liege", label: "Notre entreprise" },

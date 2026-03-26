@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/femme-de-menage-liege`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.85 },
     { url: `${baseUrl}/nettoyage-apres-travaux-liege`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.80 },
     { url: `${baseUrl}/nettoyage-demenagement-liege`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.80 },
+    { url: `${baseUrl}/nettoyage-maison-sale-liege`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.80 },
     // Location pages
     { url: `${baseUrl}/nettoyage-herstal`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.70 },
     { url: `${baseUrl}/nettoyage-seraing`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.70 },

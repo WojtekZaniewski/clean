@@ -9,7 +9,7 @@ const pageUrl = `${siteUrl}/entreprise-nettoyage-liege`
 export const metadata: Metadata = {
   title: "Entreprise de Nettoyage Liège | Lena's Cleaning Services",
   description:
-    "Entreprise de nettoyage à Liège. Société locale spécialisée dans le nettoyage de maisons, bureaux et Airbnb. Équipe fiable, produits éco, devis gratuit. ☎ 0492 95 53 48",
+    "Entreprise de nettoyage à Liège fondée par Lena. Service local, même équipe à chaque passage, satisfaction garantie. Devis gratuit. 0492 95 53 48",
   keywords: [
     "entreprise de nettoyage liège",
     "société de nettoyage liège",
@@ -198,7 +198,7 @@ export default function EntrepriseNettoyageLiegePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 md:gap-4">
                 <Link
-                  href="/#contact"
+                  href="tel:+32492955348"
                   className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium hover:bg-primary/90 transition-colors min-h-[48px] w-full sm:w-auto touch-manipulation"
                 >
                   Demander un devis gratuit
@@ -271,8 +271,25 @@ export default function EntrepriseNettoyageLiegePage() {
           </div>
         </section>
 
-        {/* Nos services */}
+        {/* Pourquoi choisir */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
+          <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+            <div className="max-w-3xl mx-auto space-y-4">
+              <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
+                Pourquoi choisir notre entreprise de nettoyage à Liège ?
+              </h2>
+              <div className="space-y-3 text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p><strong className="text-foreground">Un interlocuteur unique.</strong> Vous parlez directement à Lena — pas à un call center. Vos demandes sont traitées en moins de 48h, vos préférences sont mémorisées.</p>
+                <p><strong className="text-foreground">La même équipe à chaque passage.</strong> Nos clients ne veulent pas expliquer leurs habitudes à quelqu'un de nouveau à chaque fois. Nous garantissons la continuité de l'équipe.</p>
+                <p><strong className="text-foreground">Des tarifs transparents.</strong> 1,50 €/m² pour un nettoyage classique. Pas de frais cachés, pas de surprise sur la facture. Le devis est gratuit et le prix convenu est le prix payé.</p>
+                <p><strong className="text-foreground">Entièrement assurée.</strong> Notre entreprise de nettoyage à Liège est couverte par une assurance complète. En cas d'incident lors d'une intervention, vous êtes protégé.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Nos services */}
+        <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16 bg-secondary/30">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
             <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
@@ -408,7 +425,7 @@ export default function EntrepriseNettoyageLiegePage() {
               </p>
               <div className="flex flex-wrap gap-2.5 sm:gap-3 justify-center">
                 <Link
-                  href="/#contact"
+                  href="tel:+32492955348"
                   className="inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-3.5 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium hover:bg-primary/90 transition-colors min-h-[44px] touch-manipulation"
                 >
                   Demander un devis gratuit

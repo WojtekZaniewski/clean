@@ -17,26 +17,42 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Qu'est-ce qu'une société de nettoyage à Liège?",
+      name: "Qu'est-ce qu'une société de nettoyage à Liège ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Une société de nettoyage à Liège est une entreprise qui propose des prestations de nettoyage pour particuliers et professionnels : ménage à domicile, nettoyage de logements Airbnb, bureaux, hôtels et commerces. Lena's Cleaning est une société de nettoyage Liège intervenant à Liège et alentours avec une équipe locale et un interlocuteur unique.",
+        text: "Une société de nettoyage à Liège est une entreprise locale qui assure le nettoyage de maisons, appartements, bureaux et logements Airbnb pour les particuliers et professionnels. Lena's Cleaning Services est une société de nettoyage à Liège avec une équipe locale, un interlocuteur unique (Lena) et des produits écologiques. Nous intervenons à Liège et dans toutes les communes environnantes.",
       },
     },
     {
       "@type": "Question",
-      name: "Pourquoi choisir une société de nettoyage à Liège?",
+      name: "Quelle est la différence entre une société et une entreprise de nettoyage à Liège ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Choisir une société de nettoyage Liège comme Lena's Cleaning permet de bénéficier d'un service local, réactif (réponse sous 48h), avec des horaires flexibles et un devis gratuit. Nous intervenons pour la maison, l'Airbnb, les bureaux et les hôtels à Liège, Herstal, Seraing et environs.",
+        text: "Les termes 'société de nettoyage' et 'entreprise de nettoyage' à Liège désignent la même chose : une structure professionnelle qui propose des services de nettoyage. Lena's Cleaning est à la fois une société et une entreprise de nettoyage à Liège, spécialisée dans le nettoyage résidentiel et commercial.",
       },
     },
     {
       "@type": "Question",
-      name: "Comment contacter une société de nettoyage Liège?",
+      name: "Combien coûte le nettoyage d'une maison à Liège ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pour contacter notre société de nettoyage Liège, appelez le 0492 95 53 48 ou envoyez un email à cleaningserviceslena@gmail.com. Nous répondons sous 48h et proposons un devis gratuit sans engagement.",
+        text: "Le nettoyage classique d'une maison à Liège est facturé 1,50 €/m². Un nettoyage en profondeur revient à 2,50 €/m². Pour un appartement de 80 m², comptez environ 120 € en nettoyage classique. Nous proposons aussi des abonnements mensuels (BASIC à 499 €/mois, PREMIUM à 749 €/mois). Devis gratuit en 48h.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Nettoyez-vous les maisons très sales à Liège ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui, nous intervenons pour le nettoyage de maisons très sales à Liège : logements négligés, remises en état après succession, après déménagement ou après travaux. Notre service de nettoyage en profondeur est conçu pour les situations difficiles. Appelez le 0492 95 53 48 pour un devis personnalisé.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Dans quelles zones intervenez-vous à Liège ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nous intervenons dans toute la région liégeoise : Liège centre, Guillemins, Outremeuse, Herstal, Seraing, Ans, Grâce-Hollogne, Flémalle, Chaudfontaine et Beyne-Heusay. Les frais de déplacement sont inclus dans notre tarif pour toutes ces zones.",
       },
     },
   ],
