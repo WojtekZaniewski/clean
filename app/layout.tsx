@@ -166,6 +166,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="content-language" content="fr-BE" />
+        <meta name="smartxaas-site-verification" content="b42762be2ec2437e9bd87016af767262" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
