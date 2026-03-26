@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondary/50 py-8 sm:py-12 md:py-16 lg:py-20 border-t border-border w-full">
       <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
             <div className="mb-3 sm:mb-4">
@@ -31,7 +31,7 @@ export default function Footer() {
               </Link>
             </p>
             <address className="not-italic text-xs sm:text-sm md:text-base text-muted-foreground mt-2 sm:mt-3 break-words">
-              Lena's Cleaning Services<br />
+              Lena&apos;s Cleaning Services<br />
               Liège et alentours, Belgique<br />
               <a href="tel:+32492955348" className="hover:text-foreground transition-colors">+32 492 95 53 48</a><br />
               <a href="mailto:cleaningserviceslena@gmail.com" className="hover:text-foreground transition-colors">cleaningserviceslena@gmail.com</a>
@@ -40,53 +40,45 @@ export default function Footer() {
 
           {/* Services */}
           <div className="col-span-1 sm:col-span-1">
-            <h3 className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-xs sm:text-sm md:text-base lg:text-lg">Services</h3>
-            <ul className="space-y-2 sm:space-y-3">
-              <li>
-                <Link
-                  href="/nettoyage-classique"
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
-                  aria-label="Voir le nettoyage maison à Liège"
-                >
-                  Nettoyage maison
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/nettoyage-classique"
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
-                  aria-label="Voir le nettoyage Airbnb à Liège"
-                >
-                  Nettoyage Airbnb
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/nettoyage-classique"
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
-                  aria-label="Voir le nettoyage bureaux et hôtels à Liège"
-                >
-                  Nettoyage bureaux &amp; hôtels
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/offre-nettoyage-liege"
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
-                  aria-label="Voir nos offres de nettoyage à Liège"
-                >
-                  Nos offres de nettoyage
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/entreprise-nettoyage-liege"
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground hover:text-foreground transition-colors block min-h-[44px] flex items-center touch-manipulation break-words"
-                  aria-label="Découvrir notre entreprise de nettoyage à Liège"
-                >
-                  Notre entreprise
-                </Link>
-              </li>
+            <h3 className="font-medium mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">Services</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
+              {[
+                { href: "/nettoyage-classique", label: "Nettoyage maison" },
+                { href: "/nettoyage-airbnb-liege", label: "Nettoyage Airbnb" },
+                { href: "/nettoyage-bureaux-liege", label: "Nettoyage bureaux" },
+                { href: "/nettoyage-apres-travaux-liege", label: "Après travaux" },
+                { href: "/nettoyage-demenagement-liege", label: "Déménagement" },
+                { href: "/femme-de-menage-liege", label: "Femme de ménage" },
+                { href: "/offre-nettoyage-liege", label: "Nos offres" },
+                { href: "/entreprise-nettoyage-liege", label: "Notre entreprise" },
+              ].map((s) => (
+                <li key={s.href}>
+                  <Link href={s.href} className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors block py-0.5 break-words">
+                    {s.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Zones */}
+          <div className="col-span-1 sm:col-span-1">
+            <h3 className="font-medium mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">Zones</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
+              {[
+                { href: "/", label: "Liège" },
+                { href: "/nettoyage-herstal", label: "Herstal" },
+                { href: "/nettoyage-seraing", label: "Seraing" },
+                { href: "/nettoyage-ans", label: "Ans" },
+                { href: "/nettoyage-grace-hollogne", label: "Grâce-Hollogne" },
+                { href: "/nettoyage-flemalle", label: "Flémalle" },
+              ].map((z) => (
+                <li key={z.href}>
+                  <Link href={z.href} className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors block py-0.5 break-words">
+                    {z.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

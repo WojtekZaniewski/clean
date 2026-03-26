@@ -140,7 +140,7 @@ export default function HeroSection() {
                   <CarouselItem key={img.num} className="pl-0 basis-full h-full">
                     <div className="relative w-full h-full overflow-hidden">
                       <Image
-                        src={`/${img.num}.jpg`}
+                        src={`/${img.num}.webp`}
                         alt={img.alt}
                         fill
                         className="object-cover"

@@ -8,23 +8,27 @@ export default function ServicesSection() {
       title: "Maison",
       description:
         "Cuisine qui sent le citron. Salle de bain sans traces. Lit refait. On passe 3 heures minimum, jamais en vitesse.",
+      href: "/nettoyage-classique",
     },
     {
       icon: BedDouble,
       title: "Airbnb",
       description: "Vos 5 étoiles sont sûres. On nettoie entre chaque guest. À l'heure. Pas d'excuses.",
+      href: "/nettoyage-airbnb-liege",
     },
     {
       icon: Building2,
       title: "Hôtels",
       description:
         "Les chambres sont toujours prêtes à l'heure, quoi qu'il arrive. Ponctualité et précision sont les maîtres mots qui décrivent le mieux notre entreprise auprès de nos clients.",
+      href: "/nettoyage-bureaux-liege",
     },
     {
       icon: Briefcase,
       title: "Bureaux",
       description:
         "Vos clients arrivent, le bureau sent bon. Pas de miettes, pas de poussière. On vient tôt ou tard. Vous choisissez.",
+      href: "/nettoyage-bureaux-liege",
     },
   ]
 
@@ -57,9 +61,10 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
           {services.map((service) => (
-            <div
+            <Link
               key={service.title}
-              className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-6 lg:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group"
+              href={service.href}
+              className="bg-card border border-border rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-6 lg:p-10 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group block"
             >
               <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-18 lg:h-18 bg-accent rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-8 group-hover:bg-primary/10 transition-colors">
                 <service.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-primary" aria-hidden="true" />
@@ -70,7 +75,7 @@ export default function ServicesSection() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed break-words">
                 {service.description}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -211,7 +211,7 @@ export default function NettoyageClassiquePage() {
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
             <div className="max-w-3xl">
               <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight text-balance break-words mb-3 sm:mb-4">
-                Société de nettoyage à Liège
+                Nettoyage classique à Liège — ménage à domicile dès 1,50€/m²
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed mb-4 sm:mb-5">
                 Votre maison propre. Votre bureau impeccable. Sans lever le petit doigt.

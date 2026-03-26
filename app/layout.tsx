@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import { DM_Sans, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import WhatsAppButton from "@/components/whatsapp-button"
 import "./globals.css"
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" })
@@ -12,7 +13,7 @@ const siteUrl = "https://nettoyageliege.com"
 const ogImage = `${siteUrl}/3.jpg`
 
 // Preload LCP image (hero carousel first image)
-const lcpImage = "/3.jpg"
+const lcpImage = "/3.webp"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -96,6 +97,8 @@ const jsonLdLocalBusiness = {
     { "@type": "City", name: "Flémalle" },
     { "@type": "City", name: "Outremeuse" },
     { "@type": "City", name: "Guillemins" },
+    { "@type": "City", name: "Chaudfontaine" },
+    { "@type": "City", name: "Beyne-Heusay" },
   ],
   priceRange: "€€",
   openingHoursSpecification: [
@@ -111,16 +114,17 @@ const jsonLdLocalBusiness = {
       opens: "08:00",
       closes: "14:00",
     },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Sunday",
+      opens: "10:00",
+      closes: "20:00",
+    },
   ],
   sameAs: [
     "https://www.facebook.com/lenascleaning",
     "https://www.instagram.com/lenascleaning_liege",
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: "12",
-  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Services de nettoyage",
@@ -205,6 +209,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
         />
         {children}
+        <WhatsAppButton />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

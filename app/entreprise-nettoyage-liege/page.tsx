@@ -89,11 +89,6 @@ const jsonLdEntreprise = {
           closes: "14:00",
         },
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "12",
-      },
     },
     {
       "@type": "FAQPage",
