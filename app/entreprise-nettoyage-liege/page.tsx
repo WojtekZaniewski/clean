@@ -186,7 +186,7 @@ export default function EntrepriseNettoyageLiegePage() {
         {/* Hero */}
         <section className="w-full border-b border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight text-balance break-words mb-3 sm:mb-4">
                 Entreprise de nettoyage à Liège
               </h1>
@@ -217,7 +217,7 @@ export default function EntrepriseNettoyageLiegePage() {
         {/* Notre histoire */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Notre entreprise de nettoyage à Liège
               </h2>
@@ -237,7 +237,7 @@ export default function EntrepriseNettoyageLiegePage() {
         {/* Nos valeurs */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Les valeurs de notre société de nettoyage
               </h2>
@@ -274,7 +274,7 @@ export default function EntrepriseNettoyageLiegePage() {
         {/* Nos services */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Les services de notre entreprise de nettoyage à Liège
               </h2>
@@ -309,7 +309,7 @@ export default function EntrepriseNettoyageLiegePage() {
         {/* Zones */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Zone d&apos;intervention de notre entreprise de nettoyage
               </h2>
@@ -346,7 +346,7 @@ export default function EntrepriseNettoyageLiegePage() {
         {/* FAQ */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Questions fréquentes sur notre entreprise de nettoyage
               </h2>
@@ -399,7 +399,7 @@ export default function EntrepriseNettoyageLiegePage() {
         {/* CTA */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16 border-t border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl text-center space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Contactez notre entreprise de nettoyage à Liège
               </h2>

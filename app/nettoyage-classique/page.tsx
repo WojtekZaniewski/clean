@@ -209,7 +209,7 @@ export default function NettoyageClassiquePage() {
         {/* Hero */}
         <section className="w-full border-b border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight text-balance break-words mb-3 sm:mb-4">
                 Nettoyage classique à Liège — ménage à domicile dès 1,50€/m²
               </h1>
@@ -258,7 +258,7 @@ export default function NettoyageClassiquePage() {
         {/* Intro – société / entreprise de nettoyage Liège */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Votre entreprise de nettoyage à Liège
               </h2>
@@ -382,7 +382,7 @@ export default function NettoyageClassiquePage() {
         {/* Tarifs – forfaits et abonnements */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Nos tarifs de nettoyage à Liège
               </h2>
@@ -460,7 +460,7 @@ export default function NettoyageClassiquePage() {
         {/* Comment ça marche */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Comment fonctionne notre service de nettoyage classique
               </h2>
@@ -510,7 +510,7 @@ export default function NettoyageClassiquePage() {
         {/* Pourquoi nous choisir */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Pourquoi choisir Lena&apos;s Cleaning pour votre nettoyage à Liège
               </h2>
@@ -560,7 +560,7 @@ export default function NettoyageClassiquePage() {
         {/* Zones de service */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Nos zones d&apos;intervention à Liège
               </h2>
@@ -601,7 +601,7 @@ export default function NettoyageClassiquePage() {
         {/* FAQ */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Questions fréquentes sur le nettoyage à Liège
               </h2>
@@ -666,7 +666,7 @@ export default function NettoyageClassiquePage() {
         {/* Témoignages */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Ce que nos clients à Liège disent de nous
               </h2>
@@ -695,7 +695,7 @@ export default function NettoyageClassiquePage() {
         {/* CTA final */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16 border-t border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl text-center space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Besoin d&apos;un service de nettoyage à Liège ?
               </h2>

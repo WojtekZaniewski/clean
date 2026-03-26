@@ -71,7 +71,7 @@ export default function NettoyageSeraingPage() {
         </section>
         <section className="w-full border-b border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight text-balance break-words mb-3 sm:mb-4">
                 Service de nettoyage à Seraing — professionnel et disponible
               </h1>
@@ -91,7 +91,7 @@ export default function NettoyageSeraingPage() {
         </section>
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">Nos services à Seraing</h2>
               <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 text-sm sm:text-base text-muted-foreground">
                 {[
@@ -110,7 +110,7 @@ export default function NettoyageSeraingPage() {
         </section>
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">Questions fréquentes — nettoyage Seraing</h2>
               <div className="space-y-3 text-sm sm:text-base text-muted-foreground">
                 <div><h3 className="font-semibold text-foreground mb-1">Proposez-vous un service de nettoyage à Seraing ?</h3><p>Oui, nous intervenons régulièrement à Seraing pour maisons, appartements, bureaux et Airbnb.</p></div>
@@ -122,7 +122,7 @@ export default function NettoyageSeraingPage() {
         </section>
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16 border-t border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl text-center space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">Un devis pour Seraing ?</h2>
               <p className="text-sm sm:text-base text-muted-foreground">Appelez Lena au <a href="tel:+32492955348" className="underline hover:text-foreground">0492 95 53 48</a>. Réponse sous 48h.</p>
               <div className="flex flex-wrap gap-2.5 justify-center">

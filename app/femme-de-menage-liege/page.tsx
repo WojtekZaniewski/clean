@@ -142,7 +142,7 @@ export default function FemmeDeMenuagePage() {
         {/* Hero */}
         <section className="w-full border-b border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight text-balance break-words mb-3 sm:mb-4">
                 Femme de ménage à Liège — même personne, chaque semaine
               </h1>
@@ -183,7 +183,7 @@ export default function FemmeDeMenuagePage() {
         {/* Service personnalisé */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Un service d&apos;aide ménagère de confiance à Liège
               </h2>
@@ -209,7 +209,7 @@ export default function FemmeDeMenuagePage() {
         {/* Checklist */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Ce que fait votre aide ménagère à chaque passage
               </h2>
@@ -257,7 +257,7 @@ export default function FemmeDeMenuagePage() {
         {/* Témoignages */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Ce que disent nos clients à Liège
               </h2>
@@ -282,7 +282,7 @@ export default function FemmeDeMenuagePage() {
         {/* Tarifs */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Tarifs aide ménagère à Liège
               </h2>
@@ -330,7 +330,7 @@ export default function FemmeDeMenuagePage() {
         {/* FAQ */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Questions fréquentes — femme de ménage Liège
               </h2>
@@ -359,7 +359,7 @@ export default function FemmeDeMenuagePage() {
         {/* CTA */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16 border-t border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl text-center space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Trouvez votre aide ménagère de confiance à Liège
               </h2>

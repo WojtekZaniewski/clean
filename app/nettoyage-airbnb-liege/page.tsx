@@ -142,7 +142,7 @@ export default function NettoyageAirbnbPage() {
         {/* Hero */}
         <section className="w-full border-b border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-10 md:py-12 lg:py-16">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight text-balance break-words mb-3 sm:mb-4">
                 Nettoyage Airbnb à Liège — prêt pour votre prochain guest
               </h1>
@@ -183,7 +183,7 @@ export default function NettoyageAirbnbPage() {
         {/* Pourquoi Airbnb est différent */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Pourquoi le nettoyage Airbnb est différent du ménage classique
               </h2>
@@ -209,7 +209,7 @@ export default function NettoyageAirbnbPage() {
         {/* Checklist */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Notre checklist nettoyage Airbnb à chaque rotation
               </h2>
@@ -261,7 +261,7 @@ export default function NettoyageAirbnbPage() {
         {/* Tarifs */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Tarifs nettoyage Airbnb à Liège
               </h2>
@@ -306,7 +306,7 @@ export default function NettoyageAirbnbPage() {
         {/* Zones */}
         <section className="w-full bg-secondary/30 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Zones actives pour le nettoyage Airbnb à Liège
               </h2>
@@ -338,7 +338,7 @@ export default function NettoyageAirbnbPage() {
         {/* FAQ */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl space-y-4">
+            <div className="max-w-3xl mx-auto space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Questions fréquentes — nettoyage Airbnb Liège
               </h2>
@@ -367,7 +367,7 @@ export default function NettoyageAirbnbPage() {
         {/* CTA */}
         <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16 border-t border-border/40">
           <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-            <div className="max-w-3xl text-center space-y-3 sm:space-y-4">
+            <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl break-words">
                 Prêt à externaliser le nettoyage de votre Airbnb à Liège ?
               </h2>
