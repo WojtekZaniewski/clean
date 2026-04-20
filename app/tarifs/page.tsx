@@ -75,16 +75,16 @@ const jsonLd = {
         {
           "@type": "Offer",
           name: "Abonnement BASIC mensuel",
-          price: "120",
+          price: "499",
           priceCurrency: "EUR",
-          description: "2 interventions par mois, ménage régulier pour petite surface",
+          description: "4 nettoyages classiques par mois (1 par semaine)",
         },
         {
           "@type": "Offer",
           name: "Abonnement PREMIUM mensuel",
-          price: "240",
+          price: "749",
           priceCurrency: "EUR",
-          description: "4 interventions par mois, ménage hebdomadaire pour grande surface",
+          description: "4 nettoyages en profondeur par mois. Inclut BASIC + intérieur des placards, lessive, changement des draps, parfum d'ambiance",
         },
       ],
     },
@@ -104,7 +104,7 @@ const jsonLd = {
           name: "Quel est le prix d'une femme de ménage à Liège ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Le prix d'une femme de ménage à Liège varie selon la surface et la régularité. Chez Lena's Cleaning, nos abonnements mensuels commencent à 120€ (BASIC) et 240€ (PREMIUM). Pour des prestations ponctuelles, nous facturons à 1,50€/m².",
+            text: "Le prix d'une femme de ménage à Liège varie selon la surface et la régularité. Chez Lena's Cleaning, nos abonnements mensuels sont à 499€ (BASIC, 4 nettoyages classiques/mois) et 749€ (PREMIUM, 4 nettoyages en profondeur/mois). Pour des prestations ponctuelles, nous facturons à 1,50€/m².",
           },
         },
         {
@@ -261,10 +261,10 @@ export default function TarifsPage() {
               <div className="grid gap-4 sm:gap-5 grid-cols-1 sm:grid-cols-2">
                 <div className="rounded-xl border border-border bg-card/40 p-5 sm:p-6">
                   <h3 className="font-serif text-lg sm:text-xl mb-2">Abonnement BASIC</h3>
-                  <p className="text-2xl font-medium text-foreground mb-3">120&nbsp;€ / mois</p>
+                  <p className="text-2xl font-medium text-foreground mb-3">499&nbsp;€ / mois</p>
                   <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                    <li>2 interventions par mois</li>
-                    <li>Idéal pour studio, T2, petit bureau</li>
+                    <li>4 nettoyages classiques par mois (1 par semaine)</li>
+                    <li>Toutes pièces, cuisine, salle de bain, sols</li>
                     <li>Même personne à chaque fois</li>
                     <li>Produits inclus</li>
                     <li>Flexibilité de planning</li>
@@ -272,12 +272,12 @@ export default function TarifsPage() {
                 </div>
                 <div className="rounded-xl border border-border bg-card/40 p-5 sm:p-6">
                   <h3 className="font-serif text-lg sm:text-xl mb-2">Abonnement PREMIUM</h3>
-                  <p className="text-2xl font-medium text-foreground mb-3">240&nbsp;€ / mois</p>
+                  <p className="text-2xl font-medium text-foreground mb-3">749&nbsp;€ / mois</p>
                   <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                    <li>4 interventions par mois (hebdomadaire)</li>
-                    <li>Idéal pour maison, T3+, bureaux</li>
-                    <li>Même personne à chaque fois</li>
-                    <li>Produits inclus</li>
+                    <li>4 nettoyages en profondeur par mois</li>
+                    <li>Tout le BASIC inclus</li>
+                    <li>Intérieur des placards, lessive, changement des draps</li>
+                    <li>Parfum d&apos;ambiance</li>
                     <li>Priorité sur les créneaux</li>
                   </ul>
                 </div>
@@ -333,7 +333,7 @@ export default function TarifsPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1.5">Quel est le prix d&apos;une femme de ménage à Liège ?</h3>
-                  <p>Abonnement BASIC : 120€/mois (2 passages). PREMIUM : 240€/mois (4 passages). Ponctuel : 1,50€/m².</p>
+                  <p>Abonnement BASIC : 499€/mois (4 nettoyages classiques). PREMIUM : 749€/mois (4 nettoyages en profondeur, inclut lessive et changement des draps). Ponctuel : 1,50€/m².</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1.5">Y a-t-il un minimum par intervention ?</h3>

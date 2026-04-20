@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: "Faut-il signer un contrat à long terme ?",
-    a: "Non. Les prestations ponctuelles sont sans engagement. Pour les abonnements mensuels (BASIC 120€, PREMIUM 240€), vous pouvez annuler d'un mois à l'autre. Aucun contrat long terme n'est imposé.",
+    a: "Non. Les prestations ponctuelles sont sans engagement. Pour les abonnements mensuels (BASIC 499€, PREMIUM 749€), vous pouvez annuler d'un mois à l'autre. Aucun contrat long terme n'est imposé.",
   },
   {
     q: "Sous combien de temps répondez-vous à une demande de devis ?",
