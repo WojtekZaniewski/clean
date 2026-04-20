@@ -21,14 +21,14 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40 w-full">
-      <div className="w-full max-w-[1920px] mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 2xl:px-20 py-3 sm:py-4 md:py-5 lg:py-6 flex items-center justify-between gap-2 sm:gap-4">
+      <div className="w-full max-w-[1920px] mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 2xl:px-20 py-1 sm:py-1.5 md:py-2 lg:py-2 flex items-center justify-between gap-2 sm:gap-4">
         <Link href="/" className="flex items-center min-h-[44px] touch-manipulation flex-shrink-0" aria-label="Retour à l'accueil">
           <Image
             src="/logo-text.png"
             alt="Lena's Cleaning Services — Société de nettoyage Liège"
-            width={400}
-            height={120}
-            className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-[140px] sm:max-w-[180px] md:max-w-none"
+            width={500}
+            height={150}
+            className="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-auto object-contain max-w-[200px] sm:max-w-[260px] md:max-w-none"
             priority
           />
         </Link>
