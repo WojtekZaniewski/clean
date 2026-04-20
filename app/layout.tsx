@@ -39,7 +39,8 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   icons: {
-    icon: "/logo.png",
+    icon: "/logo-icon.png",
+    apple: "/logo-icon.png",
   },
   openGraph: {
     title: "Société de Nettoyage Liège | Lena's Cleaning Services",

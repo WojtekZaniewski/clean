@@ -11,11 +11,11 @@ export default function Footer() {
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
             <div className="mb-3 sm:mb-4">
               <Image
-                src="/logo.png"
-                alt="Société de nettoyage Liège"
-                width={200}
-                height={60}
-                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-none"
+                src="/logo-main.png"
+                alt="Lena's Cleaning Services — Société de nettoyage Liège"
+                width={400}
+                height={400}
+                className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-none"
               />
             </div>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed break-words">

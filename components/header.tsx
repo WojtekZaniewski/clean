@@ -24,11 +24,11 @@ export default function Header() {
       <div className="w-full max-w-[1920px] mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 2xl:px-20 py-3 sm:py-4 md:py-5 lg:py-6 flex items-center justify-between gap-2 sm:gap-4">
         <Link href="/" className="flex items-center min-h-[44px] touch-manipulation flex-shrink-0" aria-label="Retour à l'accueil">
           <Image
-            src="/logo.png"
-            alt="Société de nettoyage Liège"
-            width={200}
-            height={60}
-            className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-none"
+            src="/logo-text.png"
+            alt="Lena's Cleaning Services — Société de nettoyage Liège"
+            width={400}
+            height={120}
+            className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-[140px] sm:max-w-[180px] md:max-w-none"
             priority
           />
         </Link>
