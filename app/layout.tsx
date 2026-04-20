@@ -127,12 +127,45 @@ const jsonLdLocalBusiness = {
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Services de nettoyage",
+    name: "Services de nettoyage à Liège",
     itemListElement: [
-      { "@type": "ListItem", name: "Nettoyage maison" },
-      { "@type": "ListItem", name: "Nettoyage Airbnb" },
-      { "@type": "ListItem", name: "Nettoyage hôtels" },
-      { "@type": "ListItem", name: "Nettoyage bureaux" },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Nettoyage classique maison Liège", url: `${siteUrl}/nettoyage-classique` },
+        price: "1.50",
+        priceCurrency: "EUR",
+        priceSpecification: { "@type": "UnitPriceSpecification", price: "1.50", priceCurrency: "EUR", unitText: "m²" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Nettoyage Airbnb Liège", url: `${siteUrl}/nettoyage-airbnb-liege` },
+        price: "1.50",
+        priceCurrency: "EUR",
+        priceSpecification: { "@type": "UnitPriceSpecification", price: "1.50", priceCurrency: "EUR", unitText: "m²" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Nettoyage bureaux Liège", url: `${siteUrl}/nettoyage-bureaux-liege` },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Femme de ménage Liège", url: `${siteUrl}/femme-de-menage-liege` },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Nettoyage après travaux Liège", url: `${siteUrl}/nettoyage-apres-travaux-liege` },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Nettoyage fin de bail / déménagement Liège", url: `${siteUrl}/nettoyage-demenagement-liege` },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Nettoyage en profondeur Liège" },
+        price: "2.50",
+        priceCurrency: "EUR",
+        priceSpecification: { "@type": "UnitPriceSpecification", price: "2.50", priceCurrency: "EUR", unitText: "m²" },
+      },
     ],
   },
 }

@@ -74,10 +74,16 @@ export default function Header() {
           </div>
 
           <Link
-            href="/offre-nettoyage-liege"
+            href="/tarifs"
             className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
           >
-            Nos offres
+            Tarifs
+          </Link>
+          <Link
+            href="/faq"
+            className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px] flex items-center whitespace-nowrap"
+          >
+            FAQ
           </Link>
           <Link
             href="/entreprise-nettoyage-liege"
@@ -114,8 +120,11 @@ export default function Header() {
                   </Link>
                 ))}
 
-                <Link href="/offre-nettoyage-liege" onClick={() => setMenuOpen(false)} className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation mt-1">
-                  Nos offres
+                <Link href="/tarifs" onClick={() => setMenuOpen(false)} className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation mt-1">
+                  Tarifs
+                </Link>
+                <Link href="/faq" onClick={() => setMenuOpen(false)} className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation">
+                  FAQ
                 </Link>
                 <Link href="/entreprise-nettoyage-liege" onClick={() => setMenuOpen(false)} className="min-h-[48px] flex items-center px-4 rounded-lg text-base font-medium text-foreground hover:bg-secondary/50 transition-colors touch-manipulation">
                   Notre entreprise

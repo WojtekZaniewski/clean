@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}`, lastModified: lastMod, changeFrequency: "weekly", priority: 1.0 },
     // Core pages
     { url: `${baseUrl}/nettoyage-classique`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/tarifs`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/faq`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.85 },
     { url: `${baseUrl}/offre-nettoyage-liege`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.85 },
     { url: `${baseUrl}/entreprise-nettoyage-liege`, lastModified: lastMod, changeFrequency: "monthly", priority: 0.7 },
     // Service pages
