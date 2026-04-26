@@ -1,7 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-
-Sitemap: https://nettoyageliege.com/sitemap.xml
-Sitemap: https://nettoyageliege.com/sitemap-images.xml
