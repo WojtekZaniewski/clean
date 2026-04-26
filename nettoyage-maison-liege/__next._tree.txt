@@ -1,6 +1,6 @@
 :HL["/_next/static/chunks/004d53e46e33f6e4.css","style"]
-:HL["/_next/static/chunks/13562bcc0fbd5b20.css","style"]
+:HL["/_next/static/chunks/2fd4dc45fcc12d6d.css","style"]
 :HL["/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/5c285b27cdda1fe8-s.p.a62025f2.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/hero-poster.jpg","image"]
-0:{"buildId":"rTJIpFKJYqJvCHTc5SLNd","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"nettoyage-maison-liege","paramType":null,"paramKey":"nettoyage-maison-liege","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"nR293oVl5a_RYZm-bbPa2","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"nettoyage-maison-liege","paramType":null,"paramKey":"nettoyage-maison-liege","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
