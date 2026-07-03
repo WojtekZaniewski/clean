@@ -48,7 +48,11 @@ jobs:
               -d '{"textQuery":"Lena'\''s Cleaning Services nettoyage Liège","languageCode":"fr","regionCode":"BE"}' \
               | jq -r '.places[0].id // empty')
             if [ -z "$PID" ]; then
-              echo "Could not resolve place_id via text search."; exit 1
+              # New/unverified profiles are often not indexed by the Places API
+              # yet. Skip quietly; retry on the next scheduled run, or set the
+              # PLACE_ID secret to pin the place explicitly.
+              echo "Place not found via text search - skipping until indexed."
+              exit 0
             fi
             echo "Resolved place_id: $PID"
           fi
