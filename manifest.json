@@ -4,13 +4,13 @@
   "description": "Société de nettoyage à Liège. Maison, Airbnb, bureau. Équipe locale, réponse 2h, devis gratuit.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2563eb",
+  "background_color": "#0E0E10",
+  "theme_color": "#0E0E10",
   "lang": "fr-BE",
   "icons": [
     {
-      "src": "/logo.png",
-      "sizes": "512x512",
+      "src": "/logos/3.png",
+      "sizes": "500x500",
       "type": "image/png"
     },
     {
