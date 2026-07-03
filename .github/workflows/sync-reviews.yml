@@ -1,0 +1,88 @@
+# Syncs Google reviews into reviews.json (rendered as the "Avis clients"
+# section on the homepage). Runs daily; GitHub Pages redeploys on commit.
+#
+# SETUP (one-time):
+#   1. Google Cloud Console -> create/select a project
+#   2. "APIs & Services" -> enable "Places API (New)"
+#   3. "Credentials" -> Create API key (restrict it to Places API (New))
+#   4. GitHub repo -> Settings -> Secrets and variables -> Actions ->
+#      New repository secret: PLACES_API_KEY = <the key>
+#   5. (optional) secret PLACE_ID to pin the exact place and skip text search
+#
+# Without the PLACES_API_KEY secret the job exits quietly and changes nothing.
+# Note: the Places API returns at most 5 reviews.
+
+name: Sync Google reviews
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch reviews from Google Places API
+        env:
+          PLACES_API_KEY: ${{ secrets.PLACES_API_KEY }}
+          PLACE_ID: ${{ secrets.PLACE_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${PLACES_API_KEY}" ]; then
+            echo "PLACES_API_KEY secret not set - skipping (see comments in this workflow)."
+            exit 0
+          fi
+
+          PID="${PLACE_ID:-}"
+          if [ -z "$PID" ]; then
+            PID=$(curl -sf -X POST "https://places.googleapis.com/v1/places:searchText" \
+              -H "Content-Type: application/json" \
+              -H "X-Goog-Api-Key: ${PLACES_API_KEY}" \
+              -H "X-Goog-FieldMask: places.id,places.displayName" \
+              -d '{"textQuery":"Lena'\''s Cleaning Services nettoyage Liège","languageCode":"fr","regionCode":"BE"}' \
+              | jq -r '.places[0].id // empty')
+            if [ -z "$PID" ]; then
+              echo "Could not resolve place_id via text search."; exit 1
+            fi
+            echo "Resolved place_id: $PID"
+          fi
+
+          curl -sf "https://places.googleapis.com/v1/places/${PID}?languageCode=fr&regionCode=BE" \
+            -H "X-Goog-Api-Key: ${PLACES_API_KEY}" \
+            -H "X-Goog-FieldMask: rating,userRatingCount,reviews" \
+            -o /tmp/place.json
+
+          jq --arg url "https://share.google/6aF1GvvlgEsAzS6rc" '{
+            source: "google",
+            profileUrl: $url,
+            rating: (.rating // 0),
+            count: (.userRatingCount // 0),
+            updated: (now | todate),
+            reviews: [ (.reviews // [])[] | {
+              author: .authorAttribution.displayName,
+              rating: .rating,
+              text: (.text.text // ""),
+              date: (.relativePublishTimeDescription // ""),
+              time: (.publishTime // "")
+            } ]
+          }' /tmp/place.json > /tmp/reviews.json
+
+          # commit only when something other than the timestamp changed
+          if [ -f reviews.json ] && \
+             cmp -s <(jq 'del(.updated)' reviews.json) <(jq 'del(.updated)' /tmp/reviews.json); then
+            echo "No review changes."
+            exit 0
+          fi
+          mv /tmp/reviews.json reviews.json
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reviews.json
+          git commit -m "chore: sync Google reviews"
+          git push
