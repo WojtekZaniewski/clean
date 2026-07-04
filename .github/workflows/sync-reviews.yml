@@ -41,26 +41,36 @@ jobs:
 
           PID="${PLACE_ID:-}"
           if [ -z "$PID" ]; then
-            PID=$(curl -sf -X POST "https://places.googleapis.com/v1/places:searchText" \
+            # Text search is fuzzy: while this profile is not indexed by the
+            # Places API, a query can resolve to a COMPETITOR (this happened:
+            # NR PROCLEAN's reviews were imported on 2026-07-04). Only accept
+            # a text-search hit whose display name clearly matches the brand.
+            curl -sf -X POST "https://places.googleapis.com/v1/places:searchText" \
               -H "Content-Type: application/json" \
               -H "X-Goog-Api-Key: ${PLACES_API_KEY}" \
               -H "X-Goog-FieldMask: places.id,places.displayName" \
               -d '{"textQuery":"Lena'\''s Cleaning Services nettoyage Liège","languageCode":"fr","regionCode":"BE"}' \
-              | jq -r '.places[0].id // empty')
+              -o /tmp/search.json
+            PID=$(jq -r '.places[]? | select(.displayName.text | test("lena"; "i")) | .id' /tmp/search.json | head -n1)
             if [ -z "$PID" ]; then
-              # New/unverified profiles are often not indexed by the Places API
-              # yet. Skip quietly; retry on the next scheduled run, or set the
-              # PLACE_ID secret to pin the place explicitly.
-              echo "Place not found via text search - skipping until indexed."
+              echo "No place matching 'Lena' found via text search - skipping until the profile is indexed (or set the PLACE_ID secret)."
               exit 0
             fi
-            echo "Resolved place_id: $PID"
+            echo "Resolved place_id: $PID ($(jq -r '.places[]? | select(.displayName.text | test("lena"; "i")) | .displayName.text' /tmp/search.json | head -n1))"
           fi
 
           curl -sf "https://places.googleapis.com/v1/places/${PID}?languageCode=fr&regionCode=BE" \
             -H "X-Goog-Api-Key: ${PLACES_API_KEY}" \
-            -H "X-Goog-FieldMask: rating,userRatingCount,reviews" \
+            -H "X-Goog-FieldMask: displayName,rating,userRatingCount,reviews" \
             -o /tmp/place.json
+
+          # Belt and braces: never publish reviews from a place whose name
+          # does not contain the brand, even when PLACE_ID was set manually.
+          NAME=$(jq -r '.displayName.text // ""' /tmp/place.json)
+          if ! echo "$NAME" | grep -qi "lena"; then
+            echo "Refusing to sync: resolved place is '$NAME', not a Lena's Cleaning profile."
+            exit 1
+          fi
 
           jq --arg url "https://share.google/6aF1GvvlgEsAzS6rc" '{
             source: "google",
