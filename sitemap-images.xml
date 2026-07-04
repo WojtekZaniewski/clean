@@ -4,72 +4,93 @@
   <url>
     <loc>https://nettoyageliege.com/</loc>
     <image:image>
-      <image:loc>https://nettoyageliege.com/logo.png</image:loc>
+      <image:loc>https://nettoyageliege.com/logos/3.png</image:loc>
       <image:caption>Société de nettoyage Liège - Lena's Cleaning Services</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/salon-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/salon-nettoyage-liege.webp</image:loc>
       <image:caption>Salon nettoyé par Lena's Cleaning à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/cuisine-nettoyee-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/cuisine-nettoyee-liege.webp</image:loc>
       <image:caption>Cuisine nettoyée à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/salle-bain-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/salle-bain-nettoyage-liege.webp</image:loc>
       <image:caption>Salle de bain nettoyée à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/chambre-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/chambre-nettoyage-liege.webp</image:loc>
       <image:caption>Chambre nettoyée à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/bureau-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/bureau-nettoyage-liege.webp</image:loc>
       <image:caption>Nettoyage de bureau à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/appartement-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/appartement-nettoyage-liege.webp</image:loc>
       <image:caption>Nettoyage d'appartement à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/nettoyage-airbnb-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/nettoyage-airbnb-liege.webp</image:loc>
       <image:caption>Nettoyage Airbnb à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/sol-nettoyage-profond-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/sol-nettoyage-profond-liege.webp</image:loc>
       <image:caption>Nettoyage de sol en profondeur à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/espace-travail-propre-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/espace-travail-propre-liege.webp</image:loc>
       <image:caption>Espace de travail propre à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/apres-chantier-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/apres-chantier-nettoyage-liege.webp</image:loc>
       <image:caption>Nettoyage après chantier à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/interieur-propre-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/interieur-propre-liege.webp</image:loc>
       <image:caption>Intérieur propre après nettoyage à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/four-propre-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/four-propre-liege.webp</image:loc>
       <image:caption>Four propre après nettoyage à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/four-sale-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/four-sale-liege.webp</image:loc>
       <image:caption>Four avant nettoyage à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/equipe-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/equipe-nettoyage-liege.webp</image:loc>
       <image:caption>Équipe de nettoyage à Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/zone-intervention-nettoyage-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/zone-intervention-nettoyage-liege.webp</image:loc>
       <image:caption>Zone d'intervention nettoyage autour de Liège</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nettoyageliege.com/lena-manidom-fondatrice-liege.jpg</image:loc>
+      <image:loc>https://nettoyageliege.com/lena-manidom-fondatrice-liege.webp</image:loc>
       <image:caption>Lena Manidom, fondatrice de Lena's Cleaning Services à Liège</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nettoyageliege.com/nettoyage-seraing</loc>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/apres-chantier-nettoyage-liege.webp</image:loc>
+      <image:caption>Nettoyage après travaux à Seraing par Lena's Cleaning</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nettoyageliege.com/nettoyage-herstal</loc>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/espace-travail-propre-liege.webp</image:loc>
+      <image:caption>Nettoyage de bureaux à Herstal et au zoning des Hauts-Sarts</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nettoyageliege.com/nettoyage-ans</loc>
+    <image:image>
+      <image:loc>https://nettoyageliege.com/interieur-propre-liege.webp</image:loc>
+      <image:caption>Ménage à domicile à Ans et Alleur par Lena's Cleaning</image:caption>
     </image:image>
   </url>
 </urlset>
