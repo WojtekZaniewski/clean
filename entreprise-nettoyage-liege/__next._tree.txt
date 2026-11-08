@@ -1,3 +1,3 @@
-:HL["/_next/static/chunks/a50a4284d1d74f94.css","style"]
+:HL["/_next/static/chunks/fd7f679c10cad764.css","style"]
 :HL["/_next/static/media/a343f882a40d2cc9-s.p.07ce798a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"buildId":"63O9wqtWnHaSTY-yUG7dq","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"entreprise-nettoyage-liege","paramType":null,"paramKey":"entreprise-nettoyage-liege","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"g00b3fjzWHjDmkiSuw4jO","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"entreprise-nettoyage-liege","paramType":null,"paramKey":"entreprise-nettoyage-liege","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
