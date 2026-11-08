@@ -1,3 +1,3 @@
-:HL["/_next/static/chunks/fd7f679c10cad764.css","style"]
+:HL["/_next/static/chunks/9776546f5b0af03d.css","style"]
 :HL["/_next/static/media/a343f882a40d2cc9-s.p.07ce798a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"buildId":"g00b3fjzWHjDmkiSuw4jO","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"nettoyage-bureaux-liege","paramType":null,"paramKey":"nettoyage-bureaux-liege","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"bZaqMdz3TuBmnK5nRVrKx","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"nettoyage-bureaux-liege","paramType":null,"paramKey":"nettoyage-bureaux-liege","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
