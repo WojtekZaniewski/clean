@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/9326a29d0b8d08b3.css","style"]
 :HL["/_next/static/media/a343f882a40d2cc9-s.p.07ce798a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/hero-poster.webp","image",{"fetchPriority":"high"}]
-0:{"buildId":"i0pQtZdzz7YB76C8Fhn4N","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"P2VpcAaCoOtiP09JV1ObC","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
